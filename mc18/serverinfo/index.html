@@ -7,18 +7,18 @@
     <body>
         <script src="https://mcapi.us/scripts/minecraft.js"></script>
         <div class="server-status">
-            My awesome server is currently <span class="server-online"></span>!
+            null
         </div>
         <script>
             MinecraftAPI.getServerStatus('s7.hosthorde.com', {
                 port: 26297 // optional, only if you need a custom port
-              }, function (err, motd) {
+              }, function (motd) {
                 if (err) {
                   return document.querySelector('.server-status').innerHTML = 'Error loading status';
                 }
 
                 // you can change these to your own message!
-                document.querySelector('.server-online').innerHTML = status.motd
+                document.querySelector('.server-status').innerHTML = server.motd
               });
         </script>
     </body>
