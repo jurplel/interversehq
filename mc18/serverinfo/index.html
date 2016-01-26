@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Online Players</title>
-    <script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <head>
+      <title>Server Status</title>
+    </head>
+
+    <body>
+        <script src="https://mcapi.us/scripts/minecraft.js"></script>
         <div class="server-status">
-          My awesome server is currently <span class="server-online"></span>!
+            My awesome server is currently <span class="server-online"></span>!
         </div>
         <script>
-          MinecraftAPI.getServerStatus('s.nerd.nu', {
-            port: 25565 // optional, only if you need a custom port
-          }, function (err, status) {
-            if (err) {
-              return document.querySelector('.server-status').innerHTML = 'Error loading status';
-            }
+            MinecraftAPI.getServerStatus('s7.hosthorde.com', {
+                port: 26297 // optional, only if you need a custom port
+              }, function (err, motd) {
+                if (err) {
+                  return document.querySelector('.server-status').innerHTML = 'Error loading status';
+                }
 
-            // you can change these to your own message!
-            document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
-          });
-    </script>
-</head>
-<body>
-<pre style="word-wrap: break-word; white-space: pre-wrap;">{"status":"success","online":true,"motd":"§c[Bungee] Cant connect to server.","error":"","players":{"max":0,"now":0},"server":{"name":"","protocol":0},"last_online":"1453826121","last_updated":"1453826121","duration":356992000}
-</pre>
-</body>
+                // you can change these to your own message!
+                document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+              });
+        </script>
+    </body>
 </html>
