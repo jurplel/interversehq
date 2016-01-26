@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Online Players</title>
+    <title>Online Players</title>
     <script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <style>
+        p {
+            display:inline-block;
+        }
+    </style>
 </head>
 <body>
 <p id="motd">null</p><br>
-<p>Players:&nbsp;<p id="playernow"></p><p>/</p><br>
-<p id="playermax"></p>
+<p>Players:&nbsp;<p id="playernow"></p><p>/</p>
+<p id="playermax"></p><br>
 <p>Currently&nbsp;<p id="status"></p>
 <script>
 MinecraftAPI.getServerStatus('s7.hosthorde.com', {
