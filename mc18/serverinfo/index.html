@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Online players</title>
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript">
-    func();
-    var seconds = 5; /* Your Refresh Rate */
-    setInterval(function(){
-        func();
-    }, seconds * 1000);
-    function func(){
-        var ip = "mineslam.me"; 
-        var xhr = new XMLHttpRequest(); 
-        xhr.open("GET", "http://minecraft-api.com/v1/get/?server=" + ip, true); 
-        xhr.onreadystatechange = function() { 
-                if (xhr.readyState == 4) { 
-                        data = JSON.parse(xhr.responseText); 
-                        if (data.status) { 
-                                document.getElementById("bar").innerHTML=data.players.online + "/" + data.players.max;
-                                document.getElementById("bar").style.width = Math.round(100*(data.players.online/data.players.max)) + "%";
-                        }
-                } 
-        } 
-        xhr.send();
-    }
+  <title>Online Players</title>
+    <script src="https://mcapi.us/scripts/minecraft.js"></script>
+        <div class="server-status">
+          My awesome server is currently <span class="server-online"></span>!
+        </div>
+        <script>
+          MinecraftAPI.getServerStatus('s.nerd.nu', {
+            port: 25565 // optional, only if you need a custom port
+          }, function (err, status) {
+            if (err) {
+              return document.querySelector('.server-status').innerHTML = 'Error loading status';
+            }
+
+            // you can change these to your own message!
+            document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+          });
     </script>
 </head>
-<body style="padding:0;margin:0;color:#ffffff;">
-<div class="progress progress-striped active" style="background-color: #373737;">
-    <div class="progress-bar progress-bar-default" role="progressbar" style="width: 0%;" id="bar">0/0</div>
-</div>
+<body>
+<pre style="word-wrap: break-word; white-space: pre-wrap;">{"status":"success","online":true,"motd":"§c[Bungee] Cant connect to server.","error":"","players":{"max":0,"now":0},"server":{"name":"","protocol":0},"last_online":"1453826121","last_updated":"1453826121","duration":356992000}
+</pre>
 </body>
 </html>
