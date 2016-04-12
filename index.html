@@ -70,13 +70,17 @@
     </script>
 
     <script>
+        var randomvid = Math.floor((Math.random() * 2) + 1);
 
-        var vid1webm = "https://zippy.gfycat.com/MemorableDearestHarlequinbug.webm";
-        var vid1mp4 = "https://giant.gfycat.com/MemorableDearestHarlequinbug.mp4";
+        var webm1 = "https://zippy.gfycat.com/MemorableDearestHarlequinbug.webm";
+        var mp41 = "https://giant.gfycat.com/MemorableDearestHarlequinbug.mp4";
+
+        var webm2 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra.webm"
+        var mp42 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra.mp4"
 
         $('#vidBg').vide({
-            webm: vid1webm,
-            mp4: vid1mp4,
+            webm: "webm" + randomvid,
+            mp4: "mp4" + randomvid,
         }, {
         });
     </script>
