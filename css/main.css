@@ -30,13 +30,13 @@ h1 {
 .vertical-align {
 	min-height: 100%;
 	min-height: 100vh;
-	display: flex;
+	/*display: flex;*/
 /*	align-items: center;
 	justify-content: center;*/
-	flex-direction: column;
+/*	flex-direction: column;
 	display: -webkit-flex;
 	-webkit-justify-content: center;
-	-webkit-align-items: center;
+	-webkit-align-items: center;*/
 }
 
 /*.btn {
