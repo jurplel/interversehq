@@ -28,20 +28,15 @@ h1 {
 	background-size: cover;
 }
 .vertical-align {
-/*	min-height: 100%;
-	min-height: 100vh;*/
+	min-height: 100%;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	display: -webkit-flex;
-	-webkit-justify-content: center;
-	-webkit-align-items: center;
-}
-
-.vertical-align2 {
-    min-height: 100%;
-    min-height: 100vh;
+	display: -webkit-flex; /* For Safari */
+	-webkit-justify-content: center; /* For Safari */
+	-webkit-align-items: center; /* For Safari */
 }
 
 /*.btn {
