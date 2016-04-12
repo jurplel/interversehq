@@ -3,8 +3,11 @@
 
         var webm2 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra.webm"
         var mp42 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra.mp4"
-        
-        var randomvid = Math.floor((Math.random() * 2) + 1);
+
+        var numberofvideos = 2
+
+
+        var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
         $('#vidBg').vide({
             webm: eval("webm" + randomvid),
             mp4: eval("mp4" + randomvid),
