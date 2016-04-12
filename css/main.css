@@ -9,12 +9,13 @@
 }
 
 body {
-	background: none;
+	background-color: #212121;
+    animation: losbastardos 10s linear 0s infinite alternate;
+    -webkit-animation: losbastardos 10s linear 0s infinite alternate;
 }
 
 .full {
 	/*background: url(http://i.imgur.com/vDlh1j9.png) no-repeat center center fixed;*/
-    background-color: #212121;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -90,4 +91,16 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+}
+
+@keyframes losbastardos {
+    10% {background-color: #212121;}
+    50% {background-color: #2196F3;}
+    100% {background-color: #212121;}
+}
+
+@-webkit-keyframes losbastardos {
+    10% {background-color: #212121;}
+    50% {background-color: #2196F3;}
+    100% {background-color: #212121;}
 }
