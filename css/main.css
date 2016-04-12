@@ -34,7 +34,7 @@ body {
 .btn {
     border-radius: 0;
     text-transform: uppercase;
-    font-family: Play,sans-serif;
+    font-family: Roboto Condensed,sans-serif;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
