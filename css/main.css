@@ -102,6 +102,6 @@ ul.banner-social-buttons {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
 }
 }addClass(m.className).css({position:"absolute","z-index":-1,top:0,left:0,bottom:0,right:0,overflow:"hidden","-webkit-background-size":"cover","-moz-background-size":"cover","-o-background-size":"cover","background-size":"cover","background-repeat":"no-repeat","background-position"
