@@ -31,7 +31,7 @@ body {
 	-webkit-align-items: center; /* For Safari */
 }
 
-.btn {
+/*.btn {
     border-radius: 0;
     text-transform: uppercase;
     font-family: Roboto Condensed,sans-serif;
@@ -42,8 +42,8 @@ body {
 }
 
 .btn-default {
-    border: 1px solid #0288D1;
-    color: #0288D1;
+    border: 1px solid #FFF;
+    color: #FFF;
     background-color: transparent;
 }
 
@@ -53,7 +53,7 @@ body {
     outline: 0;
     color: #000;
     background-color: #00A5FF;
-}
+}*/
 
 h1 {
     font-size: 12.5vw;
