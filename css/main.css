@@ -14,7 +14,7 @@ body {
 
 .full {
 	/*background: url(http://i.imgur.com/vDlh1j9.png) no-repeat center center fixed;*/
-    background-color: #212121
+    background-color: #212121;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
