@@ -57,7 +57,11 @@ body {
 }
 
 .SFTR {
-    font-family: SF TransRobotics,serif;
+    font-family: SF TransRobotics,arial,sans-serif;
+}
+
+.robotoc {
+    font-family: Roboto Condensed,arial,sans-serif;
 }
 
 
