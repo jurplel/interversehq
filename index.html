@@ -15,6 +15,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="animate.min.css">
+
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
 
@@ -35,7 +37,8 @@
     <div class="container">
         <div class="row vertical-align">
         	<div style="width: 100%">
-            	<img src="img/INTV-Logo.png" width="100%" alt="Interverse Logo">
+            	<!-- <img src="img/INTV-Logo.png" width="100%" alt="Interverse Logo"> -->
+                <h1 class="tlt" data-in-effect="fadeIn" data-out-effect="fadeOut">INTERVERSE</h1>
             </div>
             <ul class="list-inline banner-social-buttons" style="margin-top:5%">
             <li><a class="btn btn-default btn-lg" href="https://discord.gg/0lXeGE6soHiPvT8O">Discord</a>
@@ -51,8 +54,20 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+    <!-- Lettering JavaScript -->
+    <script src="js/jquery.lettering-0.6.1.min.js"></script>
+
+    <!-- Textillate JavaScript -->
+    <script src="js/jquery.textillate.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+        $('.tlt').textillate();
+        })
+    </script>
 
 </body>
 
