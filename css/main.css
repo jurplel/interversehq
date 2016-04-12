@@ -10,8 +10,6 @@
 
 body {
 	background-color: #212121;
-    animation: losbastardos 10s linear 0s infinite alternate;
-    -webkit-animation: losbastardos 10s linear 0s infinite alternate;
 }
 
 .full {
@@ -91,14 +89,4 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
-}
-
-@keyframes losbastardos {
-    10% {background-color: #212121;}
-    100% {background-color: #2196F3;}
-}
-
-@-webkit-keyframes losbastardos {
-    10% {background-color: #212121;}
-    100% {background-color: #2196F3;}
 }
