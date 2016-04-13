@@ -9,7 +9,7 @@ var numberofvideos = 2
 var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
 var checked = false
 
-if (checked = false)
+if (checked == false)
 {
     $('#videBG').vide({
         webm: eval("webm" + randomvid),
