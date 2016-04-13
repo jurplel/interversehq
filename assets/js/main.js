@@ -11,6 +11,7 @@ var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
 $('#videBG').vide({
     webm: eval("webm" + randomvid),
     mp4: eval("mp4" + randomvid),
+    poster: 'assets/img/intv4_defocusbackground.png',
 }, {
     resizing: true,
     position: '50% 50%',
