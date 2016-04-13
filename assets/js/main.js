@@ -6,15 +6,24 @@ var mp42 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra
 
 var numberofvideos = 2
 
-var isOn = $('#videoSwitch').is(':checked');
+var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
+$('#videBG').vide({
+    webm: eval("webm" + randomvid),
+    mp4: eval("mp4" + randomvid),
+    poster: 'assets/img/intv4_defocusbackground.jpg',
+}, {
+	posterType: 'jpg'
+});
 
-if (isOn = true) {
-	var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
-	$('#videBG').vide({
-	    webm: eval("webm" + randomvid),
-	    mp4: eval("mp4" + randomvid),
-	    poster: 'assets/img/intv4_defocusbackground.jpg',
-	}, {
-		posterType: 'jpg'
-	});
-}
+$("#videoSwitch").each(function() {
+    var mycookie = $.cookie($(this).attr('name'));
+    if (mycookie && mycookie == "true") {
+        $(this).prop('checked', mycookie);
+    }
+});
+$("#videoSwitch").change(function() {
+    $.cookie($(this).attr("name"), $(this).prop('checked'), {
+        path: '/',
+        expires: 365
+    });
+});
