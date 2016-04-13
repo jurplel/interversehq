@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:900);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);
 
 body {
 	background-color: #212121;
@@ -6,7 +6,7 @@ body {
 
 }
 h1 {
-	font-family: 'Raleway', Arial, sans-serif;
-	font-weight: 900;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-weight: 75em;
 	font-size: 200px;
 }
