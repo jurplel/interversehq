@@ -12,4 +12,7 @@ $('#videBG').vide({
     webm: eval("webm" + randomvid),
     mp4: eval("mp4" + randomvid),
 }, {
+    resizing: true,
+    position: '50% 50%',
+    
 });
