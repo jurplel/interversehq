@@ -41,12 +41,5 @@ if (checked == false)
 
 function VSwitch()
 {
-    if (mycookie)
-    {
-        alert("true")
-    }
-    else
-    {
-        alert("false")
-    }
+    alert(mycookie)
 }
