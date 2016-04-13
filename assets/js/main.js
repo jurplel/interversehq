@@ -23,10 +23,7 @@ $("#videoSwitch").change(function() {
     });
 });
 
-if (mycookie == false)
-{
-    alert("nYAH")
-}
+
     $('#videBG').vide({
         webm: eval("webm" + randomvid),
         mp4: eval("mp4" + randomvid),
@@ -38,4 +35,8 @@ if (mycookie == false)
 function VSwitch()
 {
     location.reload();
+    if (mycookie == false)
+    {
+        alert("nYAH")
+    }
 }
