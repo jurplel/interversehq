@@ -18,7 +18,7 @@ $('#videBG').vide({
 });
 
 $(function() {
-  var video = $('#bgVideo').data('vide').getVideoObject();
+  var video = $('#videBG').data('vide').getVideoObject();
 
   $('#VControl').on('click', function() {
     video.paused ? video.play() : video.pause();  
