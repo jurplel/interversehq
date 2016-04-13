@@ -26,12 +26,16 @@ $(function() {
     if (IconIsPlay)
     {
         document.getElementById("PauseIcon").setAttribute("class", "fa fa-pause");
+        alert(IconIsPlay)
         IconIsPlay = false
+        alert(IconIsPlay)
     }
     else
     {
         document.getElementById("PauseIcon").setAttribute("class", "fa fa-play");
+        alert(IconIsPlay)
         IconIsPlay = true
+        alert(IconIsPlay)
     }
 
   });
