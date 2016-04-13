@@ -25,7 +25,13 @@ h1 {
 }
 
 #VControl {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;    
+	position: absolute;
+	bottom: 20px;
+	right: 20px;    
+}
+
+#MainMenu {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
 }
