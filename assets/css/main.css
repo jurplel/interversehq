@@ -10,3 +10,8 @@ h1 {
 	font-weight: 75em;
 	font-size: 200px;
 }
+
+.valign {
+	min-height: 100%;
+	min-height: 100vh;
+}
