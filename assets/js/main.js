@@ -7,21 +7,11 @@ var mp42 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra
 var numberofvideos = 2
 
 var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
-var checked = false
 
-if (checked == false)
-{
-    $('#videBG').vide({
-        webm: eval("webm" + randomvid),
-        mp4: eval("mp4" + randomvid),
-        poster: 'assets/img/intv4_defocusbackground.jpg',
-    }, {
-    	posterType: 'jpg'
-    });
-}
+var mycookie = false
 
 $("#videoSwitch").each(function() {
-    var mycookie = $.cookie($(this).attr('name'));
+    mycookie = $.cookie($(this).attr('name'));
     if (mycookie && mycookie == "true") {
         $(this).prop('checked', mycookie);
     }
@@ -33,6 +23,18 @@ $("#videoSwitch").change(function() {
     });
 });
 
+if (mycookie == false)
+{
+    $('#videBG').vide({
+        webm: eval("webm" + randomvid),
+        mp4: eval("mp4" + randomvid),
+        poster: 'assets/img/intv4_defocusbackground.jpg',
+    }, {
+    	posterType: 'jpg'
+    });
+}
+
 function VSwitch()
 {
+    location.reload();
 }
