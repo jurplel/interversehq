@@ -27,3 +27,7 @@ $("#videoSwitch").change(function() {
         expires: 365
     });
 });
+
+function reload() {
+location.reload();
+}
