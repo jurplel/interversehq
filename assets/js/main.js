@@ -21,6 +21,7 @@ $(function() {
   var video = $('#videBG').data('vide').getVideoObject();
 
   $('#VControl').on('click', function() {
-    video.paused ? video.play() : video.pause();  
+    video.paused ? video.play() : video.pause();
+    document.getElementById("PauseIcon").setAttribute("class", "fa fa-play");
   });
 });
