@@ -30,6 +30,10 @@ $("#videoSwitch").change(function() {
     });
 });
 
-function reload() {
-location.reload();
+function VSwitch(checkbox)
+{
+    if (checkbox.checked)
+    {
+        alert("a");
+    }
 }
