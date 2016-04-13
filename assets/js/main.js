@@ -1,5 +1,3 @@
-$(document).foundation()
-
 var webm1 = "https://zippy.gfycat.com/MemorableDearestHarlequinbug.webm";
 var mp41 = "https://giant.gfycat.com/MemorableDearestHarlequinbug.mp4";
 
