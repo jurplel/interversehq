@@ -8,19 +8,6 @@ var numberofvideos = 2
 
 var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
 
-$("#videoSwitch").each(function() {
-    var mycookie = $.cookie($(this).attr('name'));
-    if (mycookie && mycookie == "true") {
-        $(this).prop('checked', mycookie);
-    }
-});
-$("#videoSwitch").change(function() {
-    $.cookie($(this).attr("name"), $(this).prop('checked'), {
-        path: '/',
-        expires: 365
-    });
-});
-
 
 $('#videBG').vide({
     webm: eval("webm" + randomvid),
@@ -30,7 +17,10 @@ $('#videBG').vide({
 	posterType: 'jpg'
 });
 
-function VSwitch()
-{
-    location.reload();
-}
+$(function() {
+  var video = $('#bgVideo').data('vide').getVideoObject();
+
+  $('#VControl').on('click', function() {
+    video.paused ? video.play() : video.pause();  
+  });
+});
