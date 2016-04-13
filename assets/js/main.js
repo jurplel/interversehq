@@ -20,14 +20,15 @@ if (checked == false)
     });
 }
 
+$("#videoSwitch").each(function() {
+    var mycookie = $.cookie($(this).attr('name'));
+    if (mycookie && mycookie == "true") {
+        $(this).prop('checked', mycookie);
+    }
+});
+
 function VSwitch()
 {
-    $("#videoSwitch").each(function() {
-        var mycookie = $.cookie($(this).attr('name'));
-        if (mycookie && mycookie == "true") {
-            $(this).prop('checked', mycookie);
-        }
-    });
     $("#videoSwitch").change(function() {
         $.cookie($(this).attr("name"), $(this).prop('checked'), {
             path: '/',
