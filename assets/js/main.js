@@ -34,7 +34,7 @@ $("#videoSwitch").change(function() {
 
 function VSwitch()
 {
-    if (mycookie == false)
+    if (mycookie == "false")
     {
         alert("nYAH")
     }
