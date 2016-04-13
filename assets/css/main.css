@@ -22,3 +22,9 @@ h1 {
 	-webkit-justify-content: center; /* For Safari */ 
 	-webkit-align-items: center; /* For Safari*/
 }
+
+#VControl {
+  position: absolute;
+  top: 20px;
+  left: 20px;    
+}

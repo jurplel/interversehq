@@ -24,9 +24,3 @@ $(function() {
     video.paused ? video.play() : video.pause();  
   });
 });
-
-#VControl {
-  position: absolute;
-  top: 20px;
-  left: 20px;    
-}
