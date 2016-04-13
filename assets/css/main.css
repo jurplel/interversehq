@@ -7,7 +7,8 @@ body {
 }
 h1 {
 	font-family: 'Roboto Condensed', Arial, sans-serif;
-	font-weight: 75vw;
+	font-size: 200px;
+	font-weight: 10em;
 }
 
 .valign {
