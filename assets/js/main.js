@@ -26,12 +26,14 @@ $(function() {
     if (IconIsPlay)
     {
         document.getElementById("PauseIcon").setAttribute("class", "fa fa-pause");
+        IconIsPlay = false
     }
     else
     {
-    document.getElementById("PauseIcon").setAttribute("class", "fa fa-play");
+        document.getElementById("PauseIcon").setAttribute("class", "fa fa-play");
+        IconIsPlay = true
     }
-    
+
   });
 
 });
