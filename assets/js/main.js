@@ -8,17 +8,10 @@ var numberofvideos = 2
 
 var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
 
-var mycookie
-
 $("#videoSwitch").each(function() {
     var mycookie = $.cookie($(this).attr('name'));
     if (mycookie && mycookie == "true") {
         $(this).prop('checked', mycookie);
-        mycookie = true
-    }
-    else
-    {
-        mycookie = false
     }
 });
 $("#videoSwitch").change(function() {
@@ -28,18 +21,16 @@ $("#videoSwitch").change(function() {
     });
 });
 
-if (checked == false)
-{
-    $('#videBG').vide({
-        webm: eval("webm" + randomvid),
-        mp4: eval("mp4" + randomvid),
-        poster: 'assets/img/intv4_defocusbackground.jpg',
-    }, {
-    	posterType: 'jpg'
-    });
-}
+
+$('#videBG').vide({
+    webm: eval("webm" + randomvid),
+    mp4: eval("mp4" + randomvid),
+    poster: 'assets/img/intv4_defocusbackground.jpg',
+}, {
+	posterType: 'jpg'
+});
 
 function VSwitch()
 {
-    alert(mycookie)
+    location.reload();
 }
