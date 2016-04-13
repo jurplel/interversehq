@@ -17,12 +17,13 @@ $('#videBG').vide({
 	posterType: 'jpg'
 });
 
+var IconIsPlay
+
 $(function() {
   var video = $('#videBG').data('vide').getVideoObject();
 
   $('#VControl').on('click', function() {
     video.paused ? video.play() : video.pause();
-    var IconIsPlay
     if (IconIsPlay)
     {
         document.getElementById("PauseIcon").setAttribute("class", "fa fa-pause");
