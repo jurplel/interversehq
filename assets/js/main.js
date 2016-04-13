@@ -26,13 +26,13 @@ $("#videoSwitch").each(function() {
         $(this).prop('checked', mycookie);
     }
 });
+$("#videoSwitch").change(function() {
+    $.cookie($(this).attr("name"), $(this).prop('checked'), {
+        path: '/',
+        expires: 365
+    });
+});
 
 function VSwitch()
 {
-    $("#videoSwitch").change(function() {
-        $.cookie($(this).attr("name"), $(this).prop('checked'), {
-            path: '/',
-            expires: 365
-        });
-    });
 }
