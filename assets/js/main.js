@@ -20,27 +20,18 @@ if (checked == false)
     });
 }
 
-$("#videoSwitch").each(function() {
-    var mycookie = $.cookie($(this).attr('name'));
-    if (mycookie && mycookie == "true") {
-        $(this).prop('checked', mycookie);
-    }
-});
-$("#videoSwitch").change(function() {
-    $.cookie($(this).attr("name"), $(this).prop('checked'), {
-        path: '/',
-        expires: 365
-    });
-});
-
-function VSwitch(checkbox)
+function VSwitch()
 {
-    if (checkbox.checked)
-    {
-        checked = true
-    }
-    else
-    {
-        checked = false
-    }
+    $("#videoSwitch").each(function() {
+        var mycookie = $.cookie($(this).attr('name'));
+        if (mycookie && mycookie == "true") {
+            $(this).prop('checked', mycookie);
+        }
+    });
+    $("#videoSwitch").change(function() {
+        $.cookie($(this).attr("name"), $(this).prop('checked'), {
+            path: '/',
+            expires: 365
+        });
+    });
 }
