@@ -1,4 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:900);
+
 body {
 	background-color: #212121;
 	color: #FFF;
+	font-family: Raleway;
+	font-weight: 900;
 }
