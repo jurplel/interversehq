@@ -36,9 +36,9 @@ var post9 = "http://i.imgur.com/iLQ5k4ih.jpg"
 var webm9 = "http://i.imgur.com/iLQ5k4i.webm"
 var mp49 = "http://i.imgur.com/iLQ5k4i.mp4"
 
-var post10 = "https://thumbs.gfycat.com/MildZealousFlyinglemur-poster.jpg"
-var webm10 = "https://giant.gfycat.com/MildZealousFlyinglemur.webm"
-var mp410 = "https://giant.gfycat.com/MildZealousFlyinglemur.mp4"
+var post10 = "https://thumbs.gfycat.com/TepidFatalCornsnake-poster.jpg"
+var webm10 = "https://zippy.gfycat.com/TepidFatalCornsnake.webm"
+var mp410 = "https://zippy.gfycat.com/TepidFatalCornsnake.mp4"
 
 var post11 = "https://thumbs.gfycat.com/ShyUnnaturalCoelacanth-poster.jpg"
 var webm11 = "https://zippy.gfycat.com/ShyUnnaturalCoelacanth.webm"
