@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+
+body {
+	background-color: #212121;
+	color: #FFF;
+
+}
+h1 {
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-size: 12.5vw;
+	font-weight: 900;
+	text-shadow: 0px 4px 4px #111111;
+}
+
+.valign {
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	display: -webkit-flex;  /* For Safari */
+	-webkit-justify-content: center; /* For Safari */ 
+	-webkit-align-items: center; /* For Safari*/
+}
+
+#VControl {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;    
+}
+
+#MainMenu {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
