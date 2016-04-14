@@ -11,7 +11,11 @@ h1 {
 	font-size: 12.5vw;
 	font-weight: 900;
 	text-shadow: 0px 4px 4px #111111;
-	perspective: 600px;
+	-webkit-transform: perspective(300px) rotateX(25deg);
+	-moz-transform: perspective(300px) rotateX(25deg);
+	-ms-transform: perspective(300px) rotateX(25deg);
+	-o-transform: perspective(300px) rotateX(25deg);
+	transform: perspective(300px) rotateX(25deg);
 }
 
 button {
