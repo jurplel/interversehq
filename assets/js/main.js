@@ -1,17 +1,18 @@
 $(document).foundation()
 
+var post1 = "https://thumbs.gfycat.com/MemorableDearestHarlequinbug-poster.jpg"
 var webm1 = "https://zippy.gfycat.com/MemorableDearestHarlequinbug.webm";
 var mp41 = "https://giant.gfycat.com/MemorableDearestHarlequinbug.mp4";
 
+var post2 = "https://thumbs.gfycat.com/ShamefulCompassionateBluebreastedkookaburra-poster.jpg"
 var webm2 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra.webm"
 var mp42 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra.mp4"
 
-var testlink = "ScaryGrizzledComet"
-var cajax = "https://gfycat.com/cajax/get/"
-var properlink = cajax + testlink
-alert(properlink)
+var post3 = "https://thumbs.gfycat.com/CoordinatedForcefulHoneycreeper-poster.jpg"
+var webm3 = "https://fat.gfycat.com/CoordinatedForcefulHoneycreeper.webm"
+var mp43 = "https://fat.gfycat.com/CoordinatedForcefulHoneycreeper.mp4"
 
-var numberofvideos = 2
+var numberofvideos = 3
 
 var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
 
@@ -19,7 +20,7 @@ var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
 $('#videBG').vide({
     webm: eval("webm" + randomvid),
     mp4: eval("mp4" + randomvid),
-    poster: 'assets/img/intv4_defocusbackground.jpg',
+    poster: eval("post" + randomvid),
 }, {
 	posterType: 'jpg'
 });
