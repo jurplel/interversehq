@@ -6,6 +6,11 @@ var mp41 = "https://giant.gfycat.com/MemorableDearestHarlequinbug.mp4";
 var webm2 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra.webm"
 var mp42 = "https://giant.gfycat.com/ShamefulCompassionateBluebreastedkookaburra.mp4"
 
+var testlink = "ScaryGrizzledComet"
+var cajax = "https://gfycat.com/cajax/get/"
+var properlink = cajax + testlink
+alert(properlink)
+
 var numberofvideos = 2
 
 var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
