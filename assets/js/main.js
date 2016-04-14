@@ -28,7 +28,11 @@ var post7 = "https://thumbs.gfycat.com/ShyUnnaturalCoelacanth-poster.jpg"
 var webm7 = "https://zippy.gfycat.com/ShyUnnaturalCoelacanth.webm"
 var mp47 = "https://zippy.gfycat.com/ShyUnnaturalCoelacanth.mp4"
 
-var numberofvideos = 7
+var post8 = "https://thumbs.gfycat.com/SpicyKlutzyDachshund-poster.jpg"
+var webm8 = "https://fat.gfycat.com/SpicyKlutzyDachshund.webm"
+var mp48 = "https://giant.gfycat.com/SpicyKlutzyDachshund.mp4"
+
+var numberofvideos = 8
 
 var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
 
