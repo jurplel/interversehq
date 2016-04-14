@@ -24,27 +24,11 @@ var post6 = "https://thumbs.gfycat.com/DistinctGoldenIbex-poster.jpg"
 var webm6 = "https://fat.gfycat.com/DistinctGoldenIbex.webm"
 var mp46 = "https://fat.gfycat.com/DistinctGoldenIbex.mp4"
 
-var post7 = "https://thumbs.gfycat.com/MealyEllipticalEgret-poster.jpg"
-var webm7 = "https://fat.gfycat.com/MealyEllipticalEgret.webm"
-var mp47 = "https://fat.gfycat.com/MealyEllipticalEgret.mp4"
+var post7 = "https://thumbs.gfycat.com/ShyUnnaturalCoelacanth-poster.jpg"
+var webm7 = "https://zippy.gfycat.com/ShyUnnaturalCoelacanth.webm"
+var mp47 = "https://zippy.gfycat.com/ShyUnnaturalCoelacanth.mp4"
 
-var post8 = "https://thumbs.gfycat.com/CornyInsidiousKid-poster.jpg"
-var webm8 = "https://fat.gfycat.com/CornyInsidiousKid.webm"
-var mp48 = "https://fat.gfycat.com/CornyInsidiousKid.mp4"
-
-var post9 = "http://i.imgur.com/iLQ5k4ih.jpg"
-var webm9 = "http://i.imgur.com/iLQ5k4i.webm"
-var mp49 = "http://i.imgur.com/iLQ5k4i.mp4"
-
-var post10 = "https://thumbs.gfycat.com/TepidFatalCornsnake-poster.jpg"
-var webm10 = "https://zippy.gfycat.com/TepidFatalCornsnake.webm"
-var mp410 = "https://zippy.gfycat.com/TepidFatalCornsnake.mp4"
-
-var post11 = "https://thumbs.gfycat.com/ShyUnnaturalCoelacanth-poster.jpg"
-var webm11 = "https://zippy.gfycat.com/ShyUnnaturalCoelacanth.webm"
-var mp411 = "https://zippy.gfycat.com/ShyUnnaturalCoelacanth.mp4"
-
-var numberofvideos = 11
+var numberofvideos = 7
 
 var randomvid = Math.floor((Math.random() * numberofvideos) + 1);
 
