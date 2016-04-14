@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
-	background-color: #212121;
+	background-image: 'assets/img/intv4_defocusbackground.jpg';
 	color: #FFF;
 }
 
@@ -11,6 +11,7 @@ h1 {
 	font-size: 12.5vw;
 	font-weight: 900;
 	text-shadow: 0px 4px 4px #111111;
+	transform: rotateX(45deg);
 }
 
 button {
@@ -28,16 +29,4 @@ button {
 	display: -webkit-flex;  /* For Safari */
 	-webkit-justify-content: center; /* For Safari */ 
 	-webkit-align-items: center; /* For Safari*/
-}
-
-#VControl {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;    
-}
-
-#MainMenu {
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
 }
