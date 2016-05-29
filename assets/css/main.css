@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Play:700);
+@import url(https://fonts.googleapis.com/css?family=Play:400);
 
 body {
 	background-image: url("../img/intv4_defocusbackground.jpg");
@@ -26,7 +26,6 @@ h1 {
     border-radius: 0;
     text-transform: uppercase;
     font-family: Play, sans-serif;
-    font-weight: 600;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
