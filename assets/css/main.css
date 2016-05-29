@@ -21,9 +21,28 @@ h1 {
 	transform: perspective(15vw) rotateX(20deg);
 }
 
-button {
-	font-family: 'Roboto Condensed', Arial, sans-serif;
-	font-weight: 400;
+.button {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.button-default {
+    border: 1px solid #0288D1;
+    color: #0288D1;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #00A5FF;
+    outline: 0;
+    color: #000;
+    background-color: #00A5FF;
 }
 
 .valign {
