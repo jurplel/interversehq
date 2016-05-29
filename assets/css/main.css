@@ -41,7 +41,7 @@ h1 {
 .button:focus {
     border: 1px solid #00A5FF;
     outline: 0;
-    color: rgba(0, 0, 0, 0);
+    color: #000;
     background-color: #00A5FF;
 }
 
