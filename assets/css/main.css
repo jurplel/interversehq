@@ -37,8 +37,8 @@ h1 {
     background-color: transparent;
 }
 
-.btn-default:hover,
-.btn-default:focus {
+.button-default:hover,
+.button-default:focus {
     border: 1px solid #00A5FF;
     outline: 0;
     color: #000;
