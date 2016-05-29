@@ -31,14 +31,14 @@ h1 {
     transition: all .3s ease-in-out;
 }
 
-.button {
+.button-group {
     border: 1px solid #0288D1;
     color: #0288D1;
     background-color: transparent;
 }
 
-.button:hover,
-.button:focus {
+.button-group:hover,
+.button-group:focus {
     border: 1px solid #00A5FF;
     outline: 0;
     color: #000;
