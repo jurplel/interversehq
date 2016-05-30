@@ -1,7 +1,3 @@
-var orbit = new Foundation.Orbit($('#example'), {animation: 'fade',
-    timerDelay: 5000,
-    pauseOnHover: false,
-    navButtons: false,
-    bullets: false
-});
-$(document).foundation();
+$('.carousel').carousel({
+	interval: 5000 //changes the speed
+})
