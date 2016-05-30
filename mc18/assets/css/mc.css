@@ -53,8 +53,9 @@ h1 {
 	-webkit-align-items: center; /* For Safari*/
 }
 
-.orbit-image .orbit-slide .orbit-container {
-  width: 100vh;
-  height: 100vh;
-  object-fit: cover;
+.carousel,
+.item,
+.active,
+.carousel-item {
+    height: 100%;
 }
