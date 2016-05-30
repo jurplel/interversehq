@@ -129,19 +129,10 @@ footer {
     padding-top: 50px;
 }
 
-table.dataTable thead th {
-    position: relative;
-    background-image: none !important;
-}
- 
-table.dataTable thead th.sorting:after,
-table.dataTable thead th.sorting_asc:after,
-table.dataTable thead th.sorting_desc:after {
-    position: absolute;
-    top: 12px;
-    right: 8px;
-    display: block;
-    font-family: FontAwesome;
+th {
+    background-color: #2196F3;
+    border: black solid 1px !important;
+    font-weight: 500;
 }
 
 .table, .table td { 
@@ -157,6 +148,21 @@ table.dataTable thead th.sorting_desc:after {
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
     background-color: #404040;
+}
+
+table.dataTable thead th {
+    position: relative;
+    background-image: none !important;
+}
+ 
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    font-family: FontAwesome;
 }
 
 table.dataTable thead th.sorting:after {
