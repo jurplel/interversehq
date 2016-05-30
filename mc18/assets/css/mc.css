@@ -53,12 +53,7 @@ h1 {
 	-webkit-align-items: center; /* For Safari*/
 }
 
-.orbit-container {
-  width: 100vh;
-  height: 100vh;
-}
-
-.orbit-slide {
+.orbit-image .orbit-slide .orbit-container {
   width: 100vh;
   height: 100vh;
 }
