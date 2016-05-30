@@ -52,3 +52,8 @@ h1 {
 	-webkit-justify-content: center; /* For Safari */ 
 	-webkit-align-items: center; /* For Safari*/
 }
+
+.orbit-container {
+  width: 100vh;
+  height: 100vh;
+}
