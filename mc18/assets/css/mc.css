@@ -52,22 +52,23 @@ h1 {
 	-webkit-justify-content: center; /* For Safari */ 
 	-webkit-align-items: center; /* For Safari*/
 }
-
 .orbit-container {
-  min-height: 100vh;
-}
-
-/*.orbit-slides-container {
   width: 100%;
-  height: 100% !important
-}*/
-
-/*li {
+  height: 100%;
+}
+  
+.orbit-slides-container {
+  width: 100%;
+  height: 100% !important;
+}
+ul[data-orbit] li {
   width: 100%;
   height: 100%;
   background-size: cover;
-}*/
-.orbit-image {
-  height: 100vh;
-  background-size: cover;
+}
+.slide1 {
+  background:red;
+}
+.slide2 {
+  background:green;
 }
