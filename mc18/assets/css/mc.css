@@ -53,7 +53,13 @@ body {
 	-webkit-align-items: center; /* For Safari*/
 }
 
-.carousel .item, .active .carousel-item {
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
     height: 100%;
 }
 
