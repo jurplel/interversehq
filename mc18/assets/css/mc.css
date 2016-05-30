@@ -56,3 +56,16 @@ h1 {
 	-webkit-justify-content: center; /* For Safari */ 
 	-webkit-align-items: center; /* For Safari*/
 }
+
+.orbit-container
+  width: 100%
+  height: 100%
+  
+.orbit-slides-container
+  width: 100%
+  height: 100% !important
+  
+  li
+    width: 100%
+    height: 100%
+    background-size: cover
