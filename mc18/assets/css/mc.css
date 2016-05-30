@@ -58,11 +58,11 @@ h1 {
 }
 
 .orbit-container
-  height: 100%
+  width: 100%
   
 .orbit-slides-container
-  height: 100% !important
+  width: 100%
   
   li
-    height: 100%
+    width: 100%
     background-size: contain
