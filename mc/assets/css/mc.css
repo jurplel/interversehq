@@ -106,9 +106,10 @@ a:focus {
 }
 
 .overlay { 
-    color:#fff;
     position:absolute;
     z-index:12;
+    top:35%;
+    left:0;
     text-align:center;
 }
 
