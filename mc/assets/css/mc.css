@@ -109,7 +109,7 @@ a:focus {
     position:absolute;
     z-index:12;
     top:35%;
-    left:0;
+    width:100%;
     text-align:center;
 }
 
