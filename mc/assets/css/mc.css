@@ -60,7 +60,8 @@ a:focus {
 
 .modpacklogo {
   font-family: 'Over There', serif;
-  font-size: 5vw;
+  font-size: 6.25vw;
+  color: #00AEEF;
 }
 
 .btn {
