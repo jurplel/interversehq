@@ -63,6 +63,7 @@ a:focus {
   font-size: 6.25vw;
   color: #00AEEF;
   font-weight: 400;
+  transform: translateY(-10px)
 }
 
 .btn {
