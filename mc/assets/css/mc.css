@@ -2,6 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Play:400,700);
 
+@over-there {
+  font-family: Over There;
+  src: "../font/Over There.ttf";
+}
+
 html,
 body {
   height: 100%;
@@ -51,6 +56,11 @@ a:focus {
 	-ms-transform: perspective(15vw) rotateX(20deg);
 	-o-transform: perspective(15vw) rotateX(20deg);
 	transform: perspective(15vw) rotateX(20deg);
+}
+
+.modpacklogo {
+  font-family: 'Over There', serif;
+  font-size: 11vw;
 }
 
 .btn {
