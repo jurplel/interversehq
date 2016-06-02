@@ -10,7 +10,7 @@
 html,
 body {
   height: 100%;
-  background-color: #0F0F0F;
+  background-color: #212121;
   color: #FFF;
   font-family: Roboto,sans-serif;
 }
@@ -75,17 +75,17 @@ a:focus {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  border: 1px solid #0288D1;
-  color: #0288D1;
+  border: 1px solid #0091EA;
+  color: #0091EA;
   background-color: transparent;
 }
 
 .btn:hover,
 .btn:focus {
-  border: 1px solid #00A5FF;
+  border: 1px solid #0091EA;
   outline: 0;
-  color: #000;
-  background-color: #00A5FF;
+  color: #212121;
+  background-color: #0091EA;
 }
 
 .valign {
