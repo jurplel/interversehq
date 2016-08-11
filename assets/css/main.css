@@ -39,3 +39,8 @@ body {
 	/*	background-color: #542437;
 	border: 2px dashed #c02942;*/
 }
+.filledlogo {
+	opacity:0.5;
+	position:absolute;
+	width: 65%;
+}
