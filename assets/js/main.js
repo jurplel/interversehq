@@ -5,4 +5,6 @@ var i = {
     pathTimingFunction: Vivus.EASE_OUT,
     animTimingFunction: Vivus.EASE,
 };
-window.alert(getStatus())
+function status(myVivus {
+	window.alert(getStatus())
+})
