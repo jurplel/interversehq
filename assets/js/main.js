@@ -6,5 +6,5 @@ var i = {
     animTimingFunction: Vivus.EASE,
 };
 function status(myVivus) {
-	window.alert(getStatus())
+	window.alert(myVivus.getStatus())
 }
