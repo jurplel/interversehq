@@ -35,13 +35,14 @@
 	</div>
 
 	<script>
-		new Vivus('logo', {
-		file: 'assets/img/intv_logo.svg',
-		type: 'delayed',
-		duration: 200,
-		animTimingFunction: Vivus.EASE,
-		start: 'autostart'
-		});
+		var i = {
+		    file: '/assets/img/intv_logo.svg',
+		    type: "async",
+		    duration: 150,
+		    pathTimingFunction: Vivus.EASE_OUT,
+		    animTimingFunction: Vivus.EASE
+		};
+		new Vivus("logo",i)
 	</script>
 
 </body>
