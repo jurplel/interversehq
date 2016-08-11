@@ -35,7 +35,11 @@
 	</div>
 
 	<script>
-	  new Vivus('logo', {duration: 200}, myCallback);
+		new Vivus('logo', {
+		type: 'delayed',
+		duration: 200,
+		animTimingFunction: Vivus.EASE
+		}, myCallback)
 	</script>
 
 </body>
