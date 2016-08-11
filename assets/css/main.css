@@ -33,11 +33,11 @@ body {
 .valign {
 	min-height: 100%;
 	min-height: 100vh;
-	display: flex;
+/*	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	display: -webkit-flex;  /* For Safari */
-	-webkit-justify-content: center; /* For Safari */ 
-	-webkit-align-items: center; /* For Safari*/
+	display: -webkit-flex;   For Safari 
+	-webkit-justify-content: center; /* For Safari
+	-webkit-align-items: center; */
 }
