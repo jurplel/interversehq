@@ -5,6 +5,6 @@ var i = {
     pathTimingFunction: Vivus.EASE_OUT,
     animTimingFunction: Vivus.EASE
 };
-function (logofade) {
+logofade = function() {
 	document.getElementById("filledlogo").style.opacity = "0.5";
 }
