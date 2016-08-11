@@ -27,13 +27,8 @@ body {
 }
 
 .valign {
-	min-height: 100%;
-	min-height: 100vh;
-	display: flex;
+	display:flex;
+	justify-content: center;
 	align-items: center;
-}
-
-#logo {
-	margin: auto 5px;   // <-- This is responsible for vertical alignment
-    background-color: green;  
+	
 }
