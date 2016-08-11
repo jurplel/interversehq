@@ -3,8 +3,6 @@ var i = {
     type: "async",
     duration: 150,
     pathTimingFunction: Vivus.EASE_OUT,
-    animTimingFunction: Vivus.EASE
+    animTimingFunction: Vivus.EASE,
 };
-logofade = function() {
-	document.getElementById("filledlogo").style.opacity = "0.5";
-}
+window.alert(getStatus())
