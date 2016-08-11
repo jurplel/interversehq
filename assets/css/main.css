@@ -10,18 +10,6 @@ body {
 	color: #FFF;
 }
 
-.intvlogo {
-	font-family: 'Roboto Condensed', Arial, sans-serif;
-	font-size: 12.5vw;
-	font-weight: 900;
-	text-shadow: 0px 8px 0px rgba(31, 31, 31, 0.2);
-	-webkit-transform: perspective(15vw) rotateX(20deg);
-	-moz-transform: perspective(15vw) rotateX(20deg);
-	-ms-transform: perspective(15vw) rotateX(20deg);
-	-o-transform: perspective(15vw) rotateX(20deg);
-	transform: perspective(15vw) rotateX(20deg);
-}
-
 .btn {
     border-radius: 0;
     text-transform: uppercase;
