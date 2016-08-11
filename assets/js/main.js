@@ -7,4 +7,4 @@ var i = {
 };
 function status(myVivus) {
 	window.alert(getStatus())
-})
+}
