@@ -1,4 +1,4 @@
-var options = {
+var i = {
     file: '/assets/img/intv_logo_outline.svg',
     type: "async",
     duration: 150,
