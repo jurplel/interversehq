@@ -3,8 +3,8 @@ var i = {
     type: "async",
     duration: 150,
     pathTimingFunction: Vivus.EASE_OUT,
-    animTimingFunction: Vivus.EASE,
-    onReady: function (logofadein) {
-    	document.getElementById("filledlogo").style.opacity = "0.5";
-    }
+    animTimingFunction: Vivus.EASE
 };
+function (logofade) {
+	document.getElementById("filledlogo").style.opacity = "0.5";
+}
