@@ -27,11 +27,9 @@ body {
 }
 
 .valign {
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	width: 65%;
-	height: 15;
-	background-color: #542437;
-	border: 2px dashed #c02942;
-}
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
