@@ -33,3 +33,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	background-color: #542437;
+	border: 2px dashed #c02942;
+}
