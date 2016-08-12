@@ -6,25 +6,6 @@ body {
 	color: #FFF;
 }
 
-.btn {
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: Play, sans-serif;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border: 1px solid #0288D1;
-    color: #0288D1;
-    background-color: transparent;
-}
-
-.btn:hover,
-.button:focus {
-    border: 1px solid #00A5FF;
-    outline: 0;
-    color: #000;
-    background-color: #00A5FF;
-}
 
 .valign {
 	display: flex;
@@ -53,4 +34,66 @@ body {
 .highlight {
     background-color: #542437;
     border: 2px dashed #c02942;
+}
+
+.btn-1e {
+    overflow: hidden;
+}
+
+.btn-1e:after {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+    color: #0e83cd;
+}
+
+.btn-1e:hover:after {
+    height: 260%;
+    opacity: 1;
+}
+
+.btn-1e:active:after {
+    height: 400%;
+    opacity: 1;
+}
+
+/* General button style (reset) */
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
