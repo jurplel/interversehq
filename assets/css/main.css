@@ -31,14 +31,14 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 65%;
+	width: 65vw;
 	margin: 0 auto;
 	background-color: #542437;
 	border: 2px dashed #c02942;
-	margin-top: 1vh;
+	margin-top: 50vh;
 }
 
 #filledlogo {
 	position:absolute;
-	width: 65%;
+	width: 65vw;
 }
