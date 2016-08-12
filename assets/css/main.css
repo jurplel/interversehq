@@ -49,6 +49,7 @@ body {
 #filledlogo {
 	align-items: center;
 	position:absolute;
+	margin: 0 auto;
 	width: 65vw;
 }
 /*#filledlogo, _::-moz-progress-bar, body:last-child .selector {
