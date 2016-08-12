@@ -53,5 +53,7 @@ body {
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+#filledlogo, _::-moz-progress-bar, body:last-child .selector {
 	width: 65.2vw;
 }
