@@ -47,11 +47,12 @@ body {
 }
 
 #filledlogo {
-	align-items: center;
 	position:absolute;
-	margin: 0 auto;
 	width: 65vw;
 }
-/*#filledlogo, _::-moz-progress-bar, body:last-child .selector {
-	transform:translate(-50%,0);
-}*/
+#filledlogo, _::-moz-progress-bar, body:last-child .selector {
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 65.2vw;
+}
