@@ -49,7 +49,6 @@ body {
 #filledlogo {
 	position:absolute;
 	width: 65vw;
-	opacity: .5;
 	left: 0;
 	right: 0;
 	margin: auto;
