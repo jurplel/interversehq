@@ -37,10 +37,8 @@ body {
 }
 
 .valign2 {
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 65vw;
     margin: 0 auto;
     margin-top: 45vh;
