@@ -31,7 +31,9 @@
 	<div id="logo" class="valign"><img id="filledlogo" src="/assets/img/intv_logo.svg" alt="interverse"></div>
 
 	<script>
-		var myVivus = new Vivus("logo",i,status(myVivus))
+	var myVivus = new Vivus("logo",i,function (myVivus) {
+	window.alert(myVivus.getStatus())
+	});
 	</script>
 
 </body>
