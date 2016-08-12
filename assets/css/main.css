@@ -51,6 +51,6 @@ body {
 	position:absolute;
 	width: 65vw;
 }
-#filledlogo, .selector:not(*:root) {
+#filledlogo, _::-moz-progress-bar, body:last-child .selector {
 	transform:translate(-50%,0);
 }
