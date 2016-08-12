@@ -34,11 +34,14 @@ body {
 	width: 65vw;
 	margin: 0 auto;
 	margin-top: 35vh;
-/*	background-color: #542437;
-	border: 2px dashed #c02942;*/
 }
 
 #filledlogo {
 	position:absolute;
 	width: 65vw;
+}
+
+.highlight {
+    background-color: #542437;
+    border: 2px dashed #c02942;
 }
