@@ -49,6 +49,7 @@ body {
 #filledlogo {
 	position:absolute;
 	width: 65vw;
+	opacity: .5;
 }
 #filledlogo, _::-moz-progress-bar, body:last-child .selector {
 	left: 0;
