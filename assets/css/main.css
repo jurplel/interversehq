@@ -56,9 +56,3 @@ body {
 	margin: auto;
 	width: 65.2vw;
 }
-#filledlogo, @media screen and (min-width:0\0) {
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 65.2vw;
-}
