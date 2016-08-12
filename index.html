@@ -37,12 +37,13 @@
 	<a id="button3" href="mc" class="buttons btn btn-lg">MINECRAFT</a>
 	</div>
 
-
 	<script>
-	$('#filledlogo').hide()
+	$('#filledlogo, #button1, #button2, #button3').hide()
 	var myVivus = new Vivus("logo",i,function () {
 		$('#filledlogo').fadeIn( 750 );
-		$('#button1, #button2, #button3').addClass('animated fadeInDown');
+		$('#button1').show(0).addClass('animated fadeInDown');
+		$('#button2').show(0).delay(100).addClass('animated fadeInDown');
+		$('#button3').show(0).delay(200).addClass('animated fadeInDown');
 	});
 	</script>
 
