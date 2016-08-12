@@ -47,6 +47,7 @@ body {
 }
 
 #filledlogo {
+	align-items: center;
 	position:absolute;
 	width: 65vw;
 }
