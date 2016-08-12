@@ -27,13 +27,12 @@ body {
 }
 
 .valign {
-	min-height: 75%;
+	min-height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	width: 65%;
-	height: 10%;
 	margin: 0 auto;
 	background-color: #542437;
 	border: 2px dashed #c02942;
