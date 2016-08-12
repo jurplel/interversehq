@@ -32,9 +32,9 @@
 <body>
 	<div id="logo" class="valign highlight"><img id="filledlogo" src="/assets/img/intv_logo.svg" alt="interverse"></div>
 	<div class="valign2 highlight">
-	<a id="buttons" href="https://discord.gg/0lXeGE6soHgmQPT5" class="buttons btn btn-lg">DISCORD</a>
-	<a id="buttons" href="http://steamcommunity.com/groups/interverse" class="buttons btn btn-lg">STEAM</a>
-	<a id="buttons" href="mc" class="buttons btn btn-lg">MINECRAFT</a>
+	<a id="button1" href="https://discord.gg/0lXeGE6soHgmQPT5" class="buttons btn btn-lg">DISCORD</a>
+	<a id="button2" href="http://steamcommunity.com/groups/interverse" class="buttons btn btn-lg">STEAM</a>
+	<a id="button3" href="mc" class="buttons btn btn-lg">MINECRAFT</a>
 	</div>
 
 
@@ -42,8 +42,8 @@
 	$('#filledlogo').hide()
 	var myVivus = new Vivus("logo",i,function () {
 		$('#filledlogo').fadeIn( 750 );
+		$('#button1, #button2, #button3').addClass('animated fadeInDown');
 	});
-	$('#buttons').addClass('animated fadeInDown');
 	</script>
 
 </body>
