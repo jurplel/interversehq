@@ -33,9 +33,9 @@ body {
 	flex-direction: column;
 	width: 65vw;
 	margin: 0 auto;
-	background-color: #542437;
-	border: 2px dashed #c02942;
 	margin-top: 35vh;
+/*	background-color: #542437;
+	border: 2px dashed #c02942;*/
 }
 
 #filledlogo {
