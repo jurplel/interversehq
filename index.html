@@ -41,9 +41,7 @@
 	$('#filledlogo, #button1, #button2, #button3').hide()
 	var myVivus = new Vivus("logo",i,function () {
 		$('#filledlogo').fadeIn( 750 );
-		$('#button1').show(0).addClass('animated fadeInDown');
-		$('#button2').delay(300).show(0).addClass('animated fadeInDown');
-		$('#button3').delay(600).show(0).addClass('animated fadeInDown');
+		$('#button1, #button2, #button3').show(0).addClass('animated fadeInUp');
 	});
 	</script>
 
