@@ -5,6 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0091ea">
+	<meta name="theme-color" content="#ffffff">
+
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Play:400' rel='stylesheet' type='text/css'>
 
@@ -31,15 +39,14 @@
 	<div id="logo" class="valign"><img id="filledlogo" src="/assets/img/intv_logo.svg" alt="interverse"></div>
 	<div class="valign2">
 	<a id="button1" href="https://discord.gg/0lXeGE6soHgmQPT5" class="buttons btn btn-lg">DISCORD</a>&nbsp;
-	<a id="button2" href="http://steamcommunity.com/groups/interverse" class="buttons btn btn-lg">STEAM</a>	&nbsp;
-	<a id="button3" href="mc" class="buttons btn btn-lg">MINECRAFT</a>
+	<a id="button2" href="http://steamcommunity.com/groups/interverse" class="buttons btn btn-lg">STEAM</a>
 	</div>
 
 	<script>
 	$('#filledlogo, #button1, #button2, #button3').hide()
 	var myVivus = new Vivus("logo",i,function () {
 		$('#filledlogo').fadeIn( 750 );
-		$('#button1, #button2, #button3').show(0).addClass('animated fadeInUp');
+		$('#button1, #button2').show(0).addClass('animated fadeInUp');
 	});
 	</script>
 
