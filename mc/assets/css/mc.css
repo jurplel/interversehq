@@ -75,17 +75,17 @@ a:focus {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  border: 1px solid #0091EA;
-  color: #0091EA;
+  border: 1px solid #0288D1;
+  color: #0288D1;
   background-color: transparent;
 }
 
 .btn:hover,
-.btn:focus {
-  border: 1px solid #0091EA;
+.button:focus {
+  border: 1px solid #00A5FF;
   outline: 0;
-  color: #212121;
-  background-color: #0091EA;
+  color: #000;
+  background-color: #00A5FF;
 }
 
 .valign {
