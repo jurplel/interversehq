@@ -21,3 +21,16 @@ $(document).ready(function() {
 		"info": false,
 	} );
 } );
+
+var toggle = false;
+$('#hiddenText').hide();
+$('#doSmth').click(function() {
+    if(toggle===false) {
+        $('#hiddenText').show();
+        toggle = true;
+    }
+    else {
+        $('#hiddenText').hide();
+        toggle = false;
+    }
+});
