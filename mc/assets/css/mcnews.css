@@ -4,9 +4,7 @@
 
 html,
 body {
-  height: 100%;
-  background-color: #999999;
-  color: #FFF;
+  color: #FFFFFF;
   font-family: Roboto,sans-serif;
 }
 
@@ -61,7 +59,7 @@ a:focus {
 }
 
 .overlay {
-  color:#fff;
+  color:#ffffff;
   position:absolute;
   z-index:12;
   top:25%;
