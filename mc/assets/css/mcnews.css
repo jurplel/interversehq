@@ -7,10 +7,12 @@ body {
   color: #FFFFFF;
   font-family: Roboto,sans-serif;
 }
+
 .logo {
-  width: 65%;
+  width: 100px;
   align-items:center;
 }
+
 h1,
 h2,
 h3,
