@@ -40,13 +40,14 @@
 	<div class="valign2">
 	<a id="button1" href="https://discord.gg/0lXeGE6soHgmQPT5" class="buttons btn btn-lg">DISCORD</a>&nbsp;
 	<a id="button2" href="http://steamcommunity.com/groups/interverse" class="buttons btn btn-lg">STEAM</a>
+	<a id="button3" href="mc" class="buttons btn btn-lg">MINECRAFT</a>
 	</div>
 
 	<script>
 	$('#filledlogo, #button1, #button2, #button3').hide()
 	var myVivus = new Vivus("logo",i,function () {
 		$('#filledlogo').fadeIn( 750 );
-		$('#button1, #button2').show(0).addClass('animated fadeInUp');
+		$('#button1, #button2, #button3').show(0).addClass('animated fadeInUp');
 	});
 	</script>
 
