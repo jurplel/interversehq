@@ -1,4 +1,3 @@
-$("#update").load("update.html");
 $("#table").load("table.html", function() {
 	$('#modlist').DataTable( {
 		"scrollY": "65vh",
