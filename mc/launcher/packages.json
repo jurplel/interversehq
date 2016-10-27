@@ -14,6 +14,13 @@
             "version": "6.1.1",
             "location": "intvmp.json",
             "priority": 1
+        },
+        {
+            "name": "ftbinfev",
+            "title": "FTB Infinity Evolved",
+            "version": "2.6.0",
+            "location": "ftbinfev.json",
+            "priority": 1
         }
     ]
 }
