@@ -1,0 +1,28 @@
+# Configuration file
+
+client {
+    # If you feel the chickens may be dropping your FPS when in chicken pens, Cause of all that darn flapping try this. [default: true]
+    B:"Render Chicken Flaps"=true
+}
+
+
+"drop rates" {
+    # Configure the drop rate  %  of Eggs in the Nesting Pen.  [range: 0 ~ 100, default: 40]
+    I:"Hatchery Egg Drop Rate"=45
+}
+
+
+mechanics {
+    # Sets if players can throw eggs to hatch chickens. [default: true]
+    B:"Can Throw Eggs"=true
+}
+
+
+"special ai" {
+    B:"Breed gives Eggs"=false
+
+    # Replaces Default Mating, Gives an egg that must be hatched to get baby [default: true]
+    B:"Breeding gives Eggs"=false
+}
+
+

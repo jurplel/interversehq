@@ -1,0 +1,53 @@
+#Name: tinkers.zs
+#Author: Feed the Beast
+
+print("Initializing 'tinkers'...");
+
+//Ex Nihilo Ores In Smeltery
+//mods.tconstruct.Smeltery.addMelting(<liquid:iron> * 288, <exnihiloadscensio:itemOreIron:1>, 200, <//minecraft:iron_block>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:iron> * 144, <exnihiloadscensio:itemOreIron:2>, 100, <//minecraft:iron_block>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:gold> * 288, <exnihiloadscensio:itemOreGold:1>, 200, <//minecraft:gold_block>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:gold> * 144, <exnihiloadscensio:itemOreGold:2>, 100, <//minecraft:gold_block>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:lead> * 288, <exnihiloadscensio:itemOreLead:1>, 200, <//immersiveengineering:storage:2>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:lead> * 144, <exnihiloadscensio:itemOreLead:2>, 100, <//immersiveengineering:storage:2>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:nickel> * 288, <exnihiloadscensio:itemOreNickel:1>, //200, <immersiveengineering:storage:4>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:nickel> * 144, <exnihiloadscensio:itemOreNickel:2>, //100, <immersiveengineering:storage:4>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:silver> * 288, <exnihiloadscensio:itemOreSilver:1>, //200, <immersiveengineering:storage:3>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:silver> * 144, <exnihiloadscensio:itemOreSilver:2>, //100, <immersiveengineering:storage:3>);
+mods.tconstruct.Smeltery.addMelting(<liquid:aluminum> * 288, <exnihiloadscensio:itemOreAluminium:1>, 200, <immersiveengineering:storage:1>);
+mods.tconstruct.Smeltery.addMelting(<liquid:aluminum> * 144, <exnihiloadscensio:itemOreAluminium:2>, 100, <immersiveengineering:storage:1>);
+mods.tconstruct.Smeltery.addMelting(<liquid:ardite> * 288, <exnihiloadscensio:itemOreArdite:1>, 200, <tconstruct:metal:1>);
+mods.tconstruct.Smeltery.addMelting(<liquid:ardite> * 144, <exnihiloadscensio:itemOreArdite:2>, 100, <tconstruct:metal:1>);
+mods.tconstruct.Smeltery.addMelting(<liquid:cobalt> * 288, <exnihiloadscensio:itemOreCobalt:1>, 200, <tconstruct:metal>);
+mods.tconstruct.Smeltery.addMelting(<liquid:cobalt> * 144, <exnihiloadscensio:itemOreCobalt:2>, 100, <tconstruct:metal>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:copper> * 288, <exnihiloadscensio:itemOreCopper:1>, //200, <immersiveengineering:storage>);
+//mods.tconstruct.Smeltery.addMelting(<liquid:copper> * 144, <exnihiloadscensio:itemOreCopper:2>, 100, <immersiveengineering:storage>);
+
+//Blue Slime Additions
+mods.tconstruct.Smeltery.addMelting(<liquid:blueslime> * 125, <tconstruct:edible:1>, 200, <tconstruct:slime_congealed:1>);
+mods.tconstruct.Smeltery.addMelting(<liquid:blueslime> * 250, <tconstruct:slime_congealed:1>, 200, <tconstruct:slime_congealed:1>);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, <liquid:blueslime> * 500, null, false, 20);
+
+//Remove Bucket Exploit
+mods.tconstruct.Smeltery.removeMelting(<minecraft:bucket>);
+
+//Compressed Block Smelting
+mods.tconstruct.Smeltery.addMelting(<liquid:stone> * 648, <extrautils2:CompressedCobblestone>, 200, <minecraft:cobblestone>);
+mods.tconstruct.Smeltery.addMelting(<liquid:stone> * 5832, <extrautils2:CompressedCobblestone:1>, 350, <minecraft:cobblestone>);
+mods.tconstruct.Smeltery.addMelting(<liquid:stone> * 52488, <extrautils2:CompressedCobblestone:2>, 500, <minecraft:cobblestone>);
+mods.tconstruct.Smeltery.addMelting(<liquid:stone> * 472392, <extrautils2:CompressedCobblestone:3>, 650, <minecraft:cobblestone>);
+mods.tconstruct.Smeltery.addMelting(<liquid:stone> * 4251528, <extrautils2:CompressedCobblestone:4>, 800, <minecraft:cobblestone>);
+mods.tconstruct.Smeltery.addMelting(<liquid:stone> * 38263752, <extrautils2:CompressedCobblestone:5>, 950, <minecraft:cobblestone>);
+
+//Adds Dirt Melting To Smeltery
+mods.tconstruct.Smeltery.addMelting(<liquid:dirt> * 648, <extrautils2:CompressedDirt>, 200, <minecraft:dirt>);
+mods.tconstruct.Smeltery.addMelting(<liquid:dirt> * 5832, <extrautils2:CompressedDirt:1>, 350, <minecraft:dirt>);
+mods.tconstruct.Smeltery.addMelting(<liquid:dirt> * 52488, <extrautils2:CompressedDirt:2>, 500, <minecraft:dirt>);
+mods.tconstruct.Smeltery.addMelting(<liquid:dirt> * 472392, <extrautils2:CompressedDirt:3>, 650, <minecraft:dirt>);
+
+//New Fuels For Smeltery
+//InputFluid, TemperatureAmount, Time in Ticks
+//mods.tconstruct.Smeltery.addFuel(<liquid:fire_water>);
+//mods.tconstruct.Smeltery.addFuel(<liquid:rocket_fuel>);
+
+print("Initialized 'tinkers'");

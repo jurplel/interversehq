@@ -21,6 +21,13 @@
             "version": "2.6.0",
             "location": "ftbinfev.json",
             "priority": 1
+        },
+        {
+            "name": "skyfactory3",
+            "title": "Skyfactory 3",
+            "version": "1.0",
+            "location": "skyfactory3.json",
+            "priority": 1
         }
     ]
 }
