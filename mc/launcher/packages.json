@@ -2,10 +2,10 @@
     "minimumVersion": 1,
     "packages": [
         {
-            "name": "vanilla110",
-            "title": "Vanilla 1.10",
-            "version": "1.0",
-            "location": "vanilla110.json",
+            "name": "vanilla",
+            "title": "Vanilla",
+            "version": "1.11",
+            "location": "vanilla.json",
             "priority": 1
         },
         {
@@ -13,20 +13,6 @@
             "title": "Interverse Modpack",
             "version": "6.1.1",
             "location": "intvmp.json",
-            "priority": 1
-        },
-        {
-            "name": "ftbinfev",
-            "title": "FTB Infinity Evolved",
-            "version": "2.6.0",
-            "location": "ftbinfev.json",
-            "priority": 1
-        },
-        {
-            "name": "skyfactory3",
-            "title": "Skyfactory 3",
-            "version": "1.0",
-            "location": "skyfactory3.json",
             "priority": 1
         }
     ]
