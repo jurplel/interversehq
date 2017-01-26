@@ -29,8 +29,7 @@ h6 {
     letter-spacing: 1px;
 }
 .ohboy {
-    margin: 12 0 12px;
-    letter-spacing: 1px;
+    margin: 0 0 0;
 }
 
 p {
@@ -65,7 +64,7 @@ a:focus {
 
 .block {
     width: 90%;
-    margin: 0 0 0 0;
+    margin: 12 0 12 0;
 }
 
 .overlay {
