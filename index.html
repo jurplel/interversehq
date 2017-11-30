@@ -47,30 +47,52 @@
 	</div>
 
 	<script>
-		const mq = window.matchMedia("(orientation: landscape)");
-		if (mq.matches) {
-			var f = '/assets/img/intv_logo_outline.svg'
-		} else {
-			var f = '/assets/img/intv_compact_outline.svg'
-		}
-		var i = {
-			file: f,
-			onready: function (myVivus) {
-				myVivus.el.delay(1000).hide()
-			},
+
+		$('#filledlogo, #button1, #button2, #button3').hide()
+
+		var regularLogo = {
+			file: '/assets/img/intv_logo_outline.svg',
 			type: "async",
 			duration: 150,
 			pathTimingFunction: Vivus.EASE_OUT,
 			animTimingFunction: Vivus.EASE,
 		};
 
-		$('#filledlogo, #button1, #button2, #button3').hide()
+		var compactLogo = {
+			file: '/assets/img/intv_compact_outline.svg',
+			type: "async",
+			duration: 150,
+			pathTimingFunction: Vivus.EASE_OUT,
+			animTimingFunction: Vivus.EASE,
+		};
 
-		var myVivus = new Vivus("logo",i,function () {
+		var compactVivus = new Vivus("logo",compactLogo,function () {
 			$('#filledlogo').fadeIn( 750 );
 			$('#button1, #button2, #button3').show(0).addClass('animated fadeInUp');
 		});
-		myVivus.delay(800).reset();
+
+		var regularVivus = new Vivus("logo",regularLogo,function () {
+			$('#filledlogo').fadeIn( 750 );
+			$('#button1, #button2, #button3').show(0).addClass('animated fadeInUp');
+		});
+
+		const mq = window.matchMedia("(orientation: landscape)");
+		
+		function Define_i(mq) {
+			if (mq.matches) {
+				$('#I_Concept').show()
+				$('#Compact_Logo').hide()
+			} else {
+				$('#I_Concept').hide()
+				$('#Compact_Logo').show()
+			}
+		}
+
+		if (matchMedia) {
+			mq.addListener(Define_i)
+			Define_i(mq)		
+		}
+
 	</script>
 
 </body>
