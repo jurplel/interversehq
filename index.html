@@ -79,11 +79,13 @@
 		if (matchMedia) {
 			const mq = window.matchMedia("(orientation: landscape)");
 			Define_i(mq);
+			Console.log(mq)
 			mq.addListener(Define_i);
 		}
 		
 		function Define_i(mq) {
 			if (mq.matches) {
+				Console.log('Define_i was run')
 				$('#I_concept').show();
 				$('#Compact_Logo').hide();
 			} else {
@@ -91,10 +93,6 @@
 				$('#Compact_Logo').show();
 			}
 		}
-
-		$(document).ready(function() {
-			Define_i(mq);
-		});
 	</script>
 
 </body>
