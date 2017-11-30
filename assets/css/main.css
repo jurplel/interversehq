@@ -32,9 +32,42 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 65vw;
 	margin: 0 auto;
-	margin-top: 35vh;
+}
+
+#filledlogo {
+	position:absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+@media screen and (orientation: landscape)
+{
+	.valign
+	{
+		width: 65vw;
+		margin-top: 35vh;
+	}
+
+	#filledlogo
+	{
+		width:65vw
+	}
+}
+
+@media screen and (orientation: portrait)
+{
+	.valign
+	{
+		width: 50vw;
+		margin-top: 25vh;
+	}
+	
+	#filledlogo
+	{
+		width:50vw
+	}
 }
 
 .valign2 {
@@ -44,15 +77,4 @@ body {
     width: 65vw;
     margin: 0 auto;
     margin-top: 50px;
-}
-
-#filledlogo {
-	position:absolute;
-	width: 65vw;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-#filledlogo, _::-moz-progress-bar, body:last-child .selector {
-	width: 65.2vw;
 }
