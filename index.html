@@ -78,8 +78,7 @@
 
 		const mq = window.matchMedia("(orientation: landscape)");
 		mq.addListener(Define_i);
-		var isLandscapeMode = window.innerWidth > window.innerHeight;
-		Define_i(isLandscapeMode);
+		Define_i(mq);
 
 		function Define_i(mq) {
 			if (mq.matches) {
