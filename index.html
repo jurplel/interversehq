@@ -77,13 +77,14 @@
 		});
 
 		const mq = window.matchMedia("(orientation: landscape)");
-		
+		Define_i(mq)
+
 		function Define_i(mq) {
 			if (mq.matches) {
-				$('#I_Concept').show()
+				$('#I_concept').show()
 				$('#Compact_Logo').hide()
 			} else {
-				$('#I_Concept').hide()
+				$('#I_concept').hide()
 				$('#Compact_Logo').show()
 			}
 		}
