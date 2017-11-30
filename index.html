@@ -77,7 +77,12 @@
 		});
 
 		const mq = window.matchMedia("(orientation: landscape)");
-		Define_i(mq);
+
+		if (mq.matches) {
+			$('#Compact_Logo').hide();
+		} else {
+			$('#I_concept').hide();
+		}
 
 		function Define_i(mq) {
 			if (mq.matches) {
