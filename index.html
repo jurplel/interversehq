@@ -76,12 +76,10 @@
 			$('#button1, #button2, #button3').show(0).addClass('animated fadeInUp');
 		});
 
-		const mq = window.matchMedia("(orientation: landscape)");
-
-		if (mq.matches) {
-			$('#Compact_Logo').hide();
-		} else {
-			$('#I_concept').hide();
+		if (matchMedia) {
+			const mq = window.matchMedia("(orientation: landscape)");
+			mq.addListener(Define_i);
+			Define_i(mq);
 		}
 
 		function Define_i(mq) {
@@ -92,11 +90,6 @@
 				$('#I_concept').hide();
 				$('#Compact_Logo').show();
 			}
-		}
-
-		if (matchMedia) {
-			mq.addListener(Define_i);
-			Define_i(mq);
 		}
 
 	</script>
