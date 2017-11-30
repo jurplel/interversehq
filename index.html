@@ -48,7 +48,7 @@
 
 	<script>
 
-		$('#filledlogo, #button1, #button2, #button3').hide()
+		$('#filledlogo, #button1, #button2, #button3').hide();
 
 		var regularLogo = {
 			file: '/assets/img/intv_logo_outline.svg',
@@ -77,21 +77,21 @@
 		});
 
 		const mq = window.matchMedia("(orientation: landscape)");
-		Define_i(mq)
+		Define_i(mq);
 
 		function Define_i(mq) {
 			if (mq.matches) {
-				$('#I_concept').show()
-				$('#Compact_Logo').hide()
+				$('#I_concept').show();
+				$('#Compact_Logo').hide();
 			} else {
-				$('#I_concept').hide()
-				$('#Compact_Logo').show()
+				$('#I_concept').hide();
+				$('#Compact_Logo').show();
 			}
 		}
 
 		if (matchMedia) {
-			mq.addListener(Define_i)
-			Define_i(mq)		
+			mq.addListener(Define_i);
+			Define_i(mq);
 		}
 
 	</script>
