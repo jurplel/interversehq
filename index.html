@@ -87,7 +87,7 @@
 		}
 
 		if (matchMedia) {
-			const mq = window.matchMedia("(orientation: landscape)");
+			const mq = window.matchMedia("(max-width: 320px)");
 			mq.addListener(Define_i);
 			Define_i(mq);
 		}
