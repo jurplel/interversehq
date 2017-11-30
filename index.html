@@ -76,6 +76,12 @@
 			$('#button1, #button2, #button3').show(0).addClass('animated fadeInUp');
 		});
 
+		if (matchMedia) {
+			const mq = window.matchMedia("(orientation: landscape)");
+			Define_i(mq);
+			mq.addListener(Define_i);
+		}
+		
 		function Define_i(mq) {
 			if (mq.matches) {
 				$('#I_concept').show();
@@ -86,11 +92,9 @@
 			}
 		}
 
-		if (matchMedia) {
-			const mq = window.matchMedia("(max-width: 320px)");
-			mq.addListener(Define_i);
+		$(document).ready(function() {
 			Define_i(mq);
-		}
+		});
 	</script>
 
 </body>
