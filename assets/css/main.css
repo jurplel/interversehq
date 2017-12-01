@@ -42,6 +42,10 @@ body {
 	margin: auto;
 }
 
+.navbar {
+	background: rgba(30,30,30,0.8)
+}
+
 @media screen and (min-width: 600px)
 {
 	.valign
@@ -52,7 +56,11 @@ body {
 
 	#filledlogo
 	{
-		width:65vw
+		width:65vw;
+	}
+
+	#navbarcontainer {
+		width:65vw;
 	}
 }
 
@@ -66,19 +74,10 @@ body {
 	
 	#filledlogo
 	{
-		width:50vw
+		width:50vw;
 	}
-}
 
-.valign2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 65vw;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-.navbar {
-	background: rgba(30,30,30,0.8)
+	#navbarcontainer {
+		width:100vw;
+	}
 }
