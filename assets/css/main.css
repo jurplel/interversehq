@@ -6,27 +6,6 @@ body {
 	color: #FFF;
 }
 
-
-.btn {
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: Play, sans-serif;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border: 1px solid #0288D1;
-    color: #0288D1;
-    background-color: transparent;
-}
-
-.btn:hover,
-.button:focus {
-    border: 1px solid #00A5FF;
-    outline: 0;
-    color: #000;
-    background-color: #00A5FF;
-}
-
 .valign {
 	display: flex;
 	align-items: center;
@@ -43,7 +22,8 @@ body {
 }
 
 .navbar {
-	background: rgba(30,30,30,0.8)
+	background: rgba(30,30,30,0.8);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 @media screen and (min-width: 600px)
