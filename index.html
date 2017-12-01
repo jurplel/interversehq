@@ -105,12 +105,12 @@
 
 		var compactVivus = new Vivus("logo",compactLogo,function () {
 			$('#filledlogo').fadeIn( 750 );
-			$('.navbar').show(0).addClass('animated fadeInDown');
+			$('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
 		});
 
 		var regularVivus = new Vivus("logo",regularLogo,function () {
 			$('#filledlogo').fadeIn( 750 );
-			$('.navbar').show(0).addClass('animated fadeInDown');
+			$('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
 		});
 
 		if (matchMedia) {
