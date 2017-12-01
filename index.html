@@ -76,6 +76,7 @@
 		var compactLogo = {
 			file: '/assets/img/intv_compact_outline.svg',
 			onReady: function (myVivus) {
+				const mq = window.matchMedia("(orientation: landscape)");
 				Define_i(mq);
 			},
 			type: "async",
