@@ -61,7 +61,7 @@
 		</div>
 	</nav> 
 	<div id="logo" class="valign"><picture>
-			<source media="(max-width: 600px)" srcset="assets/img/intv_compact.svg">
+			<source media="(min-width: 600px)" srcset="assets/img/intv_compact.svg">
 		<img id="filledlogo" src="assets/img/intv_logo.svg" alt="Interverse">
 	</picture></div>
 	<div class="valign2">
@@ -72,7 +72,7 @@
 
 	<script>
 
-		$('.navbar').hide();
+		$('#filledlogo, .navbar').hide();
 
 		var regularLogo = {
 			file: '/assets/img/intv_logo_outline.svg',
