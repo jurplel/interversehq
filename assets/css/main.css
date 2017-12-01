@@ -56,7 +56,7 @@ body {
 	}
 }
 
-@media screen and (orientation: portrait)
+@media screen and (max-width: 600px)
 {
 	.valign
 	{
@@ -80,5 +80,5 @@ body {
 }
 
 .navbar {
-	background: rgba(0,0,0,0.3)
+	background: rgba(30,30,30,0.8)
 }
