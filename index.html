@@ -18,8 +18,6 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
 	
@@ -53,7 +51,7 @@
 		var regularLogo = {
 			file: '/assets/img/intv_logo_outline.svg',
 			onReady: function (myVivus) {
-				const mq = window.matchMedia("(orientation: landscape)");
+				const mq = window.matchMedia("(min-width: 600px)");
 				if (!mq.matches) {
 					$('#I_concept').hide();
 				}
@@ -67,7 +65,7 @@
 		var compactLogo = {
 			file: '/assets/img/intv_compact_outline.svg',
 			onReady: function (myVivus) {
-				const mq = window.matchMedia("(orientation: landscape)");
+				const mq = window.matchMedia("(min-width: 600px)");
 				if (mq.matches) {
 					$('#Compact_Logo').hide();
 				}
@@ -89,7 +87,7 @@
 		});
 
 		if (matchMedia) {
-			const mq = window.matchMedia("(orientation: landscape)");
+			const mq = window.matchMedia("(min-width: 600px)");
 			mq.addListener(Define_i);
 		}
 		
