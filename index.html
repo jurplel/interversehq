@@ -67,6 +67,14 @@
 
 		var regularLogo = {
 			file: '/assets/img/intv_logo_outline.svg',
+			onReady: function (myVivus) {
+				const mq = window.matchMedia("(orientation: landscape)");
+				if (mq.matches) {
+					$('#Compact_Logo').hide();
+				} else {
+					$('#I_concept').hide();
+				}
+			},
 			type: "async",
 			duration: 150,
 			pathTimingFunction: Vivus.EASE_OUT,
@@ -77,7 +85,11 @@
 			file: '/assets/img/intv_compact_outline.svg',
 			onReady: function (myVivus) {
 				const mq = window.matchMedia("(orientation: landscape)");
-				Define_i(mq);
+				if (mq.matches) {
+					$('#Compact_Logo').hide();
+				} else {
+					$('#I_concept').hide();
+				}
 			},
 			type: "async",
 			duration: 150,
