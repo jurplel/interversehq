@@ -38,6 +38,10 @@ body {
 	{
 		width:65vw;
 	}
+	#navcontainer
+	{
+		width:65vw;
+	}
 }
 
 @media screen and (max-width: 600px)
@@ -51,5 +55,10 @@ body {
 	#filledlogo
 	{
 		width:50vw;
+	}
+
+	#navcontainer
+	{
+		width:100vw;
 	}
 }
