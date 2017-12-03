@@ -62,6 +62,9 @@ function session() {
         }
         
     } else {
+        $('#filledlogo').fadeIn( 750 );
+        $('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
+        $('.nav-item').css("visibility", "visible").addClass('animated fadeInDown');
         document.cookie = "visited";
     }
 }
