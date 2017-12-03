@@ -7,10 +7,11 @@ if (document.cookie.indexOf("visited") >= 0) {
     $('#filledlogo').fadeIn( 750 );
     $('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
     $('.nav-item').css("visibility", "visible").addClass('animated fadeInDown');
-    document.cookie = "visited";     
        
 } else {
 
+    document.cookie = "visited";
+    
     var regularLogo = {
         file: '/assets/img/intv_logo_outline.svg',
         onReady: function (myVivus) {
