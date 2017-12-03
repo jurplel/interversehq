@@ -28,9 +28,9 @@ body {
 
 .navbar-brand {
 	position:absolute;
-	left:50%;
-	
+	left: calc(50% -20px);
 }
+
 @media screen and (min-width: 600px)
 {
 	.valign
