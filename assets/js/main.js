@@ -1,5 +1,5 @@
 $('#filledlogo').hide();
-$('.nav-item').hide()
+$('.nav-item').css("visibility", "hidden");
 $('.navbar').css("visibility", "hidden");
 
 if (document.cookie.indexOf("visited") >= 0) {
