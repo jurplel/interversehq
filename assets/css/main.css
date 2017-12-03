@@ -28,8 +28,9 @@ body {
 }
 
 .navbar-brand {
-	position:absolute;
-	left: calc(50% - 12.06px);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 @media screen and (min-width: 600px)
@@ -41,11 +42,6 @@ body {
 	}
 
 	#filledlogo
-	{
-		width:65vw;
-	}
-
-	#navcontainer
 	{
 		width:65vw;
 	}
@@ -62,10 +58,5 @@ body {
 	#filledlogo
 	{
 		width:50vw;
-	}
-
-	#navcontainer
-	{
-		width:100vw;
 	}
 }
