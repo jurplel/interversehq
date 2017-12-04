@@ -1,17 +1,23 @@
 $('#filledlogo').hide();
 $('.nav-item').css("visibility", "hidden");
 $('.navbar').css("visibility", "hidden");
+$('.navbar-brand').css("visibility", "hidden")
 
-if (document.cookie.indexOf("visited") >= 0) {
-
+function Entrance() {
     $('#filledlogo').fadeIn( 750 );
     $('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
     $('.nav-item').css("visibility", "visible").addClass('animated fadeInDown');
+    $('.navbar-brand').css("visibility", "visible").addClass('animated fadeInDown');
+}
+
+if (document.cookie.indexOf("visited") >= 0) {
+    
+    Entrance()
        
 } else {
 
     document.cookie = "visited";
-    
+
     var regularLogo = {
         file: '/assets/img/intv_logo_outline.svg',
         onReady: function (myVivus) {
@@ -41,15 +47,11 @@ if (document.cookie.indexOf("visited") >= 0) {
     };
 
     var compactVivus = new Vivus("logo",compactLogo,function () {
-        $('#filledlogo').fadeIn( 750 );
-        $('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
-        $('.nav-item').css("visibility", "visible").addClass('animated fadeInDown');
+        Entrance()
     });
 
     var regularVivus = new Vivus("logo",regularLogo,function () {
-        $('#filledlogo').fadeIn( 750 );
-        $('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
-        $('.nav-item').css("visibility", "visible").addClass('animated fadeInDown');
+        Entrance()
     });
 
     if (matchMedia) {
