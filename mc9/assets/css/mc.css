@@ -21,8 +21,13 @@ header {
     /* gradient animation */
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+
+    background-clip: text;
     -webkit-background-clip: text;
+    
     -webkit-text-fill-color: transparent;
+
+    animation: hue 60s infinite linear;
     -webkit-animation: hue 60s infinite linear;
 }
 
