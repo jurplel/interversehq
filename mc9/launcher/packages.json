@@ -1,0 +1,19 @@
+{
+    "minimumVersion": 1,
+    "packages": [
+        {
+            "name": "vanilla",
+            "title": "Vanilla",
+            "version": "1.11",
+            "location": "vanilla.json",
+            "priority": 1
+        },
+        {
+            "name": "intvmp",
+            "title": "Interverse Modpack",
+            "version": "8.2",
+            "location": "intvmp.json",
+            "priority": 1
+        }
+    ]
+}
