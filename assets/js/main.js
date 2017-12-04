@@ -1,15 +1,9 @@
 $('#filledlogo').hide();
-$('.nav-item').css("visibility", "hidden");
 $('.navbar').css("visibility", "hidden");
-$('.navbar-brand').css("visibility", "hidden")
-$('.navbar-toggler').css("visibility", "hidden")
 
 function Entrance() {
     $('#filledlogo').fadeIn( 750 );
     $('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
-    $('.nav-item').css("visibility", "visible").addClass('animated fadeInDown');
-    $('.navbar-brand').css("visibility", "visible").addClass('animated fadeInDown');
-    $('.navbar-toggler').css("visibility", "visible").addClass('animated fadeInDown');
 }
 
 $(document).ready(function() {
