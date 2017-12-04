@@ -30,7 +30,6 @@ body {
 .navbar-brand {
 	position: absolute;
 	left: calc(50% - 12.06px);
-	height: 30px;
 }
 
 .navbar-collapse {
