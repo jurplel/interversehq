@@ -18,7 +18,7 @@ $(document).ready(function() {
         var regularLogo = {
             file: '/assets/img/intv_logo_outline.svg',
             onReady: function (myVivus) {
-                const mq = window.matchMedia("(min-width: 600px)");
+                const mq = window.matchMedia("(min-width: 634px)");
                 if (!mq.matches) {
                     $('#I_concept').hide();
                 }
@@ -32,7 +32,7 @@ $(document).ready(function() {
         var compactLogo = {
             file: '/assets/img/intv_compact_outline.svg',
             onReady: function (myVivus) {
-                const mq = window.matchMedia("(min-width: 600px)");
+                const mq = window.matchMedia("(min-width: 634px)");
                 if (mq.matches) {
                     $('#Compact_Logo').hide();
                 }
@@ -52,7 +52,7 @@ $(document).ready(function() {
         });
 
         if (matchMedia) {
-            const mq = window.matchMedia("(min-width: 600px)");
+            const mq = window.matchMedia("(min-width: 634px)");
             mq.addListener(Define_i);
         }
 
