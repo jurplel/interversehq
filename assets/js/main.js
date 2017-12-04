@@ -11,7 +11,7 @@ function Entrance() {
 }
 
 $(document).ready(function() {
-    if (Cookies.get('visited') == 'yes') {
+    if (Cookies.get('visited')) {
 
         Entrance()
         
