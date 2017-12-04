@@ -1,10 +1,12 @@
-header {
-    height: 100%
-}
+html,
 body {
     background-color: #212121;
     color: #FFF;
     font-family: Roboto, sans-serif;
+}
+
+header {
+    height: 100%
 }
 
 th {
