@@ -13,7 +13,7 @@ function Entrance() {
 }
 
 $(document).ready(function() {
-    if (!Cookies.get('visited')) {
+    if (Cookies.get('visited') == 'yes'){
 
         Entrance()
         
