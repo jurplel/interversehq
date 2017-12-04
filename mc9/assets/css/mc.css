@@ -78,12 +78,22 @@ table.dataTable thead th.sorting_desc:after {
     content: "\f0dd";
 }
 
+@keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
 @-webkit-keyframes hue {
     from {
-      -webkit-filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
     }
-  
+
     to {
-      -webkit-filter: hue-rotate(-360deg);
+        -webkit-filter: hue-rotate(-360deg);
     }
-  }
+}
