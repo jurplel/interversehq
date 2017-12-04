@@ -1,0 +1,20 @@
+# Configuration file
+
+"mod pack name" {
+    S:modPackName=Interverse Modpack
+}
+
+
+"mod pack notes" {
+    S:modPackNotes <
+    	This pack is not extensively tested, please report this!
+    	
+     >
+}
+
+
+"mod pack version" {
+    S:modPackVersion=VIII r2
+}
+
+
