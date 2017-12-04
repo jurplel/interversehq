@@ -10,62 +10,64 @@ function Entrance() {
     $('.navbar-brand').css("visibility", "visible").addClass('animated fadeInDown');
 }
 
-if (document.cookie.indexOf("visited") >= 0) {
-    
-    Entrance()
-       
-} else {
+$(document).ready(function() {
+    if (Cookies.get('visited') == 'yes') {
 
-    document.cookie = "visited";
+        Entrance()
+        
+    } else {
 
-    var regularLogo = {
-        file: '/assets/img/intv_logo_outline.svg',
-        onReady: function (myVivus) {
+        Cookies.set('visited', 'yes', { path: '/' });
+        
+        var regularLogo = {
+            file: '/assets/img/intv_logo_outline.svg',
+            onReady: function (myVivus) {
+                const mq = window.matchMedia("(min-width: 600px)");
+                if (!mq.matches) {
+                    $('#I_concept').hide();
+                }
+            },
+            type: "async",
+            duration: 150,
+            pathTimingFunction: Vivus.EASE_OUT,
+            animTimingFunction: Vivus.EASE,
+        };
+
+        var compactLogo = {
+            file: '/assets/img/intv_compact_outline.svg',
+            onReady: function (myVivus) {
+                const mq = window.matchMedia("(min-width: 600px)");
+                if (mq.matches) {
+                    $('#Compact_Logo').hide();
+                }
+            },
+            type: "async",
+            duration: 150,
+            pathTimingFunction: Vivus.EASE_OUT,
+            animTimingFunction: Vivus.EASE,
+        };
+
+        var compactVivus = new Vivus("logo",compactLogo,function () {
+            Entrance()
+        });
+
+        var regularVivus = new Vivus("logo",regularLogo,function () {
+            Entrance()
+        });
+
+        if (matchMedia) {
             const mq = window.matchMedia("(min-width: 600px)");
-            if (!mq.matches) {
-                $('#I_concept').hide();
-            }
-        },
-        type: "async",
-        duration: 150,
-        pathTimingFunction: Vivus.EASE_OUT,
-        animTimingFunction: Vivus.EASE,
-    };
+            mq.addListener(Define_i);
+        }
 
-    var compactLogo = {
-        file: '/assets/img/intv_compact_outline.svg',
-        onReady: function (myVivus) {
-            const mq = window.matchMedia("(min-width: 600px)");
+        function Define_i(mq) {
             if (mq.matches) {
+                $('#I_concept').show();
                 $('#Compact_Logo').hide();
+            } else {
+                $('#I_concept').hide();
+                $('#Compact_Logo').show();
             }
-        },
-        type: "async",
-        duration: 150,
-        pathTimingFunction: Vivus.EASE_OUT,
-        animTimingFunction: Vivus.EASE,
-    };
-
-    var compactVivus = new Vivus("logo",compactLogo,function () {
-        Entrance()
-    });
-
-    var regularVivus = new Vivus("logo",regularLogo,function () {
-        Entrance()
-    });
-
-    if (matchMedia) {
-        const mq = window.matchMedia("(min-width: 600px)");
-        mq.addListener(Define_i);
-    }
-
-    function Define_i(mq) {
-        if (mq.matches) {
-            $('#I_concept').show();
-            $('#Compact_Logo').hide();
-        } else {
-            $('#I_concept').hide();
-            $('#Compact_Logo').show();
         }
     }
-}
+})
