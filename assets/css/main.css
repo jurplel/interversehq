@@ -29,7 +29,8 @@ body {
 
 .navbar-brand {
 	position: absolute;
-	left: calc(50% - 12.06px)
+	left: calc(50% - 12.06px);
+	height: 30px;
 }
 
 .navbar-collapse {
@@ -37,7 +38,7 @@ body {
 	flex-grow: 0;
 }
 
-@media screen and (min-width: 600px)
+@media screen and (min-width: 634px)
 {
 	.valign
 	{
@@ -51,7 +52,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 633px)
 {
 	.valign
 	{
