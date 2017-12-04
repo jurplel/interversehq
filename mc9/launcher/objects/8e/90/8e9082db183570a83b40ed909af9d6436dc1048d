@@ -1,0 +1,201 @@
+# Configuration file
+
+~CONFIG_VERSION: 0.1.0
+
+world-116717908 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=ore
+    B:overlayEnabled=true
+}
+
+
+world-1273684553 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world-1615986253 {
+    B:cheatItemsEnabled=true
+    B:editEnabled=false
+    S:filterText=wood
+    B:overlayEnabled=true
+}
+
+
+world-1778103957 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=brick
+    B:overlayEnabled=true
+}
+
+
+world-194056368 {
+    B:cheatItemsEnabled=true
+    B:editEnabled=false
+    S:filterText=@extrautils2
+    B:overlayEnabled=true
+}
+
+
+world-2144092989 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=picka
+    B:overlayEnabled=true
+}
+
+
+world-334402763 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world-78688046 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world-982573764 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=tin
+    B:overlayEnabled=true
+}
+
+
+world1005432458 {
+    # Give items instead of showing the recipe.
+    B:cheatItemsEnabled=true
+
+    # Hide and unhide items by clicking them in the item list.
+    B:editEnabled=false
+    S:filterText=ender
+
+    # Show the list of items next to open guis.
+    B:overlayEnabled=true
+}
+
+
+world115168792 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world117919 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=ore
+    B:overlayEnabled=true
+}
+
+
+world1291955345 {
+    B:cheatItemsEnabled=true
+    B:editEnabled=false
+    S:filterText=@botania
+    B:overlayEnabled=true
+}
+
+
+world1451768363 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world1790950 {
+    B:cheatItemsEnabled=true
+    B:editEnabled=false
+    S:filterText=coa
+    B:overlayEnabled=true
+}
+
+
+world1855637915 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=@immersive
+    B:overlayEnabled=true
+}
+
+
+world2053281754 {
+    B:cheatItemsEnabled=true
+    B:editEnabled=false
+    S:filterText=willow
+    B:overlayEnabled=true
+}
+
+
+world2080313917 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=conduit
+    B:overlayEnabled=true
+}
+
+
+world218113748 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world3377799 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world3446816 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world639023992 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=ore
+    B:overlayEnabled=true
+}
+
+
+world675473158 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
+world753210735 {
+    B:cheatItemsEnabled=false
+    B:editEnabled=false
+    S:filterText=
+    B:overlayEnabled=true
+}
+
+
