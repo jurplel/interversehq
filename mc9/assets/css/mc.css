@@ -1,12 +1,29 @@
 html,
-body {
+body,
+header {
     background-color: #212121;
     color: #FFF;
     font-family: Roboto, sans-serif;
 }
 
 header {
-    height: 100%
+    min-height: 100vh;
+}
+
+.numlogo {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    font-family: 'Merriweather Sans', Roboto, sans-serif;
+    
+    /* gradient animation */
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
 }
 
 th {
