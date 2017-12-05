@@ -9,7 +9,7 @@ $("#table").load("table.html", function() {
 
 $(".mplogo1").animateCss('zoomInDown');
 
-$("downButton").addEventListener("click", downButtonPressed);
+document.getElementsByClassName('.mplogo1').addEventListener("click", downButtonPressed);
 
 function downButtonPressed() {
     $("downButton").animateCss('flip');
