@@ -20,9 +20,8 @@ $("#table").load("table.html", function() {
 	});
 });
 
-$(".mplogo1").animateCss('zoomInDown');
-
 function downButtonPressed() {
+    console.log("button was pressed")
     $("downButton").animateCss('flip');
 }
 
@@ -31,7 +30,6 @@ $('#hiddenText').hide();
 $('#doSmth').click(function() {
     if(toggle===false) {
         $('#hiddenText').show();
-        $('#hiddenText').addClass('animated flipInX');
         toggle = true;
     }
     else {
