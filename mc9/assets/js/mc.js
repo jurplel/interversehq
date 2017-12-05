@@ -13,11 +13,12 @@ $(document).ready(function() {
 		"scrollCollapse": true,
 		"paging": false,
 		"info": false,
-	});
+    });
+    $(".mplogo1").animateCss('zoomInDown');
 });
 
 $("downButton").addEventListener("click", downButtonPressed);
 
 function downButtonPressed() {
-    $("downButton").addClass('animated flip');
+    $("downButton").animateCss('flip');
 }
