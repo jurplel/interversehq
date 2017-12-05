@@ -27,3 +27,17 @@ $('.mplogo1').addEventListener("click", downButtonPressed);
 function downButtonPressed() {
     $("downButton").animateCss('flip');
 }
+
+var toggle = false;
+$('#hiddenText').hide();
+$('#doSmth').click(function() {
+    if(toggle===false) {
+        $('#hiddenText').show();
+        $('#hiddenText').addClass('animated flipInX');
+        toggle = true;
+    }
+    else {
+        $('#hiddenText').hide();
+        toggle = false;
+    }
+});
