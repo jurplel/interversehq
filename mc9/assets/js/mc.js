@@ -1,3 +1,16 @@
+$.fn.extend({
+    animateCss: function (animationName, callback) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+            if (callback) {
+              callback();
+            }
+        });
+        return this;
+    }
+});
+
 $("#table").load("table.html", function() {
 	$('#modlist').DataTable( {
 		"scrollY": "65vh",
@@ -9,7 +22,7 @@ $("#table").load("table.html", function() {
 
 $(".mplogo1").animateCss('zoomInDown');
 
-document.getElementsByClassName('.mplogo1').addEventListener("click", downButtonPressed);
+$('.mplogo1').addEventListener("click", downButtonPressed);
 
 function downButtonPressed() {
     $("downButton").animateCss('flip');
