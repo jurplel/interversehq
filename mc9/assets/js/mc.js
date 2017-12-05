@@ -20,11 +20,6 @@ $("#table").load("table.html", function() {
 	});
 });
 
-function downButtonPressed() {
-    console.log("button was pressed")
-    $("downButton").animateCss('flip');
-}
-
 var toggle = false;
 $('#hiddenText').hide();
 $('#doSmth').click(function() {
