@@ -4,8 +4,8 @@ $("#table").load("table.html", function() {
 		"scrollCollapse": true,
 		"paging": false,
 		"info": false,
-	} );
-} );
+	});
+});
 
 $(document).ready(function() {
 	$('#modlist').DataTable( {
@@ -13,5 +13,11 @@ $(document).ready(function() {
 		"scrollCollapse": true,
 		"paging": false,
 		"info": false,
-	} );
-} );
+	});
+});
+
+$("downButton").addEventListener("click", downButtonPressed);
+
+function downButtonPressed() {
+    $("downButton").addClass('animated flip');
+}
