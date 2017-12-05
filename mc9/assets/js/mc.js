@@ -22,8 +22,6 @@ $("#table").load("table.html", function() {
 
 $(".mplogo1").animateCss('zoomInDown');
 
-document.getElementsByClassName('.mplogo1').addEventListener("click", downButtonPressed);
-
 function downButtonPressed() {
     $("downButton").animateCss('flip');
 }
