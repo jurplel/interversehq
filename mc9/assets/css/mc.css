@@ -23,10 +23,6 @@ header {
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);    
 
-    background-clip: text;
-    -webkit-background-clip: text;
-
-
     animation: hue 15s infinite linear;
     -webkit-animation: hue 15s infinite linear;
 }
@@ -53,7 +49,7 @@ header {
 	align-items: center;
 	justify-content: center;
     flex-direction: column;
-    font-size: 75vmin;
+    font-size: 65vmin;
 }
 
 .mplogo2 {
