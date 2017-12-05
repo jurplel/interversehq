@@ -17,7 +17,7 @@ header {
 }
 
 .mplogo1,
-.nplogo2 {
+.mplogo2 {
     font-family: 'Merriweather Sans', Roboto, sans-serif;
 
     color: #f35626;
@@ -42,7 +42,8 @@ header {
 }
 
 .mplogo2 {
-    font-size: 2em;
+    font-size: 4em;
+    margin-left: 0.5em;
 }
 
 .jarallax {
