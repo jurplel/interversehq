@@ -16,6 +16,28 @@ header {
   background-color: #212121;
 }
 
+.btn,
+.btn:hover {
+    font-family: 'Merriweather Sans', Roboto, sans-serif;
+
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);    
+
+    animation: hue 15s infinite linear;
+    -webkit-animation: hue 15s infinite linear;
+}
+
+.btn {
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.btn:hover {
+    color: #FFF;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+}
+
 .mplogo1,
 .mplogo2 {
     font-family: 'Merriweather Sans', Roboto, sans-serif;
@@ -49,7 +71,7 @@ header {
 .jarallax {
     position: relative;
     z-index: 0;
-    min-height: 40vh;
+    min-height: 50vh;
 }
 
 .jarallax > .jarallax-img {
