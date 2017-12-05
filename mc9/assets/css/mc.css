@@ -16,26 +16,18 @@ header {
   background-color: #212121;
 }
 
-.btn,
-.btn:hover {
+.btn {
     font-family: 'Merriweather Sans', Roboto, sans-serif;
 
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);    
 
-    animation: hue 15s infinite linear;
-    -webkit-animation: hue 15s infinite linear;
-}
-
-.btn {
     background-clip: text;
     -webkit-background-clip: text;
-}
 
-.btn:hover {
-    color: #FFF;
-    background-clip: border-box;
-    -webkit-background-clip: border-box;
+
+    animation: hue 15s infinite linear;
+    -webkit-animation: hue 15s infinite linear;
 }
 
 .mplogo1,
