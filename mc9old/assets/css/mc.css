@@ -63,24 +63,26 @@ a:focus {
   text-align: center;
 }
 
-.btn {
-  border-radius: 0;
-  text-transform: uppercase;
-  font-family: Play, sans-serif;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  border: 1px solid #0288D1;
-  color: #0288D1;
-  background-color: transparent;
+.btn,
+.btn:hover {
+    font-family: 'Merriweather Sans', Roboto, sans-serif;
+
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);    
+
+    animation: hue 15s infinite linear;
+    -webkit-animation: hue 15s infinite linear;
 }
 
-.btn:hover,
-.button:focus {
-  border: 1px solid #00A5FF;
-  outline: 0;
-  color: #000;
-  background-color: #00A5FF;
+.btn {
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.btn:hover {
+    color: #FFF;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
 }
 
 .valign {
