@@ -6,7 +6,8 @@ body {
   font-family: Roboto,sans-serif;
 }
 
-section {
+section,
+footer {
     padding-top: 50px;
     color: #FFF;
 }
