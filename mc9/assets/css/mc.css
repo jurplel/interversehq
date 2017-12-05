@@ -16,16 +16,10 @@ header {
   background-color: #212121;
 }
 
-.mplogo {
-    margin-bottom: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    flex-direction: column;
+.mplogo1,
+.nplogo2 {
     font-family: 'Merriweather Sans', Roboto, sans-serif;
-    font-size: 75vmin;
-    
-    /* gradient animation */
+
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);    
 
@@ -36,6 +30,19 @@ header {
 
     animation: hue 15s infinite linear;
     -webkit-animation: hue 15s infinite linear;
+}
+
+.mplogo1 {
+    margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    font-size: 75vmin;
+}
+
+.mplogo2 {
+    font-size: 2em;
 }
 
 .jarallax {
