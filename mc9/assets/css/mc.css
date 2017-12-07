@@ -15,8 +15,11 @@ footer {
 header {
   min-height: 100vh;
   background-color: #212121;
+  background: radial-gradient(#000 -5%, #212121);
 }
 
+.mplogo1,
+.mplogo2,
 .btn {
     font-family: 'Merriweather Sans', Roboto, sans-serif;
 
@@ -29,18 +32,10 @@ header {
 
 .mplogo1,
 .mplogo2 {
-    font-family: 'Merriweather Sans', Roboto, sans-serif;
-
-    color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);    
-
     background-clip: text;
     -webkit-background-clip: text;
     
     -webkit-text-fill-color: transparent;
-
-    animation: hue 15s infinite linear;
-    -webkit-animation: hue 15s infinite linear;
 }
 
 .mplogo1 {
@@ -50,11 +45,13 @@ header {
 	justify-content: center;
     flex-direction: column;
     font-size: 65vmin;
+    text-shadow: 0px 0px 100px #FF0000;
 }
 
 .mplogo2 {
     font-size: 4em;
     margin-left: 0.5em;
+    text-shadow: 0px 0px 30px #FF0000;
 }
 
 .jarallax {
