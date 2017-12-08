@@ -16,7 +16,19 @@ $("#table").load("table.html", function() {
 		"scrollY": "65vh",
 		"scrollCollapse": true,
 		"paging": false,
-		"info": false,
+        "info": false,
+        "columns": [
+            null,
+            null,
+            null,
+            null,
+            { "width": "40px" },
+            null
+        ]
+        "language": {
+            "search": "<i class="fas fa-search prefix"></i>",
+            "searchPlaceholder": "Search"
+        }
 	});
 });
 
