@@ -24,9 +24,9 @@ $("#table").load("table.html", function() {
             null,
             { "width": "40px" },
             null
-        ]
+        ],
         "language": {
-            "search": "<i class="fas fa-search prefix"></i>",
+            "search": '<i class="fas fa-search prefix"></i>',
             "searchPlaceholder": "Search"
         }
 	});
