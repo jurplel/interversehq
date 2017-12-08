@@ -1,9 +1,9 @@
 html,
 body {
-  height: 100%;
-  background-color: #212121;
-  color: #FFF;
-  font-family: Roboto,sans-serif;
+    height: 100%;
+    background-color: #212121;
+    color: #FFF;
+    font-family: Roboto,sans-serif;
 }
 
 section,
@@ -13,10 +13,14 @@ footer {
 }
 
 header {
-  min-height: 100vh;
-  background-color: #212121;
-  background: radial-gradient(#000 -5%, #212121);
-  overflow: visible;
+    min-height: 100vh;
+    background-color: #212121;
+    background: radial-gradient(#000 -5%, #212121);
+}
+
+#mplogo1wrapper {
+    width: 50vh;
+    margin: auto;
 }
 
 .mplogo1,
