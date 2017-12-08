@@ -19,7 +19,7 @@ header {
 }
 
 #mplogo1wrapper {
-    width: 85vh;
+    width: 50%;
     margin: auto;
 }
 
@@ -66,7 +66,7 @@ header {
 .jarallax {
     position: relative;
     z-index: 0;
-    min-height: 50vh;
+    min-height: 85vh;
 }
 
 .jarallax > .jarallax-img {
