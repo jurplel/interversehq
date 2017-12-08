@@ -33,6 +33,11 @@ header {
     -webkit-background-clip: text;
 }
 
+.btn:active {
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+}
+
 .mplogo1,
 .mplogo2 {
     -webkit-text-fill-color: transparent;
