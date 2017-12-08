@@ -28,7 +28,7 @@ header {
 
     animation: hue 15s infinite linear;
     -webkit-animation: hue 15s infinite linear;
-    
+
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -66,16 +66,12 @@ header {
 
 th {
     background-color: #0091EA;
-    border: black solid 1px !important;
-    font-weight: 500;
 }
 
 .table, .table td { 
     font-size: 18px;
-    font-weight: 300;
     background-color: #595959;
     color:white;
-    border: #000 solid 1px !important;
     border-bottom: 0px !important;
     border-top: 0px !important;
 }
@@ -83,34 +79,6 @@ th {
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
     background-color: #404040;
-}
-
-table.dataTable thead th {
-    position: relative;
-    background-image: none !important;
-}
- 
-table.dataTable thead th.sorting:after,
-table.dataTable thead th.sorting_asc:after,
-table.dataTable thead th.sorting_desc:after {
-    position: absolute;
-    top: 12px;
-    right: 8px;
-    display: block;
-    font-family: FontAwesome;
-}
-
-table.dataTable thead th.sorting:after {
-    content: "\f0dc";
-    color: #ddd;
-    font-size: 0.8em;
-    padding-top: 0.12em;
-}
-table.dataTable thead th.sorting_asc:after {
-    content: "\f0de";
-}
-table.dataTable thead th.sorting_desc:after {
-    content: "\f0dd";
 }
 
 @keyframes hue {
