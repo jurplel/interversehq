@@ -16,6 +16,7 @@ header {
   min-height: 100vh;
   background-color: #212121;
   background: radial-gradient(#000 -5%, #212121);
+  overflow: hidden;
 }
 
 .mplogo1,
