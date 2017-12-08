@@ -68,12 +68,22 @@ th {
     background-color: rgb(40,115,179);
 }
 
+.table th {
+    border-top: 0px !important;
+    border-color: black !important;
+    border-bottom: 1px solid black !important;
+}
+
 .table, .table td { 
     font-size: 18px;
     background-color: rgb(91,90,90);
     color:white;
     border-bottom: 0px !important;
-    border-top: 0px !important;
+    border-color: black;
+}
+
+.table a {
+    color: #0275d8 !important;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td,
