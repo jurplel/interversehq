@@ -29,7 +29,7 @@ $("#table").load("table.html", function() {
             alert( 'drawn' )
             $('#modlist_wrapper > div:first-child').html(replacementSearch);
             $('#searchForm').on('keyup', function () {
-                $('modlist').DataTable().search(this.value).draw();
+                $('modlist').DataTable().search($(this).val()).draw();
             });
         }
     });
