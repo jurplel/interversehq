@@ -24,17 +24,13 @@ $("#table").load("table.html", function() {
             null,
             { "width": "40px" },
             null
-        ],
-        "initComplete": function(settings, json) {
-            $('#modlist_wrapper > div:first-child').html(replacementSearch);
-        }
-	});
+        ]
+    });
+    $('#modlist_wrapper > div:first-child').html(replacementSearch);
 });
 
-var table = $('#modlist').DataTable();
-
-$('#searchForm').on('keyup change', function () {
-    table.search(this.value).draw();
+$('#searchForm').on('keyup', function () {
+    $('modlist').DataTable().search(this.value).draw();
 });
 
 var toggle = false;
