@@ -25,7 +25,7 @@ $("#table").load("table.html", function() {
             { "width": "40px" },
             null
         ],
-        "drawCallback": function( settings ) {
+        "initComplete": function( settings ) {
             alert( 'drawn' )
             $('#modlist_wrapper > div:first-child').html(replacementSearch);
             $('#searchForm').on('keyup', function () {
