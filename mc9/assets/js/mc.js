@@ -3,6 +3,7 @@ var replacementSearch = `
 <div class="col-sm-5 col-md-4 col-lg-3">
     <div id="modlist_filter" style="inline-block">
         <div class="md-form">
+            <i class="fas fa-search prefix"></i>
             <input type="text" id="searchForm" class="form-control">
             <label for="searchForm" class="">Search</label>
         </div>
@@ -25,7 +26,7 @@ $("#table").load("table.html", function() {
             null
         ],
         "initComplete": function(settings, json) {
-            $('#modlist-wrapper').first().html(replacementSearch)
+            $('#modlist-wrapper').first().html(replacementSearch);
         }
 	});
 });
