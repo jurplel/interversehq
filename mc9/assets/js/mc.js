@@ -26,10 +26,16 @@ $("#table").load("table.html", function() {
             null
         ],
         "initComplete": function(settings, json) {
-            $('#modlist-wrapper').first().html(replacementSearch);
+            $('#modlist_wrapper > div:first-child').html(replacementSearch);
         }
 	});
 });
+
+var table = $('#table').dataTable().api();
+
+$('#searchForm').on('keyup change', function () {
+    table.search(this.value).draw();
+})
 
 var toggle = false;
 $('#hiddenText').hide();
