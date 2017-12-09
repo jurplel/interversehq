@@ -24,13 +24,15 @@ $("#table").load("table.html", function() {
             null,
             { "width": "40px" },
             null
-        ]
+        ],
+        "drawCallback": function( settings ) {
+            alert( 'drawn' )
+            $('#modlist_wrapper > div:first-child').html(replacementSearch);
+            $('#searchForm').on('keyup', function () {
+                $('modlist').DataTable().search(this.value).draw();
+            });
+        }
     });
-    $('#modlist_wrapper > div:first-child').html(replacementSearch);
-});
-
-$('#searchForm').on('keyup', function () {
-    $('modlist').DataTable().search($(this).val()).draw();
 });
 
 var toggle = false;
