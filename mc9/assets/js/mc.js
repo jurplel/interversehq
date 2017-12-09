@@ -24,14 +24,15 @@ $("#table").load("table.html", function() {
             null,
             { "width": "40px" },
             null
-        ],
-        "initComplete": function(settings, json) {
-            alert('initcomplete is run');
-            $('#modlist_wrapper > div:first-child').html(replacementSearch);
-            $('#searchForm').on('keyup', function () {
-                $('#modlist').DataTable().search($(this).val()).draw();
-            });
-        }
+        ]
+    });
+});
+
+$('#modlist').on( 'init.dt', function() {
+    alert('init is run');
+    $('#modlist_wrapper > div:first-child').html(replacementSearch);
+    $('#searchForm').on('keyup', function () {
+        $('#modlist').DataTable().search($(this).val()).draw();
     });
 });
 
