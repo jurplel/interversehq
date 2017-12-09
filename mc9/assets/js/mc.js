@@ -1,15 +1,14 @@
-$.fn.extend({
-    animateCss: function (animationName, callback) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-            if (callback) {
-              callback();
-            }
-        });
-        return this;
-    }
-});
+var replacementSearch = `
+<div class="col-sm-7 col-md-8 col-lg-9"></div>
+<div class="col-sm-5 col-md-4 col-lg-3">
+    <div id="modlist_filter" style="inline-block">
+        <div class="md-form">
+            <input type="text" id="searchForm" class="form-control">
+            <label for="searchForm" class="">Search</label>
+        </div>
+    </div>
+</div>
+`;
 
 $("#table").load("table.html", function() {
 	$('#modlist').DataTable( {
@@ -25,12 +24,17 @@ $("#table").load("table.html", function() {
             { "width": "40px" },
             null
         ],
-        "language": {
-            "search": '<i class="fas fa-search prefix"></i>',
-            "searchPlaceholder": "Search"
+        "initComplete": function(settings, json) {
+            $('#modlist-wrapper').first().html(replacementSearch)
         }
 	});
 });
+
+var table = $('#table').dataTable().api();
+
+$('#searchForm').on('keyup change', function () {
+    table.search(this.value).draw();
+})
 
 var toggle = false;
 $('#hiddenText').hide();
