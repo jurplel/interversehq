@@ -31,6 +31,12 @@ $("#table").load("table.html", function() {
 	});
 });
 
+var table = $('#table').DataTable();
+
+$('#searchForm').on('keyup change', function () {
+    table.search(this.value).draw();
+})
+
 var toggle = false;
 $('#hiddenText').hide();
 $('#doSmth').click(function() {
