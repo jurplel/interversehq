@@ -30,7 +30,7 @@ $("#table").load("table.html", function() {
 });
 
 $('#searchForm').on('keyup', function () {
-    $('modlist').DataTable().search(this.value).draw();
+    $('modlist').DataTable().search($(this).val()).draw();
 });
 
 var toggle = false;
