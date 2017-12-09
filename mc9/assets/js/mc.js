@@ -25,11 +25,11 @@ $("#table").load("table.html", function() {
             { "width": "40px" },
             null
         ],
-        "initComplete": function( settings ) {
-            alert( 'drawn' )
+        "initComplete": function(settings, json) {
+            alert('initcomplete is run');
             $('#modlist_wrapper > div:first-child').html(replacementSearch);
             $('#searchForm').on('keyup', function () {
-                $('modlist').DataTable().search($(this).val()).draw();
+                $('#modlist').DataTable().search($(this).val()).draw();
             });
         }
     });
