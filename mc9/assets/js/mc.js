@@ -3,13 +3,11 @@ var replacementSearch = `
 <div class="col-sm-5 col-md-4 col-lg-3">
     <div id="modlist_filter" style="inline-block">
         <div class="md-form">
-            <i class="fas fa-search prefix"></i>
             <input type="text" id="searchForm" class="form-control">
             <label for="searchForm" class="">Search</label>
         </div>
     </div>
-</div>
-`;
+</div>`;
 
 $("#table").load("table.html", function() {
 	$('#modlist').DataTable( {
@@ -27,13 +25,16 @@ $("#table").load("table.html", function() {
         ]
     });
 });
-
-$('#modlist').on( 'init.dt', function() {
-    alert('init is run');
+$('#modlist_filter').waitUntilExists(function() {
+    alert('it is run');
     $('#modlist_wrapper > div:first-child').html(replacementSearch);
     $('#searchForm').on('keyup', function () {
         $('#modlist').DataTable().search($(this).val()).draw();
     });
+});
+
+$('#modlist').on( 'init.dt', function() {
+
 });
 
 var toggle = false;
