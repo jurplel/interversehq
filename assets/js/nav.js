@@ -27,7 +27,4 @@ var navbarHTML = `
 </div>
 </nav>`
 
-var navbarCSS = `<link rel="stylesheet" href="assets/css/main.css">`
-
-$('body').prepend(navbarHTML)
-$('head').append(navbarCSS)
+var navbarCSS = `<link rel="stylesheet" href="assets/css/nav.css">`
