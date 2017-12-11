@@ -29,5 +29,5 @@ var navbarHTML = `
 
 var navbarCSS = `<link rel="stylesheet" href="assets/css/main.css">`
 
-$('body').append(navbarHTML)
+$('body').prepend(navbarHTML)
 $('head').append(navbarCSS)
