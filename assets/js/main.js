@@ -1,6 +1,9 @@
 $('#filledlogo').hide();
 $('.navbar').css("visibility", "hidden");
 
+$('body').prepend(navbarHTML)
+$('head').append(navbarCSS)
+
 function Entrance() {
     $('#filledlogo').fadeIn( 750 );
     $('.navbar').css("visibility", "visible").addClass('animated fadeInDown');
