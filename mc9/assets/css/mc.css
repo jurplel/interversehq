@@ -29,23 +29,7 @@ header {
     font-family: 'Merriweather Sans', Roboto, sans-serif;
 
     color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);    
 
-    animation: hue 15s infinite linear;
-    -webkit-animation: hue 15s infinite linear;
-
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.btn:active {
-    background-clip: border-box;
-    -webkit-background-clip: border-box;
-}
-
-.mplogo1,
-.mplogo2 {
-    -webkit-text-fill-color: transparent;
 }
 
 .mplogo1 {
@@ -55,12 +39,29 @@ header {
 	justify-content: center;
     flex-direction: column;
     font-size: 65vmin;
-    text-shadow: 0px 0px 100px #FF0000;
+    text-shadow: 0px 0px 100px rgba(243,86,38,1.0) !important;
+    animation: glow 2s ease-in-out infinite alternate !important;
 }
 
 .mplogo2 {
     font-size: 4em;
-    text-shadow: 0px 0px 30px #FF0000;
+    text-shadow: 0px 0px 30px rgba(243,86,38,1.0);
+    animation: glow2 2s ease-in-out infinite alternate;
+}
+
+.btn,
+.btn:hover,
+.btn:active {
+    border-color: #f35626;
+    color: #f35626 !important;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 20px rgba(243,86,38,1.0) !important;
+}
+
+.btn:active {
+    box-shadow: 0px 0px 50px rgba(243,86,38,1.0) !important;
 }
 
 .jarallax {
@@ -75,7 +76,7 @@ header {
 }
 
 th {
-    background-color: rgb(40,115,179);
+    background-color: #f35626;
 }
 
 .table th {
@@ -93,7 +94,7 @@ th {
 }
 
 .table a {
-    color: #0275d8 !important;
+    color: #f35626 !important;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td,
@@ -118,22 +119,45 @@ th.sorting_desc::after {
 .dataTable > thead > tr > th[class*="sort"]::after{display: none}
 .dataTable > thead > tr > th[class*="sort"]::before{display: none}
 
-@keyframes hue {
-    from {
-        -webkit-filter: hue-rotate(0deg);
-    }
-
-    to {
-        -webkit-filter: hue-rotate(-360deg);
+@keyframes glow {
+    to
+    {
+        text-shadow: 0px 0px 100px rgba(243,86,38,.8)
     }
 }
 
-@-webkit-keyframes hue {
-    from {
-        -webkit-filter: hue-rotate(0deg);
-    }
-
-    to {
-        -webkit-filter: hue-rotate(-360deg);
+@keyframes glow2 {
+    to
+    {
+        text-shadow: 0px 0px 30px rgba(243,86,38,.8)
     }
 }
+
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search-md]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.md-textarea:focus:not([readonly]) + label {
+  color: #f35626; }
+
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search-md]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.md-textarea:focus:not([readonly]) {
+border-bottom: 1px solid #f35626;
+box-shadow: 0 1px 0 0 #4285F4; }
