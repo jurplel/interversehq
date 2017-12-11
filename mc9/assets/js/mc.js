@@ -9,6 +9,9 @@ var replacementSearch = `
     </div>
 </div>`;
 
+$('header').prepend(navbarHTML)
+$('head').append(navbarCSS)
+
 $("#table").load("table.html", function() {
 	$('#modlist').DataTable( {
 		"scrollY": "65vh",
