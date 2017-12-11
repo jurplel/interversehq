@@ -160,4 +160,4 @@ input[type=search-md]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.md-textarea:focus:not([readonly]) {
 border-bottom: 1px solid #f35626;
-box-shadow: 0 1px 0 0 #4285F4; }
+box-shadow: 0 1px 0 0 #f35626; }
