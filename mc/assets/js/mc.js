@@ -9,7 +9,7 @@ var replacementSearch = `
     </div>
 </div>`;
 
-$('body').prepend(navbarHTML)
+$('header').prepend(navbarHTML)
 $('head').append(navbarCSS)
 
 $('.navbar').addClass('animated fadeInDown');
