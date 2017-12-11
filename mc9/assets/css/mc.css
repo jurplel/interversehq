@@ -93,8 +93,12 @@ th {
     border-color: black;
 }
 
-.table a, a {
+.table a, #doSmth {
     color: #f35626 !important;
+}
+
+a {
+    color: #f35626;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td,
