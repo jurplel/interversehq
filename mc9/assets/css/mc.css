@@ -52,7 +52,7 @@ header {
 .btn,
 .btn:hover,
 .btn:active {
-    border-color: #f35626;
+    border-color: #f35626 !important;
     color: #f35626 !important;
 }
 
