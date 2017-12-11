@@ -9,8 +9,10 @@ var replacementSearch = `
     </div>
 </div>`;
 
-$('header').prepend(navbarHTML)
+$('body').prepend(navbarHTML)
 $('head').append(navbarCSS)
+
+$('.navbar').addClass('animated fadeInDown');
 
 $("#table").load("table.html", function() {
 	$('#modlist').DataTable( {
