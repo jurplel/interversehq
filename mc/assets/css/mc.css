@@ -27,9 +27,7 @@ header {
 .mplogo2,
 .btn {
     font-family: 'Merriweather Sans', Roboto, sans-serif;
-
     color: #f35626;
-
 }
 
 .mplogo1 {
@@ -41,12 +39,14 @@ header {
     font-size: 65vmin;
     text-shadow: 0px 0px 100px rgba(243,86,38,1.0) !important;
     animation: glow 2s ease-in-out infinite alternate !important;
+    user-select: none;
 }
 
 .mplogo2 {
     font-size: 4em;
     text-shadow: 0px 0px 30px rgba(243,86,38,1.0);
     animation: glow2 2s ease-in-out infinite alternate;
+    user-select: none;
 }
 
 .btn,
