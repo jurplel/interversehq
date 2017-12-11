@@ -27,4 +27,4 @@ var navbarHTML = `
 </div>
 </nav>`
 
-var navbarCSS = `<link rel="stylesheet" href="assets/css/nav.css">`
+var navbarCSS = `<link rel="stylesheet" href="/assets/css/nav.css">`
