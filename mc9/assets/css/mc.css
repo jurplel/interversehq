@@ -93,7 +93,7 @@ th {
     border-color: black;
 }
 
-.table a {
+.table a, a {
     color: #f35626 !important;
 }
 
