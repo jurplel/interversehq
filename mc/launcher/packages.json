@@ -4,15 +4,15 @@
         {
             "name": "vanilla",
             "title": "Vanilla",
-            "version": "1.11",
+            "version": "1.12.2",
             "location": "vanilla.json",
             "priority": 1
         },
         {
-            "name": "intvmp",
-            "title": "Interverse Modpack",
-            "version": "8.2",
-            "location": "intvmp.json",
+            "name": "intvmp9",
+            "title": "Interverse Modpack 9",
+            "version": "9.1",
+            "location": "intvmp9.json",
             "priority": 1
         }
     ]
