@@ -7,10 +7,10 @@ var navbarHTML = `
     <div class="navbar-collapse collapse">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="don't_tell_anybody_this_doesn't_go_anywhere">ABOUT</a>
+                <a class="nav-link" href="/don't_tell_anybody_this_doesn't_go_anywhere">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="mc">MINECRAFT</a>
+                <a class="nav-link" href="/mc">MINECRAFT</a>
             </li>
         </ul>
     </div>
