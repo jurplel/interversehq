@@ -27,4 +27,4 @@ var navbarHTML = `
 </div>
 </nav>`
 
-var navbarCSS = `<link rel="stylesheet" href="/assets/css/nav.css">`
+var navbarCSS = `<link rel="stylesheet" href="/assets/css/nav.css"><link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">`
