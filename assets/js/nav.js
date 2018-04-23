@@ -28,3 +28,6 @@ var navbarHTML = `
 </nav>`
 
 var navbarCSS = `<link rel="stylesheet" href="/assets/css/nav.css"><link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">`
+
+$('body').prepend(navbarHTML)
+$('head').append(navbarCSS)
