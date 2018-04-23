@@ -1,8 +1,5 @@
 $('#filledlogo').hide();
 
-$('body').prepend(navbarHTML)
-$('head').append(navbarCSS)
-
 $('.navbar').css("visibility", "hidden");
 
 function Entrance() {
