@@ -28,7 +28,7 @@ if (!Cookies.get('visited')) {
     var compactLogo = {
         file: '/assets/img/intv_compact_outline.svg',
         onReady: function (myVivus) {
-            const mq = window.matchMedia("(min-width: 634px)");
+            const mq = window.matchMedia("(min-width: 576px)");
             if (mq.matches) {
                 $('#Compact_Logo').hide();
             }
