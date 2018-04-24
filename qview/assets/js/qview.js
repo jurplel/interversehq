@@ -48,33 +48,33 @@ $(".dlbtn").click(function() {
         {
             location.href=data[0].tarball_url;
         }
-        $("#ty").show().addClass('animated zoomIn');
+        thankYou()
     });
 });
 
 $(".dlgrp1").click(function() {
-    $("#ty").show().addClass('animated zoomIn');
+    thankYou();
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         location.href=data[0].assets[0].browser_download_url;
     });
 });
 
 $(".dlgrp2").click(function() {
-    $("#ty").show().addClass('animated zoomIn');
+    thankYou();
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         location.href=data[0].assets[1].browser_download_url;
     });
 });
 
 $(".dlgrp3").click(function() {
-    $("#ty").show().addClass('animated zoomIn');
+    thankYou();
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         location.href=data[0].assets[2].browser_download_url;
     });
 });
 
 $(".dlgrp4").click(function() {
-    $("#ty").show().addClass('animated zoomIn');
+    thankYou();
     $(".linuxlabel").show();
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         location.href=data[0].tarball_url;
@@ -85,3 +85,8 @@ $("#dllabel").click(function() {
     $(".dlbtn").toggle();
     $(".dlgrp").toggle();
 });
+
+function thankYou()
+{
+    $("#ty").show().addClass('animated zoomIn');
+}
