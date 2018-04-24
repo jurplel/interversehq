@@ -1,0 +1,110 @@
+body {
+    background-color: #212121;
+    color: #ffffff;
+    font-family: Lato, Roboto, sans-serif;
+}
+
+header {
+    min-height: 90vh;
+}
+
+a {
+    color: #03A9F4;
+}
+
+a:hover {
+    -webkit-transition: 0.35s;
+	-o-transition: 0.35s;
+	transition: 0.35s; 
+    color: rgba(3, 168, 244, 0.75);
+}
+
+.qvlogo {
+    font-weight: 300;
+    font-size: 20vmin;
+    margin-top: 10vmin;
+}
+
+.qvsubtitle {
+    font-size: 5vmin;
+    margin-top: 0px;
+}
+
+.dlbtn {
+    font-size: 3vmin;
+    margin-top: 5vmin;
+    min-width: 50vmin;
+    min-height: 10vmin;
+    border-radius: 2vmin;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.dlbtn:hover {
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    -moz-transition: 0.35s;
+    transition: 0.35s;
+    color: #151515 !important;
+}
+
+.dlbtn:active {
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    -moz-transition: 0s;
+    transition: 0s;
+    color: #FFFFFF !important;
+}
+
+.dlgrp
+.dlgrp1,
+.dlgrp2,
+.dlgrp3,
+.dlgrp4 {
+    font-size: 3vmin;
+    margin-top: 5vmin;
+    width: 12.6vmin;
+    min-height: 10vmin;
+    border-radius: 2vmin;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dlgrp1:hover,
+.dlgrp2:hover,
+.dlgrp3:hover,
+.dlgrp4:hover {
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    -moz-transition: 0.35s;
+    transition: 0.35s;
+    color: #151515 !important;
+}
+
+.dlgrp1:active,
+.dlgrp2:active,
+.dlgrp3:active,
+.dlgrp4:active {
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    -moz-transition: 0s;
+    transition: 0s;
+    color: #FFFFFF !important;
+}
+
+.lowerlabel {
+    font-size: 2vmin;
+    margin-top: 3vmin;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
