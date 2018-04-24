@@ -1,5 +1,5 @@
 $('#filledlogo').fadeIn( 750 );
-$('.navbar').addClass('animated fadeIn');
+$('.navbar').addClass('animated fadeInDown');
 
 $(".linuxlabel").hide();
 $(".dlgrp").hide();
