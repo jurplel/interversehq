@@ -7,20 +7,20 @@ var navbarHTML = `
     <div class="navbar-collapse collapse">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/don't_tell_anybody_this_doesn't_go_anywhere">ABOUT</a>
+                <a class="nav-link" href="/qview">qView</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/mc">MINECRAFT</a>
+                <a class="nav-link" href="/mc">Minecraft</a>
             </li>
         </ul>
     </div>
     <div class="navbar-collapse collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="http://steamcommunity.com/groups/interverse">STEAM</a>
+                <a class="nav-link" href="http://steamcommunity.com/groups/interverse">Steam</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://discord.gg/0lXeGE6soHgmQPT5">DISCORD</a>
+                <a class="nav-link" href="https://discord.gg/0lXeGE6soHgmQPT5">Discord</a>
             </li>
         </ul>
     </div>
