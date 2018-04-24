@@ -2,6 +2,7 @@
 	background: rgba(21, 21, 21, 0.9);
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	font-family: 'Varela Round', sans-serif;
+	color: #FFFFFF;
 }
 
 .navbar-brand {
@@ -12,4 +13,17 @@
 .navbar-collapse {
 	width: 35%;
 	flex-grow: 0;
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+	color: #fff;
+	-webkit-transition: 0.35s;
+	-o-transition: 0.35s;
+	transition: 0.35s; 
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+	color: rgba(255, 255, 255, 0.75);
 }
