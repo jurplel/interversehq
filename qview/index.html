@@ -7,16 +7,43 @@
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#212121">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
     <!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/css/mc.css">
+	<link rel="stylesheet" href="assets/css/qview.css">
 </head>
 <body>
-
+    <header class="container-fluid text-center">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1 class="qvlogo noselect">qView</h1>
+                <h2 class="qvlogo qvsubtitle noselect">Simple Qt Image Viewer</h2>
+                <a role="button" class="btn btn-lg btn-outline-light dlbtn">Download</a>
+                <div role="group" class="btn-group dlgrp">
+                    <a role="button" class="btn btn-lg btn-outline-light dlgrp1">Win32</a>
+                    <a role="button" class="btn btn-lg btn-outline-light dlgrp2">Win64</a>
+                    <a role="button" class="btn btn-lg btn-outline-light dlgrp3">macOS</a>
+                    <a role="button" class="btn btn-lg btn-outline-light dlgrp4">Linux</a>
+                </div>
+                <p class="lowerlabel noselect"><a href="https://github.com/jeep70/qView/wiki/Linux-Installation-Guide" class="linuxlabel">Linux Guide</a><span class="linuxlabel"> | </span><a id="dllabel" href="#">Other Downloads</a> | <a href="https://github.com/jeep70/qView">Github</a> | <a href="https://github.com/jeep70/qView/releases">Releases</a></p>
+                <p id="ty">Thank you for downloading qView!</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </header>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- Navbar JS -->
-    <script src="/assets/js/nav.js"></script>
+    <script src="../assets/js/nav.js"></script>
     <!-- Custom JS -->
-	<script src="assets/js/mc.js" defer></script>
+	<script src="assets/js/qview.js"></script>
 </body>
 </html>
