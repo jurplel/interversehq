@@ -2,10 +2,18 @@ body {
     background-color: #212121;
     color: #ffffff;
     font-family: Lato, Roboto, sans-serif;
+    background-image: url("../img/cloud-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: right; 
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, .btn {
+    font-weight: 300;
 }
 
 header {
-    min-height: 90vh;
+    height: 100vh;
 }
 
 a {
@@ -19,8 +27,19 @@ a:hover {
     color: rgba(3, 168, 244, 0.75);
 }
 
+.window {
+    z-index: -100;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%; 
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-28vmin);
+    transform: translateX(-50%) translateY(-28vmin);
+    width: 78vmin;
+}
+
 .qvlogo {
-    font-weight: 300;
     font-size: 20vmin;
     margin-top: 10vmin;
 }
