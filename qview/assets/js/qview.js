@@ -3,7 +3,6 @@ $('.navbar').addClass('animated fadeInDown');
 
 $(".linuxlabel").hide();
 $(".dlgrp").hide();
-$("#ty").hide();
 
 var os = 3;
 if (navigator.platform.indexOf("Win") != -1)
@@ -85,8 +84,3 @@ $("#dllabel").click(function() {
     $(".dlbtn").toggle();
     $(".dlgrp").toggle();
 });
-
-function thankYou()
-{
-    $("#ty").show().addClass('animated zoomIn');
-}
