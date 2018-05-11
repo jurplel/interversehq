@@ -7,14 +7,13 @@ $(".dlgrp").hide();
 var os = 3;
 if (navigator.platform.indexOf("Win") != -1)
 {
+    $(".dlbtn").html("Download for Windows");
     if (navigator.userAgent.indexOf("WOW64") != -1 || 
         navigator.userAgent.indexOf("Win64") != -1 ){
-        $(".dlbtn").html("Download for Windows");
-        os=0;
+        os=1;
     } 
     else {
-        $(".dlbtn").html("Download for Windows");
-        os=1;
+        os=0;
     }
 }
 else if (navigator.platform.indexOf("MacIntel") != -1)
@@ -52,28 +51,24 @@ $(".dlbtn").click(function() {
 });
 
 $(".dlgrp1").click(function() {
-    thankYou();
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         location.href=data[0].assets[0].browser_download_url;
     });
 });
 
 $(".dlgrp2").click(function() {
-    thankYou();
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         location.href=data[0].assets[1].browser_download_url;
     });
 });
 
 $(".dlgrp3").click(function() {
-    thankYou();
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         location.href=data[0].assets[2].browser_download_url;
     });
 });
 
 $(".dlgrp4").click(function() {
-    thankYou();
     $(".linuxlabel").show();
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         location.href=data[0].tarball_url;
