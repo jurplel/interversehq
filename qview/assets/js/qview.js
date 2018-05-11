@@ -28,6 +28,17 @@ else if (navigator.platform.indexOf("Linux") != -1)
     os=3;
 }
 
+if (os < 2)
+{
+    var src="assets/img/win-window.png";
+    $(".window").attr("src", src);
+}
+else
+{
+    var src="assets/img/mac-window.png";
+    $(".window").attr("src", src);
+}
+
 $(".dlbtn").click(function() {
     $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         if (os == 0)
