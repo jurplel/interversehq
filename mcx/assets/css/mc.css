@@ -133,12 +133,12 @@ label {
 
 th {
     background-color: #F21531;
-    color: #000;
 }
 
 .table th {
     border-color: black !important;
     border-bottom: 1px solid black !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .table, .table td { 
