@@ -10,7 +10,7 @@ var navbarHTML = `
                 <a class="nav-link" href="/qview">qView</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/mc">Minecraft</a>
+                <a class="nav-link" href="/mc">Modpack</a>
             </li>
         </ul>
     </div>
@@ -27,7 +27,7 @@ var navbarHTML = `
 </div>
 </nav>`
 
-var navbarCSS = `<link rel="stylesheet" href="/assets/css/nav.css"><link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">`
+var navbarCSS = `<link rel="stylesheet" href="/assets/css/nav.css"><link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">`
 
-$('body').prepend(navbarHTML)
+$('header').prepend(navbarHTML)
 $('head').append(navbarCSS)
