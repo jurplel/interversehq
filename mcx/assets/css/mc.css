@@ -14,7 +14,7 @@ footer {
 
 header {
     height: 100vh;
-    background: linear-gradient(0deg, #000000, #000000, #d14200, #a80000);
+    background: linear-gradient(0deg, #000000, #000000, #f4225a, #f00707);
     background-size: 400% 400%;    
     -webkit-animation: Gradient 10s ease;
     -moz-animation: Gradient 10s ease;
@@ -106,8 +106,8 @@ label {
     display: inline-flex;
     align-items: center;
     justify-content: center;  
-    border-color: #BD2100;
-    color: #BD2100;
+    border-color: #F21531;
+    color: #F21531;
     border-radius: 2px;
 }
 
@@ -116,9 +116,9 @@ label {
     -o-transition: 0.35s;
     -moz-transition: 0.35s;
     transition: 0.35s;
-    color: #212121 !important;
-    background-color: #BD2100 !important;
-    border-color: #BD2100;
+    color: #000 !important;
+    background-color: #F21531 !important;
+    border-color: #F21531;
 }
 
 .dlbtn:active {
@@ -126,13 +126,13 @@ label {
     -o-transition: 0s;
     -moz-transition: 0s;
     transition: 0s;
-    color: #BD2100 !important;
-    background-color: #BD2100!important;
-    border-color: #BD2100;
+    color: #F21531 !important;
+    background-color: #F21531!important;
+    border-color: #F21531;
 }
 
 th {
-    background-color: #BD2100;
+    background-color: #F21531;
     color: #000;
 }
 
@@ -151,26 +151,26 @@ th {
 }
 
 .table a, #doSmth {
-    color: #BD2100 !important;
+    color: #F21531 !important;
     -webkit-transition: 0.35s !important;
 	-o-transition: 0.35s !important;
 	transition: 0.35s !important;
 }
 
 .table a:hover, #doSmth:hover {
-    color: #BD2100BF !important;
+    color: #F21531BF !important;
     text-decoration: none !important;
 }
 
 a {
-    color: #BD2100;
+    color: #F21531;
     -webkit-transition: 0.35s;
 	-o-transition: 0.35s;
 	transition: 0.35s; 
 }
 
 a:hover {
-    color: #BD2100BF;
+    color: #F21531BF;
     text-decoration: none;
 }
 
