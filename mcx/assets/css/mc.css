@@ -34,16 +34,12 @@ label {
     font-family: 'Open Sans', sans-serif;
 }
 
-.mplogo1,
-.mplogo2 {
+.mplogo1 {
     color: rgb(0, 0, 0);
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-
-.mplogo1 {
     font-size: 60vmin;
     font-weight: 700;
     text-shadow: 0 1px 1px #000,
@@ -76,19 +72,7 @@ label {
                               0 0px 40px rgba(0,0,0,.5);
 }
 
-.mplogo2 {
-    font-size: 8vmin;
-    user-select: none;
-    text-shadow: 0 1px 0 ,
-                             0 2px 0 ,
-                             0 3px 0 ,
-                             0 6px 1px rgba(0,0,0,.1),
-                             0 0 5px rgba(0,0,0,.1),
-                             0 1px 3px rgba(0,0,0,.3),
-                             0 3px 5px rgba(0,0,0,.2);
-}
-
-.mplogos {
+.mplogodiv {
     position: absolute;
     top: 50%;
     left: 50%;
