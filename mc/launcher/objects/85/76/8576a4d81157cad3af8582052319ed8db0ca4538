@@ -1,0 +1,14 @@
+# Configuration file
+
+general {
+    # The client id retrieved from https://discordapp.com/developers/applications/me
+    S:clientID=462020349517627392
+
+    # The key of an image uploaded to the application.
+    S:largeImageKey=tarantino
+
+    # The text displayed when hovering over the large image
+    S:largeImageText=Interverse Modpack X
+}
+
+

@@ -1,104 +1,165 @@
 html,
 body {
     height: 100%;
-    background-color: #212121;
+    background-color: #000;
     color: #FFF;
-    font-family: Roboto,sans-serif;
+    font-family: 'Open Sans',sans-serif;
 }
 
 section,
 footer {
     padding-top: 50px;
-    color: #FFF;
 }
 
 header {
-    min-height: 100vh;
-    background-color: #212121;
-    background: radial-gradient(#000 -5%, #212121);
-}
-
-#mplogo1wrapper {
-    width: 50%;
-    margin: auto;
+    height: 100vh;
+    background: linear-gradient(0deg, #000000, #000000, #f4225a, #f00707);
+    background-size: 400% 400%;    
+    -webkit-animation: Gradient 10s ease;
+    -moz-animation: Gradient 10s ease;
+    -o-animation: Gradient 10s ease;
+    animation: Gradient 10s ease;
 }
 
 .mplogo1,
 .mplogo2,
-.btn {
-    font-family: 'Merriweather Sans', Roboto, sans-serif;
-    color: #f35626;
+.btn,
+h2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+label {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .mplogo1 {
-    margin-bottom: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    flex-direction: column;
-    font-size: 65vmin;
-    text-shadow: 0px 0px 100px rgba(243,86,38,1.0) !important;
-    animation: glow 2s ease-in-out infinite alternate !important;
+    color: rgb(0, 0, 0);
     user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    font-size: 60vmin;
+    font-weight: 700;
+    text-shadow: 0 1px 1px #000,
+                              0 2px 1px #000,
+                              0 3px 1px #000,
+                              0 4px 1px #000,
+                              0 5px 1px #000,
+                              0 6px 1px #000,
+                              0 7px 1px #000,
+                              0 8px 1px #000,
+                              0 9px 1px #000,
+                              0 10px 1px #000,
+                              0 11px 1px #000,
+                              0 12px 1px #000,
+                              0 13px 1px #000,
+                              0 14px 1px #000,
+                              0 15px 1px #000,
+                              0 16px 1px #000,
+                              0 17px 1px #000,
+                              0 18px 1px #000,
+                              0 19px 1px #000,
+                              0 20px 1px #000,
+                              0 12px 2px rgba(0,0,0,.1),
+                              0 0 10px rgba(0,0,0,.1),
+                              0 2px 6px rgba(0,0,0,.3),
+                              0 6px 10px rgba(0,0,0,.2),
+                              0 10px 20px rgba(0,0,0,.25),
+                              0 20px 20px rgba(0,0,0,.2),
+                              0 40px 40px rgba(0,0,0,.15),
+                              0 0px 40px rgba(0,0,0,.5);
 }
 
-.mplogo2 {
-    font-size: 4em;
-    text-shadow: 0px 0px 30px rgba(243,86,38,1.0);
-    animation: glow2 2s ease-in-out infinite alternate;
-    user-select: none;
-}
-
-.btn,
-.btn:hover,
-.btn:active {
-    border-color: #f35626 !important;
-    color: #f35626 !important;
-}
-
-.btn:hover {
-    box-shadow: 0px 0px 20px rgba(243,86,38,1.0) !important;
-}
-
-.btn:active {
-    box-shadow: 0px 0px 50px rgba(243,86,38,1.0) !important;
-}
-
-.jarallax {
-    position: relative;
-    z-index: 0;
-    min-height: 85vh;
-}
-
-.jarallax > .jarallax-img {
+.mplogodiv {
     position: absolute;
-    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: 9001;
+    text-align: center;
+}
+
+.dlbtn {
+    font-size: 24px;
+    margin-top: 30px;
+    min-width: 30vmin;
+    min-height: 8vmin;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;  
+    border-color: #F21531;
+    color: #F21531;
+    border-radius: 2px;
+}
+
+.dlbtn:hover {
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    -moz-transition: 0.35s;
+    transition: 0.35s;
+    color: #000 !important;
+    background-color: #F21531 !important;
+    border-color: #F21531;
+}
+
+.dlbtn:active {
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    -moz-transition: 0s;
+    transition: 0s;
+    color: #F21531 !important;
+    background-color: #F21531!important;
+    border-color: #F21531;
 }
 
 th {
-    background-color: #f35626;
+    background-color: #F21531;
 }
 
 .table th {
-    border-top: 0px !important;
     border-color: black !important;
     border-bottom: 1px solid black !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .table, .table td { 
     font-size: 18px;
     background-color: rgb(91,90,90);
     color:white;
+    border-top: 0px !important;
     border-bottom: 0px !important;
     border-color: black;
 }
 
 .table a, #doSmth {
-    color: #f35626 !important;
+    color: #F21531 !important;
+    -webkit-transition: 0.35s !important;
+	-o-transition: 0.35s !important;
+	transition: 0.35s !important;
+}
+
+.table a:hover, #doSmth:hover {
+    color: #F21531BF !important;
+    text-decoration: none !important;
 }
 
 a {
-    color: #f35626;
+    color: #F21531;
+    -webkit-transition: 0.35s;
+	-o-transition: 0.35s;
+	transition: 0.35s; 
+}
+
+a:hover {
+    color: #F21531BF;
+    text-decoration: none;
+}
+
+@keyframes Gradient {
+    0%{background-position:50% 100%}
+    100%{background-position:50% 0%}
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td,
@@ -123,45 +184,8 @@ th.sorting_desc::after {
 .dataTable > thead > tr > th[class*="sort"]::after{display: none}
 .dataTable > thead > tr > th[class*="sort"]::before{display: none}
 
-@keyframes glow {
-    to
-    {
-        text-shadow: 0px 0px 100px rgba(243,86,38,.8)
-    }
+.dataTables_scrollBody
+{
+ overflow-x:hidden !important;
+ overflow-y:auto !important;
 }
-
-@keyframes glow2 {
-    to
-    {
-        text-shadow: 0px 0px 30px rgba(243,86,38,.8)
-    }
-}
-
-input[type=text]:focus:not([readonly]) + label,
-input[type=password]:focus:not([readonly]) + label,
-input[type=email]:focus:not([readonly]) + label,
-input[type=url]:focus:not([readonly]) + label,
-input[type=time]:focus:not([readonly]) + label,
-input[type=date]:focus:not([readonly]) + label,
-input[type=datetime-local]:focus:not([readonly]) + label,
-input[type=tel]:focus:not([readonly]) + label,
-input[type=number]:focus:not([readonly]) + label,
-input[type=search-md]:focus:not([readonly]) + label,
-input[type=search]:focus:not([readonly]) + label,
-textarea.md-textarea:focus:not([readonly]) + label {
-  color: #f35626; }
-
-input[type=text]:focus:not([readonly]),
-input[type=password]:focus:not([readonly]),
-input[type=email]:focus:not([readonly]),
-input[type=url]:focus:not([readonly]),
-input[type=time]:focus:not([readonly]),
-input[type=date]:focus:not([readonly]),
-input[type=datetime-local]:focus:not([readonly]),
-input[type=tel]:focus:not([readonly]),
-input[type=number]:focus:not([readonly]),
-input[type=search-md]:focus:not([readonly]),
-input[type=search]:focus:not([readonly]),
-textarea.md-textarea:focus:not([readonly]) {
-border-bottom: 1px solid #f35626;
-box-shadow: 0 1px 0 0 #f35626; }

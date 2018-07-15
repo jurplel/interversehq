@@ -14,6 +14,13 @@
             "version": "9.4",
             "location": "intvmp9.json",
             "priority": 1
+        },
+        {
+            "name": "intvmpx",
+            "title": "Interverse Modpack X",
+            "version": "10.0",
+            "location": "intvmpx.json",
+            "priority": 1
         }
     ]
 }
