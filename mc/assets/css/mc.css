@@ -81,20 +81,16 @@ label {
     text-align: center;
 }
 
-.dlbtn {
-    font-size: 24px;
-    margin-top: 30px;
-    min-width: 30vmin;
-    min-height: 8vmin;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;  
+.btn {
     border-color: #F21531;
     color: #F21531;
     border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;  
 }
 
-.dlbtn:hover {
+.btn:hover {
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
     -moz-transition: 0.35s;
@@ -104,7 +100,7 @@ label {
     border-color: #F21531;
 }
 
-.dlbtn:active {
+.btn:active {
     -webkit-transition: 0s;
     -o-transition: 0s;
     -moz-transition: 0s;
@@ -112,6 +108,13 @@ label {
     color: #F21531 !important;
     background-color: #F21531!important;
     border-color: #F21531;
+}
+
+.dlbtn {
+    font-size: 24px;
+    margin-top: 30px;
+    min-width: 30vmin;
+    min-height: 8vmin;
 }
 
 th {
@@ -184,8 +187,10 @@ th.sorting_desc::after {
 .dataTable > thead > tr > th[class*="sort"]::after{display: none}
 .dataTable > thead > tr > th[class*="sort"]::before{display: none}
 
-.dataTables_scrollBody
+@media screen and (min-width: 992px)
 {
- overflow-x:hidden !important;
- overflow-y:auto !important;
+    .dataTables_scrollBody
+    {
+    overflow-x:hidden !important;
+    }
 }
