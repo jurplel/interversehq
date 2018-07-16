@@ -1,0 +1,14 @@
+# Configuration file
+
+general {
+    # Set to false to disable chest boats [default: true]
+    B:"Enable chest boat"=true
+
+    # The registry id for the link key item [default: minecraft:lead]
+    S:"Link key item"=minecraft:lead
+
+    # The metadata for the link key item, use 32767 for fuzzy metadata [range: 0 ~ 32767, default: 0]
+    I:"Link key meta"=0
+}
+
+

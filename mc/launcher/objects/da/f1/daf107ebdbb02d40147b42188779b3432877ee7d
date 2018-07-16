@@ -1,0 +1,17 @@
+#Splash screen properties
+#Tue Jun 26 01:03:58 EDT 2018
+background=0x000000
+memoryGood=0xF21531
+font=0xffffff
+barBackground=0x000000
+barBorder=0xF21531
+memoryLow=0xF21531
+rotate=false
+memoryWarn=0xF21531
+showMemory=true
+bar=0xF21531
+enabled=true
+resourcePackPath=resources
+logoOffset=9999
+forgeTexture=fml\:textures/gui/forge.png
+fontTexture=textures/font/ascii.png
