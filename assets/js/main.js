@@ -48,7 +48,7 @@ if (!Cookies.get('visited')) {
     });
 
     if (matchMedia) {
-        const mq = window.matchMedia("(min-width: 634px)");
+        const mq = window.matchMedia("(min-width: 576px)");
         mq.addListener(Define_i);
     }
 
