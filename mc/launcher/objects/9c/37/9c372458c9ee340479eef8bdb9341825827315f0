@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+  <recipe name="Alloy: Steel (Oredict)" required="false" disabled="true">
+    <alloying energy="4000" exp="0">
+      <input name="ingotIron"/>
+      <input name="fuelCoke"/>
+      <output name="ingotSteel"/>
+    </alloying>
+  </recipe>
+  <recipe name="Alloy: Steel" required="false" disabled="true">
+    <alloying energy="10000" exp="0">
+      <input name="ingotIron"/>
+      <input name="dustCoal" amount="2"/>
+      <output name="ingotSteel"/>
+    </alloying>
+  </recipe>
+</enderio:recipes>
