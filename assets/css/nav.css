@@ -1,3 +1,9 @@
+/* Font rendering fix for macOS */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .navbar {
 	background: rgba(0, 0, 0, 0.8);
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
