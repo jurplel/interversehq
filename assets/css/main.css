@@ -12,6 +12,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	margin: 0 auto;
+	margin-top: 35vh;
 }
 
 #filledlogo {
@@ -42,7 +43,6 @@ body {
 	.valign
 	{
 		width: 65vw;
-		margin-top: 35vh;
 	}
 
 	#filledlogo
@@ -55,12 +55,11 @@ body {
 {
 	.valign
 	{
-		width: 50vw;
-		margin-top: 25vh;
+		width: 85vw;
 	}
 	
 	#filledlogo
 	{
-		width:50vw;
+		width:85vw;
 	}
 }
