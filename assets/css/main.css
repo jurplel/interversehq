@@ -22,22 +22,6 @@ body {
 	margin: auto;
 }
 
-.navbar {
-	background: rgba(21, 21, 21, 0.9);
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	font-family: 'Varela Round', sans-serif;
-}
-
-.navbar-brand {
-	position: absolute;
-	left: calc(50% - 12.06px);
-}
-
-.navbar-collapse {
-	width: 35%;
-	flex-grow: 0;
-}
-
 @media screen and (min-width: 576px)
 {
 	.valign
@@ -51,7 +35,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 575px)
+@media screen and (max-width: 575.98px)
 {
 	.valign
 	{
