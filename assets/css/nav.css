@@ -6,7 +6,7 @@
 
 .navbar {
 	background: rgba(0, 0, 0, 0.8);
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.32);
 	font-family: 'Exo 2', sans-serif;
 	color: #FFFFFF;
 	padding-top: 5px;
@@ -23,15 +23,13 @@
 	flex-grow: 0;
 }
 
-.navbar.navbar-dark .breadcrumb .nav-item .nav-link,
-.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item .nav-link {
 	color: #fff;
 	-webkit-transition: 0.35s;
 	-o-transition: 0.35s;
 	transition: 0.35s; 
 }
 
-.navbar.navbar-dark .breadcrumb .nav-item .nav-link,
-.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover {
 	color: rgba(255, 255, 255, 0.75);
 }

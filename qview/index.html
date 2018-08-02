@@ -8,43 +8,79 @@
     <!-- Theme Color -->
     <meta name="theme-color" content="#101010">
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/qview.css">
     
-    <title>qView</title>
+    <title>Home - qView</title>
 </head>
 <body>
-    <header class="animated fadeIn">
-        <div class="text-center row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <image class="window"></image>
-                <h1 class="qvlogo noselect">qView</h1>
-                <h2 class="qvsubtitle noselect">Practical and Minimal Image Viewer</h2>
-                <a role="button" class="btn btn-lg btn-outline-light dlbtn">Download</a>
-                <div role="group" class="btn-group dlgrp">
-                    <a role="button" class="btn btn-lg btn-outline-light dlgrp1">Win32</a>
-                    <a role="button" class="btn btn-lg btn-outline-light dlgrp2">Win64</a>
-                    <a role="button" class="btn btn-lg btn-outline-light dlgrp3">macOS</a>
-                    <a role="button" class="btn btn-lg btn-outline-light dlgrp4">Linux</a>
-                </div>
-                <p class="lowerlabel noselect"><a href="https://github.com/jeep70/qView/wiki/Linux-Installation-Guide" class="linuxlabel">Linux Guide</a><span class="linuxlabel"> | </span><a id="dllabel" href="#">Other Downloads</a> | <a href="https://github.com/jeep70/qView">Github</a> | <a href="https://github.com/jeep70/qView/releases">Releases</a></p>
+    <div class="outside container">
+        <header class="row">
+        </header>
+        <section class="row section align-items-center firstsection">
+            <div class="col-md-5 text-center">
+                <h2>An image viewer for <b>viewing</b></h2>
+                <a role="button" style="width: 9em;" class="btn btn-lg btn-outline-light dlbtn" href="download">Get qView</a><br>
             </div>
-            <div class="col-2"></div>
-        </div>
-    </header>
-    
+            <div id="screenshots" class="col-md-7 carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <ol class="carousel-indicators">
+                        <li data-target="#screenshots" style="cursor: pointer;" data-slide-to="0" class="active"></li>
+                        <li data-target="#screenshots" style="cursor: pointer;" data-slide-to="1"></li>
+                        <li data-target="#screenshots" style="cursor: pointer;" data-slide-to="2"></li>
+                        <li data-target="#screenshots" style="cursor: pointer;" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-item active">
+                        <img class="img-fluid" src="assets/img/screenshot.png"></img>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="assets/img/screenshot2.png"></img>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="assets/img/screenshot3.png"></img>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="assets/img/screenshot4.png"></img>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section row text-center">
+            <div class="col-md-4">
+                <h2>No wasted space</h2>
+                <p>qView's minimal GUI allows you to focus on what you really want to see - no unnecessary toolbars or buttons</p>
+            </div>
+            <div class="col-md-4">
+                <h2>No compromises</h2>
+                <p>Everything you need from an image viewer is never more than a right click away</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Free and open source</h2>
+                <p>qView is free and open source software licensed under the GPLv3 license</p>
+            </div>
+        </section>
+        <footer class="row">
+            <div class="col-12 text-center">        
+                <p class="credits">
+                    Background: Free B-Roll by <a href="http://www.videezy.com">Videezy!</a>&nbsp;-&nbsp;
+                    Copyright © 2018 Interverse, jurplel
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <video preload="auto" playsinline autoplay muted loop poster="assets/img/thumbnail.jpg" id="bgvid">
+        <source src="assets/img/rainywindow.mp4" type="video/mp4">
+    </video>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap JS-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- Navbar JS -->
-    <script src="../assets/js/nav.js"></script>
     <!-- Custom JS -->
 	<script src="assets/js/qview.js"></script>
 </body>
