@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#101010">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/qview.css">
+    <link rel="stylesheet" href="assets/css/download.css">
+    
+    <title>Downloads - qView</title>
+</head>
+<body>
+    <div class="outside container">
+        <header class="row">
+        </header>
+        <section class="row section firstsection">
+            <div class="col-12 text-center noselect">
+                <h1 class="d-inline">qView for</h1>&nbsp;&nbsp;
+                <ul class="cylinder text-left transition">
+                    <li id="winselect">Windows</li>
+                    <li id="macselect">macOS</li>
+                    <li id="linuxselect">Linux</li>
+                </ul>
+                <br>
+            </div>
+        </section>
+        <section id="winzone" class="section row">
+            <div class="col-12 text-center">
+                <h2>Windows 7+</h2>
+            </div>
+            <div class="col-12 text-center">
+                    <a id="win64dl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">64-bit Portable (.zip)</a><br>
+                    <a id="win32dl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">32-bit Portable (.zip)</a>
+            </div>
+        </section>    
+        <section id="maczone" class="section row text-center">
+            <div class="col-12 text-center">
+                <h2>macOS 10.11+</h2>
+                <a id="dmgdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Disk Image (.dmg)</a>
+            </div>
+        </section>
+        <section id="linuxzone" class="section row text-center">
+        <div class="col-12 text-center">
+        </div>
+        <div class="col-12 text-center">
+                <h2>Distro Agnostic</h2>
+                <a id="targzdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Source (.tar.gz)</a><br>
+                <a href="https://github.com/jeep70/qView/wiki/Linux-Installation-Guide">Installation Guide</a><br>
+        </div>
+        </section>
+        <section id="ty" style="padding-top: 2vh; padding-bottom: 1vh; margin-bottom: 5vh; margin-top: 2vh;" class="nonaltsection row">
+            <div class="col-12 text-center">
+                <h2><i>Thank you for downloading qView!</i></h2>
+                <p>If you have any questions, suggestions, or bug reports please <a href="https://github.com/jeep70/qView/issues">make an issue on github.</a></p>
+            </div>
+        </section>
+        <footer class="row ">
+            <div class="col-12 text-center">        
+                <p class="credits">
+                    Background: Free B-Roll by <a href="http://www.videezy.com">Videezy!</a>&nbsp;-&nbsp;
+                    Copyright © 2018 Interverse, jurplel
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <video preload="auto" playsinline autoplay muted loop poster="assets/img/thumbnail.jpg" id="bgvid">
+        <source src="../assets/img/rainywindow.mp4" type="video/mp4">
+    </video>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery Mouse Wheel Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha256-jnOjDTXIPqall8M0MyTSt98JetJuZ7Yu+1Jm7hLTF7U=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+	<script src="../assets/js/qview.js"></script>
+    <!-- Custom JS -->
+	<script src="assets/js/download.js"></script>
+</body>
+</html>

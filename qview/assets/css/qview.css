@@ -1,21 +1,27 @@
-body {
-    background-color: #212121;
-    color: #ffffff;
-    font-family: Lato, Roboto, sans-serif;
-    background-image: url("../img/cloud-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: right; 
-    background-size: cover;
-    overflow: hidden;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, .btn {
-    font-weight: 300;
-}
-
-header {
-    height: 100vh;
+#bgvid {
+    object-fit: cover;
     width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -999;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background-color: #000000;
+    background-image: url("../img/thumbnail.jpg");
+    
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: Lato, "Open Sans", sans-serif
+}
+
+h1, h2, .btn {
+    font-weight: 300;
 }
 
 a {
@@ -29,37 +35,82 @@ a:hover {
     color: rgba(3, 168, 244, 0.75);
 }
 
-.window {
-    z-index: -100;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%; 
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-28vmin);
-    transform: translateX(-50%) translateY(-28vmin);
-    width: 78vmin;
+.qvheading {
+    font-size: 4em;
 }
 
-.qvlogo {
-    font-size: 20vmin;
-    margin-top: 10vmin;
+header {
+    background-color: #121212;
+    border-radius: .5em .5em 0 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    z-index: 2;
+    position: relative;
 }
 
-.qvsubtitle {
-    font-size: 3.5vmin;
-    margin-top: 0px;
+footer {
+    border-radius: 0 0 .5em .5em;
+}
+
+.navbar-nav .nav-item .nav-link, .navbar-brand {
+	color: #fff;
+	-webkit-transition: 0.35s;
+	-o-transition: 0.35s;
+	transition: 0.35s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.outside {
+    border-radius: .5em;
+    background-color: #292929;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.8)
+}
+
+@media (max-width: 575.98px)
+{
+    .outside {
+        border-radius: 0em;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+}
+
+.section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.firstsection {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    background-color: #212121;
+    z-index: 1;
+    position: relative;
+}
+
+.nonaltsection {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6), 0 -2px 4px rgba(0,0,0,0.6);
+    background-color: #212121;
+    z-index: 1;
+    position: relative;
 }
 
 .dlbtn {
-    font-size: 3vmin;
-    margin-top: 5vmin;
-    min-width: 50vmin;
-    min-height: 10vmin;
-    border-radius: 2vmin;
+    font-size: 2em;
+    margin-top: 0.5em;
+    width: 10em;
+    min-height: 1em;
+    border-radius: 0.2em;
     display: inline-flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .dlbtn:hover {
@@ -78,54 +129,23 @@ a:hover {
     color: #FFFFFF !important;
 }
 
-.dlgrp
-.dlgrp1,
-.dlgrp2,
-.dlgrp3,
-.dlgrp4 {
-    font-size: 3vmin;
-    margin-top: 5vmin;
-    width: 12.6vmin;
-    min-height: 10vmin;
-    border-radius: 2vmin;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.credits {
+    color: #505050;
+    font-size: .7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-.dlgrp1:hover,
-.dlgrp2:hover,
-.dlgrp3:hover,
-.dlgrp4:hover {
-    -webkit-transition: 0.35s;
-    -o-transition: 0.35s;
-    -moz-transition: 0.35s;
-    transition: 0.35s;
-    color: #151515 !important;
-}
-
-.dlgrp1:active,
-.dlgrp2:active,
-.dlgrp3:active,
-.dlgrp4:active {
-    -webkit-transition: 0s;
-    -o-transition: 0s;
-    -moz-transition: 0s;
-    transition: 0s;
-    color: #FFFFFF !important;
-}
-
-.lowerlabel {
-    font-size: 2vmin;
-    margin-top: 3vmin;
+.credits a {
+    color: #666666;
 }
 
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome and Opera */
-  }
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
