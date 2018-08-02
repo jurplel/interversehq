@@ -1,3 +1,9 @@
+/* Font rendering fix for macOS */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 #bgvid {
     object-fit: cover;
     width: 100vw;
