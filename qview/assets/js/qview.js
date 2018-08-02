@@ -22,7 +22,7 @@ var navbarHTML = `
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Return to Interverse</a>
+                        <a class="nav-link" href="/">Return to Interverse</a>
                     </li>
                 </ul>
             </div>
