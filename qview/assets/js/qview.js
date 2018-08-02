@@ -2,7 +2,7 @@ var navbarHTML = `
 <div class="col-12">
     <nav class="navbar navbar-dark navbar-expand-md">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/qview/assets/img/qview.svg" style="height: 1em;">&nbsp;qView</a>
+            <a class="navbar-brand" href="#"><img src="/qview/assets/img/qview.svg" style="height: 1em; href="/qview">&nbsp;qView</a>
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item">
