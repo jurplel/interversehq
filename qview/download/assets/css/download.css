@@ -1,0 +1,21 @@
+.cylinder {
+  display: inline-block;
+  list-style: none;
+  padding: 0px;
+  height: 10rem;
+}
+
+.cylinder li {
+  height: 2.5rem;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 300;
+  font-family: Lato, "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.transition {
+  transition: .2s;
+  transition-timing-function: ease-in-out;
+}
