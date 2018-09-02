@@ -40,16 +40,7 @@
             </header>
         </div>
     </div>
-    <!-- <section class="section align-items-center" style="height:25vh;">
-            <div class="container">
-                <div class="row">
-                        <div class="col-12 text-center">
-                                <h1 class="qvlogo">Download qView</h1>
-                        </div>
-                </div>
-            </div>
-        </section> -->
-    <section id="scrollzone" class="nonaltsection" style="padding-bottom:2em;">
+    <section id="scrollzone" class="container firstsection" style="padding-bottom:2em;">
         <div class="col-12 text-center noselect">
             <h1 class="d-inline">qView for</h1>&nbsp;&nbsp;
             <ul class="cylinder text-left transition">
@@ -60,56 +51,45 @@
             <br>
         </div>
     </section>
-    <section class="section altsection">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
+    <section class="section container altsection">
+        <div class="row">
+            <div id="winzone" class="col-12 text-center">
+                <a id="win64dl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a>
+                <h5>64-bit installer - Windows 7+</h5>
+                <h6><a href="javascript:void(0);" id="hiddenwindowsbutton">32-bit and portable downloads</a></h6>
+                <div id="hiddenwindowsdl">
+                    <a id="win64dlp" role="button" class="btn btn-lg btn-outline-light" href="#">64-bit portable</a>&nbsp;
+                    <a id="win32dl" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit installer</a>&nbsp;
+                    <a id="win32dlp" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit portable</a>&nbsp;
                 </div>
             </div>
-            <div id="winzone" class="row">
-                <div class="col-12 text-center">
-                    <a id="win64dl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a><br><br>
-                    <h5>qView <span class="ver">#.#</span> - 64-bit installer - <span id="sizewin">##.#</span>MiB</h5>
-                    <h6>Supports Windows 7, 8.1, and 10</h6>
-                    <h6><a href="javascript:void(0);" id="hiddenwindowsbutton">32-bit and portable downloads</a></h6>
-                    <div id="hiddenwindowsdl">
-                            <a id="win32dl" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit Installer</a>&nbsp;
-                            <a id="win64dlp" role="button" class="btn btn-lg btn-outline-light" href="#">64-bit Portable</a>&nbsp;
-                            <a id="win32dlp" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit Portable</a>&nbsp;
-                        </div>
-                    </div><br><br>
-                </div>
+            <div id="maczone" class="col-12 text-center">
+                <a id="dmgdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a>
+                <h5>dmg image - macOS 10.11+</h5>
             </div>
-        </div>
-        <div id="maczone" class="row">
-            <div class="col-12 text-center">
-                <a id="dmgdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a><br><br>
-                <h5>qView <span class="ver">#.#</span> - DMG image - <span id="sizemac">##.#</span>MiB</h5>
-                <h6>Supports macOS 10.11 and up</h6><br><br>
+            <div class="linuxzone col-md-6 text-center">
+                <h2>Packages:</h2>
+                <h4>AUR:&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/qview/">qview</a></h4>
             </div>
-        </div>
-            <div  id="linuxzone"  class="col-12 text-center">
-                <a id="targzdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a><br><br>
-                <h5>qView <span class="ver">#.#</span> - Source Tarball - <span id="sizelinux">##.#</span>MiB</h5>
-                <h6><a href="https://github.com/jeep70/qView/wiki/Linux-Installation-Guide">Tarball Installation Guide</a></h6><br><br>
-                <h3>Packages:</h3>
-                <a role="button" class="btn btn-lg btn-outline-light dlbtn" href="https://aur.archlinux.org/packages/qview/">Arch
-                    Linux (AUR)</a><br>
+            <div class="linuxzone col-md-6 text-center">
+            <h2>Distro agnostic:</h2>
+                <a id="targzdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Source Tarball</a>
+                <h5><a href="https://github.com/jeep70/qView/wiki/Linux-Installation-Guide">Source tarball installation guide</a></h5>
             </div>
         </div>
     </section>
     <section id="ty" style="padding-top: 2vh; padding-bottom: 1vh" class="nonaltsection row">
         <div class="col-12 text-center">
             <h2>Thank you for downloading qView!</h2>
-            <p>If you have any questions, suggestions, or bug reports please <a href="https://github.com/jeep70/qView/issues">make
+            <p>If you have any questions, suggestions, or bug reports, please feel free to <a href="https://github.com/jeep70/qView/issues">make
                     an issue on github.</a></p>
         </div>
     </section>
-    <footer class="altsection">
+    <footer class="container altsection">
     </footer>
 
     <video preload="auto" playsinline autoplay muted loop poster="assets/img/thumbnail.jpg" id="bgvid">
-        <source src="assets/img/rainywindow.mp4" type="video/mp4">
+        <source src="../assets/img/rainywindow.mp4" type="video/mp4">
     </video>
 
     <!-- jQuery -->
