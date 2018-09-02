@@ -54,10 +54,6 @@ $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         $('#win64dlp').attr('href',data[0].assets[3].browser_download_url);
         $('#dmgdl').attr('href',data[0].assets[4].browser_download_url);
         $('#targzdl').attr('href',data[0].assets[5].browser_download_url);
-        $('.ver').html(data[0].tag_name);
-        $('#sizewin').html((data[0].assets[2].size/1024/1024).toFixed(2));
-        $('#sizemac').html((data[0].assets[4].size/1024/1024).toFixed(2));
-        $('#sizelinux').html((data[0].assets[5].size/1024/1024).toFixed(2));
 });
 
 $('#winselect').click(function() {
@@ -197,18 +193,18 @@ function recalculateLinks() {
     {
         $('#winzone').hide();
         $('#maczone').hide();
-        $('#linuxzone').show();
+        $('.linuxzone').show();
     }
     else if (scrollLevel == 1)
     {
         $('#winzone').hide();
         $('#maczone').show();
-        $('#linuxzone').hide()
+        $('.linuxzone').hide()
     }
     else
     {
         $('#winzone').show();
         $('#maczone').hide();
-        $('#linuxzone').hide();
+        $('.linuxzone').hide();
     }
 }
