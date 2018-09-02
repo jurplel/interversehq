@@ -22,7 +22,6 @@ body {
     background-position: 50% 50%;
     background-size: cover;
     color: #ffffff;
-    overflow-x: hidden;
     font-family: Lato, "Open Sans", sans-serif
 }
 
@@ -41,20 +40,19 @@ a:hover {
     color: rgba(3, 168, 244, 0.75);
 }
 
+.qvlogo {
+    font-size: 6em;
+}
+
 .qvheading {
     font-size: 4em;
 }
 
-header {
+.header {
     background-color: #121212;
-    border-radius: .5em .5em 0 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.7);
     z-index: 2;
     position: relative;
-}
-
-footer {
-    border-radius: 0 0 .5em .5em;
 }
 
 .navbar-nav .nav-item .nav-link, .navbar-brand {
@@ -73,10 +71,7 @@ footer {
 }
 
 .outside {
-    border-radius: .5em;
     background-color: #292929;
-    margin-top: 2em;
-    margin-bottom: 2em;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.8)
 }
 
@@ -89,6 +84,10 @@ footer {
     }
 }
 
+footer {
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.8);
+}
+
 .section {
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -97,42 +96,55 @@ footer {
 .firstsection {
     box-shadow: 0 2px 4px rgba(0,0,0,0.6);
     background-color: #212121;
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
 .nonaltsection {
     box-shadow: 0 2px 4px rgba(0,0,0,0.6), 0 -2px 4px rgba(0,0,0,0.6);
     background-color: #212121;
+    z-index: 2;
+    position: relative;
+}
+
+.altsection {
+    background-color: #292929;
     z-index: 1;
     position: relative;
 }
 
-.dlbtn {
-    font-size: 2em;
-    margin-top: 0.5em;
-    width: 10em;
-    min-height: 1em;
+.btn {
     border-radius: 0.2em;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-.dlbtn:hover {
+.btn:hover {
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
     -moz-transition: 0.35s;
     transition: 0.35s;
-    color: #151515 !important;
+    color: #252525 !important;
 }
 
-.dlbtn:active {
+.btn:active {
     -webkit-transition: 0s;
     -o-transition: 0s;
     -moz-transition: 0s;
     transition: 0s;
     color: #FFFFFF !important;
+}
+
+.dlbtn {
+    font-size: 2em;
+    margin-top: 0.5em;
+    min-width: 10em;
+    min-height: 1em;
+    border-radius: 0.2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .credits {
