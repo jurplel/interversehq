@@ -1,3 +1,4 @@
+
 var itempositions = [0, 1, 2];
 
 var arrayOfLis = $('.cylinder').find('li');
@@ -31,6 +32,7 @@ $('#winzone').hide();
 $('#maczone').hide();
 $('#linuxzone').hide();
 $('#ty').hide();
+$('#hiddenwindowsdl').hide();
 
 $('document').ready(function() {
     if (os < 2)
@@ -47,9 +49,15 @@ $('document').ready(function() {
 
 $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         $('#win32dl').attr('href',data[0].assets[0].browser_download_url);
-        $('#win64dl').attr('href',data[0].assets[1].browser_download_url);
-        $('#dmgdl').attr('href',data[0].assets[2].browser_download_url);
-        $('#targzdl').attr('href',data[0].assets[3].browser_download_url);
+        $('#win32dlp').attr('href',data[0].assets[1].browser_download_url);
+        $('#win64dl').attr('href',data[0].assets[2].browser_download_url);
+        $('#win64dlp').attr('href',data[0].assets[3].browser_download_url);
+        $('#dmgdl').attr('href',data[0].assets[4].browser_download_url);
+        $('#targzdl').attr('href',data[0].assets[5].browser_download_url);
+        $('.ver').html(data[0].tag_name);
+        $('#sizewin').html((data[0].assets[2].size/1024/1024).toFixed(2));
+        $('#sizemac').html((data[0].assets[4].size/1024/1024).toFixed(2));
+        $('#sizelinux').html((data[0].assets[5].size/1024/1024).toFixed(2));
 });
 
 $('#winselect').click(function() {
@@ -72,12 +80,17 @@ $('.dlbtn').click(function() {
     $('#ty').fadeIn();
 })
 
-$('.firstsection').mousewheel(function(event) {
-    if (event.deltaY > 0)
+$('#hiddenwindowsbutton').click(function() {
+    $('#hiddenwindowsdl').toggle();
+})
+
+$('#scrollzone').on('wheel', function(event) {
+    if (event.originalEvent.deltaY > 0)
     {
         moveUp();
+        return false;
     }
-    else if (event.deltaY < 0)
+    else if (event.originalEvent.deltaY < 0)
     {
         moveDown();
     }
