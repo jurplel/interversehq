@@ -103,7 +103,7 @@ footer {
 .nonaltsection {
     box-shadow: 0 2px 4px rgba(0,0,0,0.6), 0 -2px 4px rgba(0,0,0,0.6);
     background-color: #212121;
-    z-index: 2;
+    z-index: 4;
     position: relative;
 }
 
@@ -139,12 +139,9 @@ footer {
 .dlbtn {
     font-size: 2em;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
     min-width: 10em;
     min-height: 1em;
-    border-radius: 0.2em;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .credits {
