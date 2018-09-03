@@ -1,3 +1,4 @@
+
 var itempositions = [0, 1, 2];
 
 var arrayOfLis = $('.cylinder').find('li');
@@ -31,6 +32,7 @@ $('#winzone').hide();
 $('#maczone').hide();
 $('#linuxzone').hide();
 $('#ty').hide();
+$('#hiddenwindowsdl').hide();
 
 $('document').ready(function() {
     if (os < 2)
@@ -47,9 +49,19 @@ $('document').ready(function() {
 
 $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         $('#win32dl').attr('href',data[0].assets[0].browser_download_url);
-        $('#win64dl').attr('href',data[0].assets[1].browser_download_url);
-        $('#dmgdl').attr('href',data[0].assets[2].browser_download_url);
-        $('#targzdl').attr('href',data[0].assets[3].browser_download_url);
+        $('#win32dlp').attr('href',data[0].assets[1].browser_download_url);
+        $('#win64dl').attr('href',data[0].assets[2].browser_download_url);
+        $('#win64dlp').attr('href',data[0].assets[3].browser_download_url);
+        $('#dmgdl').attr('href',data[0].assets[4].browser_download_url);
+        $('#targzdl').attr('href',data[0].assets[5].browser_download_url);
+
+        converter = new showdown.Converter();
+        var html = converter.makeHtml(data[0].body)
+        var lines = html.split('\n');
+        lines.splice(0,1);
+        var newhtml = lines.join('\n');
+        $('#log0').html(newhtml);
+        $('#ver0').html(data[0].tag_name)
 });
 
 $('#winselect').click(function() {
@@ -68,19 +80,20 @@ $('#linuxselect').click(function() {
     moveUp();
 })
 
-$('.dlbtn').click(function() {
-    $('#ty').fadeIn();
+$('#hiddenwindowsbutton').click(function() {
+    $('#hiddenwindowsdl').toggle();
 })
 
-$('.firstsection').mousewheel(function(event) {
-    if (event.deltaY > 0)
+$('#scrollzone').on('wheel', function(event) {
+    if (event.originalEvent.deltaY > 0)
     {
         moveUp();
     }
-    else if (event.deltaY < 0)
+    else if (event.originalEvent.deltaY < 0)
     {
         moveDown();
     }
+    return false;
 });
 
 
@@ -184,18 +197,18 @@ function recalculateLinks() {
     {
         $('#winzone').hide();
         $('#maczone').hide();
-        $('#linuxzone').show();
+        $('.linuxzone').show();
     }
     else if (scrollLevel == 1)
     {
         $('#winzone').hide();
         $('#maczone').show();
-        $('#linuxzone').hide()
+        $('.linuxzone').hide()
     }
     else
     {
         $('#winzone').show();
         $('#maczone').hide();
-        $('#linuxzone').hide();
+        $('.linuxzone').hide();
     }
 }
