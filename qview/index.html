@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,20 +17,22 @@
     <meta name="application-name" content="qView">
     <meta name="msapplication-TileColor" content="#212121">
     <meta name="msapplication-config" content="/qview/browserconfig.xml">
-    
+
     <!-- Theme Color-->
     <meta name="theme-color" content="#212121">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/qview.css">
-    
+
     <title>qView - Practical and Minimal Image Viewer</title>
     <meta name="description" content="qView is a Qt-based image viewer designed to be practical and minimal, available for Windows, macOS, and Linux">
 </head>
+
 <body>
     <div class="header">
         <div class="container">
@@ -37,17 +40,8 @@
             </header>
         </div>
     </div>
-    <section class="section align-items-center" style="height:50vh;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img class="img-fluid" src="assets/img/screenshot.png" alt="qView screenshot one"></img>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section text-center nonaltsection">
-        <div class="container">
+    <section class="section firstsection align-items-center window">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
                     <h2>An image viewer for <b>viewing</b></h2>
@@ -55,27 +49,67 @@
                     <a role="button" class="btn btn-lg btn-outline-light dlbtn" href="download">Get qView</a><br>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img class="img-fluid" src="assets/img/screenshot.png" alt="qView screenshot">
+                </div>
+            </div>
         </div>
     </section>
     <section class="section  altsection">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <h2>Refreshingly minimal</h2>
-                    <p>qView was designed from the very start to be as visually minimal and efficient as possible. No cluttered GUIs here, just your image and a context menu
-                    <br>
+                    <p>qView was designed from the very start to be as visually minimal and efficient as possible. No cluttered
+                        GUIs here, just your image and a context menu</p>
+                </div>
+                <div class="col-md-7">
+                    <img class="img-fluid" src="assets/img/screenshot3.png" alt="qView screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section  nonaltsection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <img class="img-fluid" src="assets/img/screenshot2.png" alt="qView screenshot 2">
+                </div>
+                <div class="col-md-5">
+                    <h2>Practical nonetheless</h2>
+                    <p>With features such as animated GIF support, file info display, file history, slideshow, image transformations,
+                        and numerous configurable options, minimalism doesn't have to be a compromise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section  altsection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
                     <h2>High quality scaling</h2>
-                    <p>Whenever you zoom or resize the window, your image is quickly and smoothly scaled to ensure a crisp picture.</p>
+                    <p>Whenever you zoom or resize the window, your image is quickly and smoothly scaled to ensure a crisp
+                        picture.</p>
+                </div>
+                <div class="col-md-3">
                     <h2>Cross-platform</h2>
                     <p>Whatever operating sytem you prefer, qView was designed to provide as native of an experience as possible.</p>
                 </div>
-                <div class="col-md-6">
-                    <h2>Practical nonetheless</h2>
-                    <p>With features such as animated GIF support, file info display, file history, slideshow, image transformations, and numerous configurable options, you shouldn't find yourself lacking.</p>
+                <div class="col-md-3">
                     <h2>Supports all common image formats</h2>
-                    <p>qView supports all common image formats including but not limited to bmp, gif, jp2, jpg, png, svg, tiff, and webp.</p>
+                    <p>qView supports all common image formats including but not limited to bmp, gif, jp2, jpg, png, svg,
+                        tiff, and webp.</p>
+                </div>
+                <div class="col-md-3">
                     <h2>Free and open-source</h2>
-                    <p>qView is completely free and open source software based on Qt5. It can be found on Github under the GPLv3 license.</p>
+                    <p>qView is completely free and open source software based on Qt5. It can be found on Github under the
+                        GPLv3 license.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a role="button" class="btn btn-lg btn-outline-light dlbtn" href="download">Get qView</a><br>
                 </div>
             </div>
         </div>
@@ -90,8 +124,11 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
     <!-- Custom JS -->
-	<script src="assets/js/qview.js"></script>
+    <script src="assets/js/qview.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
