@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,104 +17,68 @@
     <meta name="application-name" content="qView">
     <meta name="msapplication-TileColor" content="#212121">
     <meta name="msapplication-config" content="/qview/browserconfig.xml">
-    
+
     <!-- Theme Color-->
     <meta name="theme-color" content="#212121">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/qview.css">
-    
+
     <title>Changelog - qView</title>
 </head>
+
 <body>
-    <div class="outside container">
-        <header class="row">
-        </header>
-        <section class="row section firstsection">
-            <div class="col-md-4">
-                <h1 class="qvheading">version 0.6</h1>
-            </div>
-            <div class="col-md-8">
-                <ul>
-                    <li>Windows binaries are now compiled statically for improved start time</li>
-                    <li>Supported more formats</li>
-                    <li>Fixed problem where images with the wrong file extension would not open</li>
-                    <li>Added fully featured recent files list</li>
-                    <li>Fixed bug where image load fails and you must reload the previous image</li>
-                    <li>Added more keyboard shorcuts and fixed them on Windows</li>
-                    <li>Added Windows tile icon</li>
-                    <li>Added option to change titlebar format</li>
-                    <li>Improved scaling speed and smoothness</li>
-                    <li>Added error messages on image load failures</li>
-                    <li>File select dialog now shows folder you had open previously</li>
-                    <li>Added dock menu on macOS</li>
-                    <li>reformatted context menu</li>
-                    <li>Made it so that context menu items are disabled when there is no image loaded</li>
-                    <li>Added zooming and scaling to the context menu</li>
-                    <li>Added image flipping and rotation</li>
-                    <li>Fixed bug where image would appear blurry when first loaded</li>
-                    <li>Closed many memory leaks related to dialogs</li>
-                    <li>File dialog now appears as a sheet on macOS</li>
-                </ul>
-            </div>
-        </section>
-        <section class="row section">
-            <div class="col-md-4">
-                <h1 class="qvheading">version 0.5</h1>
-            </div>
-            <div class="col-md-8">
-                <ul>
-                    <li>Added zoom limit (don't worry, it's far)</li>
-                    <li>Finally fixed poor scaling appearance with new scaling algorithm</li>
-                    <li>Added update checking on about page</li>
-                    <li>Fixed border being shown around images at 100% zoom</li>
-                    <li>Removed cursor option due to being confusing and pointless</li>
-                    <li>Fixed image disappearing after first zoom</li>
-                    <li>Fixed text on color selection button</li>
-                    <li>Added show in explorer/finder button</li>
-                    <li>Added option to disable bilinear filtering</li>
-                    <li>Added option to disable new scaling algorithm</li>
-                    <li>Fixed program behavior and icons on Linux</li>
-                    <li>Restyled about dialog including mac-specific font sizes</li>
-                </ul>
-            </div>
-        </section>
-        <section class="row section nonaltsection">
-            <div class="col-md-4">
-                <h1 class="qvheading">version 0.4</h1>
-            </div>
-            <div class="col-md-8">
-                <ul>
-                    <li>Added options window</li>
-                    <li>Added option to change background color</li>
-                    <li>Added option to change cursor behavior</li>
-                    <li>Added about window</li>
-                    <li>Added icon to all platforms</li>
-                    <li>Added ability to switch between files in current folder with arrow keys</li>
-                    <li>Fixed Open with... not working under macOS</li>
-                    <li>Now distributing binaries</li>
-                </ul>
-            </div>
-        </section>
-        <section class="row section">
-            <div class="col-12 text-center">
-                <h1 class="qvheading">Older versions</h1>
-                <a href="https://github.com/jeep70/qView/releases"><h2>can be found on Github</h2></a>
-            </div>
-        </section>
-        <footer class="row">
-            <div class="col-12 text-center">        
-                <p class="credits">
-                    Background: Free B-Roll by <a href="http://www.videezy.com">Videezy!</a>&nbsp;-&nbsp;
-                    Copyright © 2018 jurplel and qView contributors
-                </p>
-            </div>
-        </footer>
+    <div class="header">
+        <div class="container">
+            <header class="row">
+            </header>
+        </div>
     </div>
+    <section class="section firstsection window">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h1 class="qvheading changelogheading">version <span id="ver0">0.0</span></h1>
+                </div>
+                <div class="changelog" id="log0" class="col-lg-10">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section altsection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h1 class="qvheading changelogheading">version <span id="ver1">0.0</span></h1>
+                </div>
+                <div class="changelog" id="log1" class="col-lg-10">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section nonaltsection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h1 class="qvheading changelogheading">version <span id="ver2">0.0</span></h1>
+                </div>
+                <div class="changelog" id="log2" class="col-lg-10">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section altsection">
+        <div class="col-12 text-center">
+            <a class="btn btn-large btn-outline-light dlbtn" href="https://github.com/jeep70/qView/releases">Further changelogs</a>
+        </div>
+    </section>
+    <footer class="altsection">
+    </footer>
 
     <video preload="auto" playsinline autoplay muted loop poster="assets/img/thumbnail.jpg" id="bgvid">
         <source src="../assets/img/rainywindow.mp4" type="video/mp4">
@@ -122,8 +87,13 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!--Showdown-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js" integrity="sha256-dwhppIrxD8qC6lNulndZgtIm4XBU9zoMd9OUoXzIDAE=" crossorigin="anonymous"></script>
     <!-- Custom JS -->
-	<script src="../assets/js/qview.js"></script>
+    <script src="../assets/js/qview.js"></script>
+    <script src="assets/js/changelog.js"></script>
 </body>
+
 </html>
