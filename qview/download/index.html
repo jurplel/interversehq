@@ -40,7 +40,7 @@
             </header>
         </div>
     </div>
-    <section id="scrollzone" class="container firstsection" style="padding-bottom:2em;">
+    <section id="scrollzone" class="firstsection window" style="padding-bottom:2em; ">
         <div class="col-12 text-center noselect">
             <h1 class="d-inline">qView for</h1>&nbsp;&nbsp;
             <ul class="cylinder text-left transition">
@@ -51,41 +51,85 @@
             <br>
         </div>
     </section>
-    <section class="section container altsection">
-        <div class="row">
-            <div id="winzone" class="col-12 text-center">
-                <a id="win64dl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a>
-                <h5>64-bit installer - Windows 7+</h5>
-                <h6><a href="javascript:void(0);" id="hiddenwindowsbutton">32-bit and portable downloads</a></h6>
-                <div id="hiddenwindowsdl">
-                    <a id="win64dlp" role="button" class="btn btn-lg btn-outline-light" href="#">64-bit portable</a>&nbsp;
-                    <a id="win32dl" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit installer</a>&nbsp;
-                    <a id="win32dlp" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit portable</a>&nbsp;
+    <section class="section altsection" style="height:30em;">
+        <div class="container">
+            <div class="row">
+                <div id="winzone" class="col-12 text-center">
+                    <a id="win64dl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a>
+                    <h5>64-bit installer - Windows 7+</h5>
+                    <h6><a href="javascript:void(0);" id="hiddenwindowsbutton">32-bit and portable downloads</a></h6>
+                    <div id="hiddenwindowsdl">
+                        <a id="win64dlp" role="button" class="btn btn-lg btn-outline-light" href="#">64-bit portable</a>&nbsp;
+                        <a id="win32dl" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit installer</a>&nbsp;
+                        <a id="win32dlp" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit portable</a>&nbsp;
+                    </div>
+                </div>
+                <div id="maczone" class="col-12 text-center">
+                    <a id="dmgdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a>
+                    <h5>dmg image - macOS 10.11+</h5>
+                </div>
+                <div class="linuxzone col-md-6 text-center">
+                    <h2>Packages:</h2>
+                    <h4>AUR:&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/qview/">qview</a></h4>
+                </div>
+                <div class="linuxzone col-md-6 text-center">
+                    <h2>Distro agnostic:</h2>
+                    <a id="targzdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Source Tarball</a>
+                    <h5><a href="https://github.com/jeep70/qView/wiki/Linux-Installation-Guide">Source tarball installation
+                            guide</a></h5>
                 </div>
             </div>
-            <div id="maczone" class="col-12 text-center">
-                <a id="dmgdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a>
-                <h5>dmg image - macOS 10.11+</h5>
+        </div>
+    </section>
+    <section class="section nonaltsection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="qvheading">What's new with qView</h1><br><br>
+                </div>
             </div>
-            <div class="linuxzone col-md-6 text-center">
-                <h2>Packages:</h2>
-                <h4>AUR:&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/qview/">qview</a></h4>
+            <div class="row">
+                <div class="col-lg-2">
+                    <h1 class="qvheading changelogheading">qView <span id="ver0">0.0</span></h1>
+                </div>
+                <div class="changelog" id="log0" class="col-lg-10">
+                </div>
             </div>
-            <div class="linuxzone col-md-6 text-center">
-            <h2>Distro agnostic:</h2>
-                <a id="targzdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Source Tarball</a>
-                <h5><a href="https://github.com/jeep70/qView/wiki/Linux-Installation-Guide">Source tarball installation guide</a></h5>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a class="btn btn-large btn-outline-light dlbtn" href="../changelog">View full changelog</a>
+                </div>
             </div>
         </div>
     </section>
-    <section id="ty" style="padding-top: 2vh; padding-bottom: 1vh" class="nonaltsection row">
-        <div class="col-12 text-center">
-            <h2>Thank you for downloading qView!</h2>
-            <p>If you have any questions, suggestions, or bug reports, please feel free to <a href="https://github.com/jeep70/qView/issues">make
-                    an issue on github.</a></p>
+    <section class="section altsection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>More stuff</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <a href="https://github.com/jeep70/qView/wiki/Keyboard-Shortcuts" class="btn btn-large btn-outline-light dlbtn">Keyboard shortcuts</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="https://github.com/jeep70/qView/issues" class="btn btn-large btn-outline-light dlbtn">Report a bug</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="https://discord.gg/0lXeGE6soHgmQPT5" class="btn btn-large btn-outline-light dlbtn">Discord</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="col-12 text-center">
+                        <br><br><h1>Thank you for using qView.</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer class="container altsection">
+    <footer class="altsection">
     </footer>
 
     <video preload="auto" playsinline autoplay muted loop poster="assets/img/thumbnail.jpg" id="bgvid">
@@ -95,12 +139,15 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
     <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!--Showdown-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js" integrity="sha256-dwhppIrxD8qC6lNulndZgtIm4XBU9zoMd9OUoXzIDAE=" crossorigin="anonymous"></script>
     <!-- Custom JS -->
     <script src="../assets/js/qview.js"></script>
-    <!-- Custom JS -->
     <script src="assets/js/download.js"></script>
 </body>
 
