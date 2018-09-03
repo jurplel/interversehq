@@ -6,7 +6,7 @@ var navbarHTML = `
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/qview/download">Downloads</a>
+                        <a class="nav-link" href="/qview/download">Download</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/qview/changelog">Changelog</a>
@@ -15,14 +15,14 @@ var navbarHTML = `
                         <a class="nav-link" href="https://github.com/jeep70/qView">Github</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/qview/about">About</a>
+                        <a class="nav-link" href="https://discord.gg/0lXeGE6soHgmQPT5">Discord</a>
                     </li>
                 </ul>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Return to Interverse</a>
+                        <a class="nav-link" href="/">Interverse</a>
                     </li>
                 </ul>
             </div>
@@ -32,4 +32,17 @@ var navbarHTML = `
     </nav>
 </div>`
 
+var footerHTML =`
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <p class="credits">
+                Copyright © 2018 jurplel and qView contributors&nbsp;-&nbsp;
+                Background: Free B-Roll by <a href="http://www.videezy.com">Videezy!</a>
+            </p>
+        </div>
+    </div>
+</div>`
+
 $('header').prepend(navbarHTML);
+$('footer').prepend(footerHTML);
