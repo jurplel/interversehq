@@ -54,6 +54,14 @@ $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
         $('#win64dlp').attr('href',data[0].assets[3].browser_download_url);
         $('#dmgdl').attr('href',data[0].assets[4].browser_download_url);
         $('#targzdl').attr('href',data[0].assets[5].browser_download_url);
+
+        converter = new showdown.Converter();
+        var html = converter.makeHtml(data[0].body)
+        var lines = html.split('\n');
+        lines.splice(0,1);
+        var newhtml = lines.join('\n');
+        $('#log0').html(newhtml);
+        $('#ver0').html(data[0].tag_name)
 });
 
 $('#winselect').click(function() {
@@ -72,10 +80,6 @@ $('#linuxselect').click(function() {
     moveUp();
 })
 
-$('.dlbtn').click(function() {
-    $('#ty').fadeIn();
-})
-
 $('#hiddenwindowsbutton').click(function() {
     $('#hiddenwindowsdl').toggle();
 })
@@ -84,12 +88,12 @@ $('#scrollzone').on('wheel', function(event) {
     if (event.originalEvent.deltaY > 0)
     {
         moveUp();
-        return false;
     }
     else if (event.originalEvent.deltaY < 0)
     {
         moveDown();
     }
+    return false;
 });
 
 
