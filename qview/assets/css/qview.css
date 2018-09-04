@@ -16,7 +16,7 @@
 
 body {
     background-color: #212121;
-    background-image: url("/qview/assets/img/thumbnail.jpg");
+    background-image: url("../img/thumbnail.jpg");
     
     background-attachment: fixed;
     background-position: 50% 50%;
