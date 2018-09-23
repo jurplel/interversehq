@@ -48,12 +48,16 @@ $('document').ready(function() {
 })
 
 $.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
-        $('#win32dl').attr('href',data[0].assets[0].browser_download_url);
-        $('#win32dlp').attr('href',data[0].assets[1].browser_download_url);
-        $('#win64dl').attr('href',data[0].assets[2].browser_download_url);
-        $('#win64dlp').attr('href',data[0].assets[3].browser_download_url);
-        $('#dmgdl').attr('href',data[0].assets[4].browser_download_url);
-        $('#targzdl').attr('href',data[0].assets[5].browser_download_url);
+        $('#rpm32dl').attr('href',data[0].assets[0].browser_download_url);
+        $('#rpm64dl').attr('href',data[0].assets[1].browser_download_url);
+        $('#win32dl').attr('href',data[0].assets[2].browser_download_url);
+        $('#win32dlp').attr('href',data[0].assets[3].browser_download_url);
+        $('#win64dl').attr('href',data[0].assets[4].browser_download_url);
+        $('#win64dlp').attr('href',data[0].assets[5].browser_download_url);
+        $('#dmgdl').attr('href',data[0].assets[6].browser_download_url);
+        $('#targzdl').attr('href',data[0].assets[7].browser_download_url);
+        $('#deb64dl').attr('href',data[0].assets[8].browser_download_url);
+        $('#deb32dl').attr('href',data[0].assets[9].browser_download_url);
 
         converter = new showdown.Converter();
         var html = converter.makeHtml(data[0].body)
