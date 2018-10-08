@@ -1,9 +1,47 @@
+/* Font rendering fix for macOS */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body {
 	background-image: url("../img/50zoomBG.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
 	color: #FFF;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index:-2
+}
+
+footer {
+	position: absolute;
+	text-align: center;
+	bottom: .5em;
+	width: 100vw;
+	color: #353535;
+	font-size: 0.8em;
+}
+
+a {
+	color: #004068;
+}
+
+a:hover {
+	color: #0091EA;
+}
+
+canvas {
+	position:absolute;
+	z-index:-1
 }
 
 .valign {
@@ -15,11 +53,16 @@ body {
 	margin-top: 35vh;
 }
 
+.buttons {
+	margin-top: 1em;
+	z-index: 50;
+}
+
 #filledlogo {
-	position:absolute;
 	left: 0;
 	right: 0;
 	margin: auto;
+	pointer-events: none;
 }
 
 @media screen and (min-width: 576px)
@@ -46,4 +89,14 @@ body {
 	{
 		width:85vw;
 	}
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
 }
