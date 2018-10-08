@@ -12,12 +12,13 @@
 	<link rel="manifest" href="/manifest.json">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#101010">
 
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
 	<!-- Theme Color -->
 	<meta name="theme-color" content="#101010">
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/css/main.css">
 
@@ -26,23 +27,34 @@
 </head>
 <body>
 	<header>
+		<canvas id="canvas"></canvas>
 		<div id="logo" class="valign">
 			<picture>
-				<img id="filledlogo" src="assets/img/intv_logo.svg" alt="Interverse">
+				<img class="noselect" id="filledlogo" src="assets/img/intv_logo.svg" alt="Interverse">
 			</picture>
 		</div>
+		<div class="text-center">
+			<div class="buttons btn-group" role="group">
+				<a href="qview" class="btn btn-lg btn-outline-light" data-toggle="tooltip" role="button" data-placement="bottom" title="Practical and minimal image viewer">qView</a>
+				<a href="https://discord.gg/0lXeGE6soHgmQPT5" class="btn btn-lg btn-outline-light" data-toggle="tooltip" role="button" data-placement="bottom" title="Join the discord group">Discord</a>
+				<!-- <a href="" class="btn btn-lg btn-outline-light" role="button">About</a> -->
+			</div>
+		</div>
 	</header>
+	<footer>
+		Copyright © 2018 jurplel All rights reserved. | <a href="mailto:jurplel@interverse.tk">Email me</a>
+	</footer>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap JS-->
+	<!-- Popper JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<!-- JS Cookie -->
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 	<!-- Vivus JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.min.js"></script>
-	<!-- Navbar JS -->
-	<script src="assets/js/nav.js"></script>
 	<!-- Custom JS -->
 	<script src="assets/js/main.js"></script>
 </body>
