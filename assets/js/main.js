@@ -165,5 +165,5 @@ for (var i = 0, n; i < units; i++) {
     // colour cycle sinewave rotation
     cycle += 0.1;
 
-    setTimeout(loop, 1000/60);
+    requestAnimationFrame(loop);
 }());

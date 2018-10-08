@@ -14,9 +14,6 @@ var navbarHTML = `
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/jeep70/qView">Github</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/0lXeGE6soHgmQPT5">Discord</a>
-                    </li>
                 </ul>
             </div>
             <div class="navbar-collapse collapse">
