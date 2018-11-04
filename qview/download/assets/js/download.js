@@ -47,7 +47,7 @@ $('document').ready(function() {
     recalculateRotations();
 })
 
-$.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
+$.getJSON("https://api.github.com/repos/jurplel/qView/releases", function(data) {
         $('#rpm32dl').attr('href',data[0].assets[0].browser_download_url);
         $('#rpm64dl').attr('href',data[0].assets[1].browser_download_url);
         $('#win32dl').attr('href',data[0].assets[2].browser_download_url);

@@ -1,4 +1,4 @@
-$.getJSON("https://api.github.com/repos/jeep70/qView/releases", function(data) {
+$.getJSON("https://api.github.com/repos/jurplel/qView/releases", function(data) {
         converter = new showdown.Converter();
         for (i = 0; i < 3; i++) {
             var html = converter.makeHtml(data[i].body)
