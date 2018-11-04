@@ -14,6 +14,9 @@ var navbarHTML = `
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/jurplel/qView">Github</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jurplel/qView/wiki/Keyboard-Shortcuts">Keyboard Shortcuts</a>
+                    </li>
                 </ul>
             </div>
             <div class="navbar-collapse collapse">
