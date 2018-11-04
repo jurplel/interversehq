@@ -66,6 +66,7 @@ $.getJSON("https://api.github.com/repos/jurplel/qView/releases", function(data) 
         var newhtml = lines.join('\n');
         $('#log0').html(newhtml);
         $('#ver0').html(data[0].tag_name)
+        $('#date0').html((data[0].published_at).substring(0,10))
 });
 
 $('#winselect').click(function() {

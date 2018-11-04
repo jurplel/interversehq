@@ -7,6 +7,7 @@ $.getJSON("https://api.github.com/repos/jurplel/qView/releases", function(data) 
             var newhtml = lines.join('\n');
             $('#log' + i).html(newhtml);
             $('#ver' + i).html(data[i].tag_name)
+            $('#date' + i).html((data[i].published_at).substring(0,10))
         }
 });
 var text = document.getElementById('sourceTA').value,
