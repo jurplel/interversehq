@@ -1,49 +1,9 @@
-$('#filledlogo').hide();
-$('.buttons').hide();
-$('footer').hide();
-
-function Entrance() {
-    $('#filledlogo').fadeIn(1500, function() {
-        $('#I_concept').fadeOut();
-    });
-    $('.buttons').delay(300).fadeIn();
-    $('footer').delay(300).fadeIn();
-}
-
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-
-$( document ).ready(function() {
-    if (Cookies.get('visited')) 
-    {
-        Entrance();
-    }
-    else 
-    {
-        Cookies.set('visited', 'yes', { path: '/' });
-        
-        var regularLogo = {
-            file: 'assets/img/intv_logo_outline.svg',
-            type: "async",
-            duration: 150,
-            pathTimingFunction: Vivus.EASE_OUT,
-            animTimingFunction: Vivus.EASE,
-        };
-        var regularVivus = new Vivus("logo",regularLogo,function () {
-            $('#I_concept').css("position", "absolute");
-            $('#I_concept').css("width", $('#filledlogo').css("width"));
-            Entrance();
-        });
-    }
-})
-
 //starfield stuff below, not written by me but from here: http://jsfiddle.net/4Lanc/ and modified by me
 
 // get dimensions of window and resize the canvas to fit
 var width = window.innerWidth,
     height = window.innerHeight,
-    mousex = width / 2.5,
+    mousex = width / 2,
     mousey = height / 2;
 
 var canvas = document.getElementById("canvas");
@@ -64,7 +24,7 @@ var warpZ = 12,
     units = 500,
     stars = [],
     cycle = 0,
-    Z = 0.025 + (1 / 25 * 2),
+    Z = 0.025,
     isDown = false;
 
 // addEventListener helper
@@ -114,7 +74,7 @@ $(window).resize(function() {
     height = window.innerHeight;
     canvas.width = width;
     canvas.height = height;
-    mousex = width / 2.5;
+    mousex = width / 2;
     mousey = height / 2;
 })
 
