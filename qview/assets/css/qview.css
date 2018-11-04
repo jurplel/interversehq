@@ -50,17 +50,17 @@ a:hover {
         writing-mode: vertical-lr;
         text-orientation: sideways;
         font-size: 6.5em;
-        -ms-transform: rotate(-180deg) translate(0.7em);
-        -webkit-transform: rotate(-180deg) translate(0.7em);
-        transform: rotate(-180deg) translate(0.7em);
+        -ms-transform: rotate(-180deg) translate(0.5em);
+        -webkit-transform: rotate(-180deg) translate(0.5em);
+        transform: rotate(-180deg) translate(0.5em);
     }
 
     .changelogsubheading {
         position: absolute;
         font-size: 2em;
-        -ms-transform: rotate(-180deg) translate(2.0em);
-        -webkit-transform: rotate(-180deg) translate(2.0em);
-        transform: rotate(-180deg) translate(1.0em);
+        -ms-transform: rotate(-180deg) translate(0.7em);
+        -webkit-transform: rotate(-180deg) translate(0.7em);
+        transform: rotate(-180deg) translate(0.7em);
     }
 }
 
