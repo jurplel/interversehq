@@ -12,7 +12,7 @@ var navbarHTML = `
                         <a class="nav-link" href="/qview/changelog">Changelog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/jeep70/qView">Github</a>
+                        <a class="nav-link" href="https://github.com/jurplel/qView">Github</a>
                     </li>
                 </ul>
             </div>
