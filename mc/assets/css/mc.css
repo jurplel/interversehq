@@ -156,7 +156,7 @@ a {
 }
 
 a:hover {
-    color: #F21531BF;
+    color: rgba(241, 23, 52, 0.749);
     text-decoration: none;
 }
 
