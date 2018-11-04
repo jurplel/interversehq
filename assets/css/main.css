@@ -33,6 +33,7 @@ footer {
 }
 
 a {
+	transition: 0.1s;
 	color: #004068;
 }
 
