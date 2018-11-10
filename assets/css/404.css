@@ -5,8 +5,9 @@ body {
 .fourohfour {
     font-size: 15em;
     font-family: 'Exo 2';
+    font-style: italic;
 }
 
 .valign {
-	margin-top: 25vh !important;
+	margin-top: 20vh !important;
 }
