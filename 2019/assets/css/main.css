@@ -16,6 +16,25 @@ body {
     perspective: 30em;
 }
 
+footer {
+	position: absolute;
+	text-align: center;
+	bottom: .5em;
+	width: 100vw;
+	color: #353535;
+	font-size: 0.8em;
+}
+
+a {
+    transition: 0.1s;
+    text-decoration: none;
+	color: #004068;
+}
+
+a:hover {
+	color: #0091EA;
+}
+
 #logo {
     width: 8vw;
     position: absolute;
@@ -30,4 +49,15 @@ body {
     -webkit-clip-path: inset(0px 0px 0px 100%);
     clip-path: inset(0px 0px 0px 100%);
     visibility: hidden;
+}
+
+#videobg {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -999;
+    top: 0;
+    left: 0;
+    opacity: 0.50;
 }
