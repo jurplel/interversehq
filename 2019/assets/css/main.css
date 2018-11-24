@@ -1,0 +1,33 @@
+/* Font rendering fix for macOS */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Exo 2", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    perspective: 30em;
+}
+
+#logo {
+    width: 8vw;
+    position: absolute;
+    white-space: nowrap;
+    visibility: hidden;
+}
+
+#logotext {
+    position: absolute;
+    font-size: 8vw;
+    font-weight: 300;
+    -webkit-clip-path: inset(0px 0px 0px 100%);
+    clip-path: inset(0px 0px 0px 100%);
+    visibility: hidden;
+}
