@@ -43,5 +43,10 @@ function presentText() {
         xPercent: -39,
         clipPath: 'inset(0% 0% 0% 0%)',
         webkitClipPath: 'inset(0% 0% 0% 0%)',
+        onComplete: presentVideo
     })
+}
+
+function presentVideo() {
+    document.getElementById('videobg').play()
 }
