@@ -4,8 +4,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+html {
+    overflow: auto;
+}
+
 body {
-    background-color: #0a0c19;
+    background-color: #090a12;
     color: #FFFFFF;
     font-family: "Exo 2", sans-serif;
 }
@@ -33,7 +37,7 @@ a {
 }
 
 #logo {
-    width: 8vw;
+    width: 9vw;
     position: absolute;
     white-space: nowrap;
     visibility: hidden;
@@ -41,9 +45,20 @@ a {
 
 #logotext {
     position: absolute;
-    font-size: 8vw;
+    font-size: 9vw;
     font-weight: 300;
     -webkit-clip-path: inset(0px 0px 0px 100%);
     clip-path: inset(0px 0px 0px 100%);
+    visibility: hidden;
+}
+
+#backgroundthing {
+    position: absolute;
+    width: 58vw;
+    height: 15vw;
+    border-radius: 0.8vw;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
     visibility: hidden;
 }
