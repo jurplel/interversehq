@@ -36,17 +36,25 @@ function presentLogo() {
 function presentText() {
     TweenLite.to(logo, 0.5, {
         ease: Power2.easeInOut,
-        xPercent: -295,
+        xPercent: -290,
     });
     TweenLite.to(logoText, 0.5, {
         ease: Power2.easeInOut,
-        xPercent: -39,
+        xPercent: -36,
         clipPath: 'inset(0% 0% 0% 0%)',
         webkitClipPath: 'inset(0% 0% 0% 0%)',
-        onComplete: presentVideo
+        onComplete: presentAfter
     })
 }
 
-function presentVideo() {
-    document.getElementById('videobg').play()
+function presentAfter() {
+    TweenLite.to(logo, 0.5, {
+        ease: Power2.easeInOut,
+        top: "40%"
+    })
+    TweenLite.to(logoText, 0.5, {
+        ease: Power2.easeInOut,
+        top: "40%"
+    })
+    TweenLite.to(document.getElementById("backgroundthing"), 2, {ease: Power3.easeOut, autoAlpha: 1 });
 }
