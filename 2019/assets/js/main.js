@@ -66,24 +66,16 @@ function presentAfter() {
 function makeRoomForInfo() {
     if (isProjectsVisible || isSocialVisible)
     {
-        TweenLite.to([logo, logoText], 0.6, {
+        TweenLite.to([logo, logoText, buttons], 0.6, {
             ease: Power1.easeInOut,
             top: "45%"
-        })
-        TweenLite.to(buttons, 0.6, {
-            ease: Power1.easeInOut,
-            top: "62.5%"
         })
     }
     else
     {
-        TweenLite.to([logo, logoText], 0.6, {
+        TweenLite.to([logo, logoText, buttons], 0.6, {
             ease: Power1.easeInOut,
             top: "20%"
-        })
-        TweenLite.to(buttons, 0.6, {
-            ease: Power1.easeInOut,
-            top: "35%"
         })
     }
 }
