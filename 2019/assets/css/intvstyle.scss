@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* Font rendering fix for macOS */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    overflow: auto;
+}
+
+$title-color: white;
+$subtitle-color: white;
+$text: white;
+
+
+$intv-bg-color: #050710;
+
+
+@import "bulma.sass";
