@@ -18,23 +18,46 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700" rel="stylesheet"> 
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/main.css">
-    
+
     <meta name="theme-color" content="#000000">
     <title>Interverse</title>
 </head>
 <body>
-    <header>
-        <!-- <img id="backgroundthing" src="assets/img/intvultrablur2.png"> -->
-        <h1 id="logotext">Interverse</h1>
-        <img id="logo" src="assets/img/intvcompact.svg">
-    </header>
+    <!-- <img id="backgroundthing" src="assets/img/intvultrablur2.png"> -->
+    <h1 id="logotext">Interverse</h1>
+    <img id="logo" src="assets/img/intvcompact.svg">
+    <div id="buttons" class="field has-addons has-addons-centered" onclick="projectsClicked()">
+        <p class="control">
+            <button class="button is-primary is-inverted is-outlined is-medium intvbutton">
+            <span>Projects</span>
+            </button>
+        </p>
+        <p class="control">
+            <button class="button is-primary is-inverted is-outlined is-medium intvbutton" onclick="socialClicked()">
+            <span>Social</span>
+            </button>
+        </p>
+    </div>
+    <div class="columns" id="projectsinfo">
+        <div class="column has-text-centered">
+            <h1 class="title">qView</h1 class="title">
+            <p>Practical and minimal image viewer</p>
+            <p>Website | Github</p>
+        </div>
+        <div class="column has-text-centered">
+            <h1 class="title">Synchro</h1 class="title">
+            <p>something something interverse</p>
+            <p>visit website</p>
+        </div>
+    </div>
     <footer>
 		Copyright © 2018 jurplel All rights reserved. | <a href="mailto:jurplel@interverse.tk">Email me</a>
 	</footer>
 
     <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/TweenLite.js" integrity="sha256-BxR+ZJzr2+8rL4LbOfULTc/gW3zutQlXojLVxYmUyWc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/CSSPlugin.js" integrity="sha256-0uHyvvHb/nitW5ICGsupEJdESWgmKKlj6XnT4xxfuts=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/EasePack.js" integrity="sha256-F/RSSCXyjqp8NImwqisApSewIqOQMbnkGz542Jsh4F0=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>

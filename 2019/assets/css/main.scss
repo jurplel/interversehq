@@ -1,22 +1,12 @@
-/* Font rendering fix for macOS */
-* {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-html {
-    overflow: auto;
-}
+@import "intvstyle.scss";
 
 body {
-    background-color: #090a12;
+    background-color: $intv-bg-color;
     color: #FFFFFF;
     font-family: "Exo 2", sans-serif;
-}
-
-header {
     height: 100vh;
     perspective: 30em;
+    
 }
 
 footer {
@@ -25,26 +15,38 @@ footer {
 	bottom: .5em;
 	width: 100vw;
 	color: #353535;
-	font-size: 0.8em;
+    font-size: 0.8em;
+    a {
+        transition: 0.1s;
+        color: #002943;
+        &:hover {
+            color: #0067a7;
+        }
+    }
 }
 
-a {
+.intvbutton {
     transition: 0.1s;
-    color: #004068;
     &:hover {
-        color: #0091EA;
+        color: $intv-bg-color !important;
+    }
+    &:active {
+        color: #FFFFFF !important;
     }
 }
 
 #logo {
+    position: relative;
+    top: 45%;
+    left: 50%;
     width: 9vw;
-    position: absolute;
-    white-space: nowrap;
     visibility: hidden;
 }
 
 #logotext {
     position: absolute;
+    top: 45%;
+    left: 50%;
     font-size: 9vw;
     font-weight: 300;
     -webkit-clip-path: inset(0px 0px 0px 100%);
@@ -52,13 +54,16 @@ a {
     visibility: hidden;
 }
 
-#backgroundthing {
+#buttons {
+    position: relative;
+    top: 45%;
+    transform: translateY(-5vw);
+    visibility: hidden;
+}
+
+#projectsinfo {
     position: absolute;
-    width: 58vw;
-    height: 15vw;
-    border-radius: 0.8vw;
-    left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 100vw;
     visibility: hidden;
 }

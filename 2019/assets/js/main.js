@@ -2,12 +2,21 @@ function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
 }
 
+function isVisible(e) {
+    return !!( e.offsetWidth || e.offsetHeight || e.getClientRects().length );
+}
+
 //start
 var logo = document.getElementById('logo');
 var logoText = document.getElementById('logotext');
+var buttons = document.getElementById('buttons');
+var projectsInfo = document.getElementById('projectsinfo');
 
-TweenMax.set(logo, {xPercent:-50, yPercent:-50, left:"50%", top:"50%"}) 
-TweenMax.set(logoText, {xPercent:-90, yPercent:-50, left:"50%", top:"50%", autoAlpha:"1"}) 
+var isProjectsVisible;
+var isSocialVisible;
+
+TweenLite.set(logo, {xPercent:-50, yPercent:-50})
+TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"}) 
 
 window.onload = function() {
     presentLogo();
@@ -23,7 +32,7 @@ function presentLogo() {
         newY = -newY;
 
     TweenLite.from(logo, 1.5, {
-        ease: Expo,
+        ease: Power1.easeOut,
         x: newX,
         y: newY,
         rotationY: newX > 0 ? 155 : -155,
@@ -48,13 +57,65 @@ function presentText() {
 }
 
 function presentAfter() {
-    TweenLite.to(logo, 0.5, {
-        ease: Power2.easeInOut,
-        top: "40%"
-    })
-    TweenLite.to(logoText, 0.5, {
-        ease: Power2.easeInOut,
-        top: "40%"
-    })
-    TweenLite.to(document.getElementById("backgroundthing"), 2, {ease: Power3.easeOut, autoAlpha: 1 });
+    TweenLite.to(buttons, 0.5, {
+        ease: Bounce.easeIn,
+        autoAlpha: 1,
+    });
+}
+
+function makeRoomForInfo() {
+    if (isProjectsVisible || isSocialVisible)
+    {
+        TweenLite.to([logo, logoText], 0.6, {
+            ease: Power1.easeInOut,
+            top: "45%"
+        })
+        TweenLite.to(buttons, 0.6, {
+            ease: Power1.easeInOut,
+            top: "62.5%"
+        })
+    }
+    else
+    {
+        TweenLite.to([logo, logoText], 0.6, {
+            ease: Power1.easeInOut,
+            top: "20%"
+        })
+        TweenLite.to(buttons, 0.6, {
+            ease: Power1.easeInOut,
+            top: "35%"
+        })
+    }
+}
+
+function projectsClicked() {
+    makeRoomForInfo();
+    toggleProjectsInfo();
+}
+
+function socialClicked() {
+    
+}
+
+function toggleProjectsInfo() {
+    if (isProjectsVisible)
+    {
+        TweenLite.to(projectsInfo, 0.2, {
+            autoAlpha: 0,
+        });
+        isProjectsVisible = false;
+    }
+    else
+    {
+        TweenLite.to(projectsInfo, 0.5, {
+            ease: Bounce.easeIn,
+            delay: 0.15,
+            autoAlpha: 1,
+        });
+        isProjectsVisible = true;
+    }
+}
+
+function toggleSocialInfo() {
+
 }
