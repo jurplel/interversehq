@@ -10,12 +10,18 @@ html {
     overflow: auto;
 }
 
+$intv-bg-color: #050710;
+
 $title-color: white;
 $subtitle-color: white;
 $text: white;
 
-
-$intv-bg-color: #050710;
-
+$tabs-toggle-link-active-background-color: white;
+$tabs-toggle-link-active-color: $intv-bg-color;
+$tabs-toggle-link-hover-background-color: white;
 
 @import "bulma.sass";
+
+a {
+	transition: 0.1s;
+}

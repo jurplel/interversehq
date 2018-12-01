@@ -7,13 +7,15 @@ function isVisible(e) {
 }
 
 //start
-var logo = document.getElementById('logo');
-var logoText = document.getElementById('logotext');
-var buttons = document.getElementById('buttons');
-var projectsInfo = document.getElementById('projectsinfo');
+var logo = document.getElementById("logo");
+var logoText = document.getElementById("logotext");
+var buttons = document.getElementById("buttons");
+var projectsInfo = document.getElementById("projectsinfo");
+var socialInfo = document.getElementById("socialinfo");
+var projectsButton = document.getElementById("projectsbutton");
+var socialButton = document.getElementById("socialbutton");
 
-var isProjectsVisible;
-var isSocialVisible;
+var currentIndex = -1;
 
 TweenLite.set(logo, {xPercent:-50, yPercent:-50})
 TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"}) 
@@ -50,8 +52,8 @@ function presentText() {
     TweenLite.to(logoText, 0.5, {
         ease: Power2.easeInOut,
         xPercent: -36,
-        clipPath: 'inset(0% 0% 0% 0%)',
-        webkitClipPath: 'inset(0% 0% 0% 0%)',
+        clipPath: "inset(0% 0% 0% 0%)",
+        webkitClipPath: "inset(0% 0% 0% 0%)",
         onComplete: presentAfter
     })
 }
@@ -63,51 +65,79 @@ function presentAfter() {
     });
 }
 
-function makeRoomForInfo() {
-    if (isProjectsVisible || isSocialVisible)
+function setLogoPosition(setRaised) {
+    if (setRaised)
     {
         TweenLite.to([logo, logoText, buttons], 0.6, {
-            ease: Power1.easeInOut,
-            top: "45%"
-        })
-    }
-    else
-    {
-        TweenLite.to([logo, logoText, buttons], 0.6, {
-            ease: Power1.easeInOut,
+            ease: Power2.easeInOut,
             top: "20%"
         })
     }
-}
-
-function projectsClicked() {
-    makeRoomForInfo();
-    toggleProjectsInfo();
-}
-
-function socialClicked() {
-    
-}
-
-function toggleProjectsInfo() {
-    if (isProjectsVisible)
-    {
-        TweenLite.to(projectsInfo, 0.2, {
-            autoAlpha: 0,
-        });
-        isProjectsVisible = false;
-    }
     else
     {
-        TweenLite.to(projectsInfo, 0.5, {
-            ease: Bounce.easeIn,
-            delay: 0.15,
-            autoAlpha: 1,
-        });
-        isProjectsVisible = true;
+        TweenLite.to([logo, logoText, buttons], 0.6, {
+            ease: Power2.easeInOut,
+            top: "45%"
+        })
     }
 }
 
-function toggleSocialInfo() {
+function setProjectsInfo(setVisible) {
+    if (setVisible) {
+        TweenLite.to(projectsInfo, 0.6, {
+            ease: Power2.easeInOut,
+            left: "0%"
+        });
+        currentIndex = 0;
+    }
+    else {
+        TweenLite.to(projectsInfo, 0.6, {
+            ease: Power2.easeInOut,
+            left: "-100%"
+        });
+    }
+}
 
+function setSocialInfo(setVisible) {
+    if (setVisible) {
+        TweenLite.to(socialInfo, 0.6, {
+            ease: Power2.easeInOut,
+            left: "0%"
+        });
+        currentIndex = 1;
+    }
+    else {
+        TweenLite.to(socialInfo, 0.6, {
+            ease: Power2.easeInOut,
+            left: "100%"
+        });
+    }
+}
+
+function switchTab(index) {
+    if (currentIndex >= 0)
+    {
+        socialButton.classList.remove("is-active");
+        projectsButton.classList.remove("is-active");
+        setSocialInfo(false);
+        setProjectsInfo(false);
+        setLogoPosition(false);
+    }
+    if (currentIndex != index)
+    {
+        if (index == 0) {
+            projectsButton.classList.add("is-active");
+            setSocialInfo(false);
+            setProjectsInfo(true);
+            setLogoPosition(true);
+        }
+        else if (index == 1) {
+            socialButton.classList.add("is-active");
+            setSocialInfo(true);
+            setProjectsInfo(false);
+            setLogoPosition(true);
+        }
+    }
+    else
+        currentIndex = -1;
 }

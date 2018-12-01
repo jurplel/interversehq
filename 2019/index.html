@@ -15,7 +15,7 @@
     </script>
     
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,500" rel="stylesheet"> 
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -27,28 +27,42 @@
     <!-- <img id="backgroundthing" src="assets/img/intvultrablur2.png"> -->
     <h1 id="logotext">Interverse</h1>
     <img id="logo" src="assets/img/intvcompact.svg">
-    <div id="buttons" class="field has-addons has-addons-centered">
-        <p class="control">
-            <button class="button is-primary is-inverted is-outlined is-medium intvbutton" onclick="projectsClicked()">
-            <span>Projects</span>
-            </button>
-        </p>
-        <p class="control">
-            <button class="button is-primary is-inverted is-outlined is-medium intvbutton" onclick="socialClicked()">
-            <span>Social</span>
-            </button>
-        </p>
+    <div id="buttons" class="tabs is-centered is-toggle">
+        <ul>
+            <li id="projectsbutton">
+                <a  onclick="switchTab(0)">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li id="socialbutton">
+                <a onclick="switchTab(1)">
+                    <span>Social</span>
+                </a>
+            </li>
+        </ul>
     </div>
     <div class="columns" id="projectsinfo">
         <div class="column has-text-centered">
-            <h1 class="title">qView</h1 class="title">
+            <h1 class="title">qView</h1>
             <p>Practical and minimal image viewer</p>
             <p>Website | Github</p>
         </div>
         <div class="column has-text-centered">
-            <h1 class="title">Synchro</h1 class="title">
+            <h1 class="title">Synchro</h1>
             <p>something something interverse</p>
             <p>visit website</p>
+        </div>
+    </div>
+    <div class="columns" id="socialinfo">
+        <div class="column has-text-centered">
+            <h1 class="title">Discord</h1>
+            <p>Wow this is incredible</p>
+            <p>Invite link or maybe embed</p>
+        </div>
+        <div class="column has-text-centered">
+            <h1 class="title">ancient steam group</h1>
+            <p>Haha why is this even a thing</p>
+            <p>amazing</p>
         </div>
     </div>
     <footer>
