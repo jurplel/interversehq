@@ -2,7 +2,7 @@
 
 body {
     background-color: $intv-bg-color;
-    color: #FFFFFF;
+    color: white;
     font-family: "Exo 2", sans-serif;
     height: 100vh;
     perspective: 30em;
@@ -22,16 +22,6 @@ footer {
         &:hover {
             color: #0067a7;
         }
-    }
-}
-
-.intvbutton {
-    transition: 0.1s;
-    &:hover {
-        color: $intv-bg-color !important;
-    }
-    &:active {
-        color: #FFFFFF !important;
     }
 }
 
@@ -63,7 +53,14 @@ footer {
 
 #projectsinfo {
     position: absolute;
+    left: -100%;
     top: 50%;
     width: 100vw;
-    visibility: hidden;
+}
+
+#socialinfo {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    width: 100vw;
 }

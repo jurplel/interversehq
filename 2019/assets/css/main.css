@@ -6506,7 +6506,7 @@ label.panel-block:hover {
   position: relative;
 }
 .tabs.is-toggle a:hover {
-  background-color: whitesmoke;
+  background-color: white;
   border-color: #b5b5b5;
   z-index: 2;
 }
@@ -6520,9 +6520,9 @@ label.panel-block:hover {
   border-radius: 0 4px 4px 0;
 }
 .tabs.is-toggle li.is-active a {
-  background-color: #3273dc;
+  background-color: white;
   border-color: #3273dc;
-  color: #fff;
+  color: #050710;
   z-index: 1;
 }
 .tabs.is-toggle ul {
@@ -8958,9 +8958,13 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+a {
+  transition: 0.1s;
+}
+
 body {
   background-color: #050710;
-  color: #FFFFFF;
+  color: white;
   font-family: "Exo 2", sans-serif;
   height: 100vh;
   perspective: 30em;
@@ -8980,16 +8984,6 @@ footer a {
 }
 footer a:hover {
   color: #0067a7;
-}
-
-.intvbutton {
-  transition: 0.1s;
-}
-.intvbutton:hover {
-  color: #050710 !important;
-}
-.intvbutton:active {
-  color: #FFFFFF !important;
 }
 
 #logo {
@@ -9020,9 +9014,16 @@ footer a:hover {
 
 #projectsinfo {
   position: absolute;
+  left: -100%;
   top: 50%;
   width: 100vw;
-  visibility: hidden;
+}
+
+#socialinfo {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=main.css.map */
