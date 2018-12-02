@@ -14,6 +14,7 @@ var projectsInfo = document.getElementById("projectsinfo");
 var socialInfo = document.getElementById("socialinfo");
 var projectsButton = document.getElementById("projectsbutton");
 var socialButton = document.getElementById("socialbutton");
+var backgroundBit = document.getElementById("backgroundbit");
 
 var isInfoShown = false;
 var currentInfoIndex = 0;
@@ -64,6 +65,10 @@ function presentAfter() {
         ease: Bounce.easeIn,
         autoAlpha: 1,
     });
+    TweenLite.to(backgroundBit, 1.0, {
+        ease: Power2.easeInOut,
+        autoAlpha: 1,
+    });
 }
 
 function setLogoPosition(setRaised) {
@@ -77,6 +82,10 @@ function setLogoPosition(setRaised) {
             ease: Power2.easeInOut,
             top: "50%"
         });
+        TweenLite.to(backgroundBit, 0.6, {
+            ease: Power2.easeInOut,
+            height: "45vh"
+        });
         isInfoShown = true;
     }
     else
@@ -88,6 +97,10 @@ function setLogoPosition(setRaised) {
         TweenLite.to([projectsInfo, socialInfo], 0.6, {
             ease: Power2.easeInOut,
             top: "100%"
+        });
+        TweenLite.to(backgroundBit, 0.6, {
+            ease: Power2.easeInOut,
+            height: "100vh"
         });
         isInfoShown = false;
     }
