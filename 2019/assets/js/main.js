@@ -66,7 +66,7 @@ function presentAfter() {
         autoAlpha: 1,
     });
     TweenLite.to(backgroundBit, 1.0, {
-        ease: Power2.easeInOut,
+        ease: Power1.easeInOut,
         autoAlpha: 1,
     });
 }
@@ -80,7 +80,7 @@ function setLogoPosition(setRaised) {
         })
         TweenLite.to([projectsInfo, socialInfo], 0.6, {
             ease: Power2.easeInOut,
-            top: "50%"
+            top: "55%"
         });
         TweenLite.to(backgroundBit, 0.6, {
             ease: Power2.easeInOut,
