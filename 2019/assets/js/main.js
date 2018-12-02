@@ -15,7 +15,8 @@ var socialInfo = document.getElementById("socialinfo");
 var projectsButton = document.getElementById("projectsbutton");
 var socialButton = document.getElementById("socialbutton");
 
-var currentIndex = -1;
+var isInfoShown = false;
+var currentInfoIndex = 0;
 
 TweenLite.set(logo, {xPercent:-50, yPercent:-50})
 TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"}) 
@@ -72,6 +73,11 @@ function setLogoPosition(setRaised) {
             ease: Power2.easeInOut,
             top: "20%"
         })
+        TweenLite.to([projectsInfo, socialInfo], 0.6, {
+            ease: Power2.easeInOut,
+            top: "50%"
+        });
+        isInfoShown = true;
     }
     else
     {
@@ -79,6 +85,11 @@ function setLogoPosition(setRaised) {
             ease: Power2.easeInOut,
             top: "45%"
         })
+        TweenLite.to([projectsInfo, socialInfo], 0.6, {
+            ease: Power2.easeInOut,
+            top: "100%"
+        });
+        isInfoShown = false;
     }
 }
 
@@ -88,7 +99,9 @@ function setProjectsInfo(setVisible) {
             ease: Power2.easeInOut,
             left: "0%"
         });
-        currentIndex = 0;
+        currentInfoIndex = 0;
+        socialButton.classList.remove("is-active");
+        projectsButton.classList.add("is-active");
     }
     else {
         TweenLite.to(projectsInfo, 0.6, {
@@ -104,7 +117,9 @@ function setSocialInfo(setVisible) {
             ease: Power2.easeInOut,
             left: "0%"
         });
-        currentIndex = 1;
+        currentInfoIndex = 1;
+        socialButton.classList.add("is-active");
+        projectsButton.classList.remove("is-active");
     }
     else {
         TweenLite.to(socialInfo, 0.6, {
@@ -115,29 +130,24 @@ function setSocialInfo(setVisible) {
 }
 
 function switchTab(index) {
-    if (currentIndex >= 0)
-    {
-        socialButton.classList.remove("is-active");
-        projectsButton.classList.remove("is-active");
-        setSocialInfo(false);
-        setProjectsInfo(false);
+    if (index == currentInfoIndex && isInfoShown) {
         setLogoPosition(false);
+        projectsButton.classList.remove("is-active");
+        socialButton.classList.remove("is-active");
+        return;
     }
-    if (currentIndex != index)
-    {
-        if (index == 0) {
-            projectsButton.classList.add("is-active");
-            setSocialInfo(false);
-            setProjectsInfo(true);
-            setLogoPosition(true);
-        }
-        else if (index == 1) {
-            socialButton.classList.add("is-active");
-            setSocialInfo(true);
-            setProjectsInfo(false);
-            setLogoPosition(true);
-        }
+    else {
+        setLogoPosition(true);
     }
-    else
-        currentIndex = -1;
+
+    switch(index) {
+    case 0:
+        setProjectsInfo(true);
+        setSocialInfo(false);
+        break;
+    case 1:
+        setProjectsInfo(false);
+        setSocialInfo(true);
+        break;
+    }
 }

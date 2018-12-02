@@ -8962,6 +8962,10 @@ a {
   transition: 0.1s;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   background-color: #050710;
   color: white;
@@ -9014,15 +9018,15 @@ footer a:hover {
 
 #projectsinfo {
   position: absolute;
-  left: -100%;
-  top: 50%;
+  left: 0%;
+  top: 100%;
   width: 100vw;
 }
 
 #socialinfo {
   position: absolute;
   left: 100%;
-  top: 50%;
+  top: 100%;
   width: 100vw;
 }
 
