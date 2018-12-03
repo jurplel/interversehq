@@ -16,11 +16,14 @@ $title-color: white;
 $subtitle-color: white;
 $text: white;
 
+$link-hover: hsl(204, 86%, 53%);
+
 $tabs-toggle-link-active-background-color: white;
 $tabs-toggle-link-active-color: $intv-bg-color;
 $tabs-toggle-link-hover-background-color: white;
 $tabs-toggle-link-radius: 7px;
 
+$control-radius: 7px;
 
 @import "bulma.sass";
 
