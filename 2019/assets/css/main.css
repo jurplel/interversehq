@@ -153,7 +153,7 @@ html {
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 7px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -331,7 +331,7 @@ a strong {
   color: currentColor;
 }
 a:hover {
-  color: #363636;
+  color: #209cee;
 }
 
 code {
@@ -1461,7 +1461,7 @@ a.box:active {
 }
 .button:hover, .button.is-hovered {
   border-color: #b5b5b5;
-  color: #363636;
+  color: #209cee;
 }
 .button:focus, .button.is-focused {
   border-color: #3273dc;
@@ -4492,7 +4492,7 @@ a.tag:hover {
   padding: 0 0.75em;
 }
 .breadcrumb a:hover {
-  color: #363636;
+  color: #209cee;
 }
 .breadcrumb li {
   align-items: center;
@@ -6209,7 +6209,7 @@ body.has-spaced-navbar-fixed-bottom {
 .pagination-next:hover,
 .pagination-link:hover {
   border-color: #b5b5b5;
-  color: #363636;
+  color: #209cee;
 }
 .pagination-previous:focus,
 .pagination-next:focus,
@@ -8982,12 +8982,15 @@ footer {
   color: #525252;
   font-size: 0.8em;
 }
-footer a {
+
+.intvbutton {
   transition: 0.1s;
-  color: #003a5e;
 }
-footer a:hover {
-  color: #0067a7;
+.intvbutton:hover {
+  color: #050710 !important;
+}
+.intvbutton:active {
+  color: #FFFFFF !important;
 }
 
 #logo {

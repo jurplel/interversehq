@@ -20,12 +20,15 @@ footer {
 	width: 100vw;
 	color: #525252;
     font-size: 0.8em;
-    a {
-        transition: 0.1s;
-        color: #003a5e;
-        &:hover {
-            color: #0067a7;
-        }
+}
+
+.intvbutton {
+    transition: 0.1s;
+    &:hover {
+        color: $intv-bg-color !important;
+    }
+    &:active {
+        color: #FFFFFF !important;
     }
 }
 
