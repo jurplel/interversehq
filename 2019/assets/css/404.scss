@@ -2,9 +2,9 @@
 
 #fourohfour {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
-    font-size: 9vw;
+    font-size: 16vw;
     font-weight: 300;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -12,6 +12,11 @@
 #subtitles {
     position: absolute;
     width: 100vw;
-    top: 45%;
-    transform: translateY(6vw);
+    top: 40%;
+    transform: translateY(9vw);
+}
+
+#canvas {
+    height: 100vh;
+    width: 100vh;    
 }
