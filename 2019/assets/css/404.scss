@@ -1,5 +1,9 @@
 @import "intvstyle.scss";
 
+html {
+    overflow: hidden;
+}
+
 #fourohfour {
     position: absolute;
     top: 40%;
@@ -14,9 +18,4 @@
     width: 100vw;
     top: 40%;
     transform: translateY(9vw);
-}
-
-#canvas {
-    height: 100vh;
-    width: 100vh;    
 }
