@@ -8997,6 +8997,11 @@ body {
   width: 9vw;
   visibility: hidden;
 }
+@media screen and (max-width: 768px) {
+  #logo {
+    width: 12vw;
+  }
+}
 
 #logotext {
   position: absolute;
@@ -9008,6 +9013,11 @@ body {
   clip-path: inset(0px 0px 0px 100%);
   visibility: hidden;
 }
+@media screen and (max-width: 768px) {
+  #logotext {
+    font-size: 12vw;
+  }
+}
 
 #buttons {
   position: absolute;
@@ -9015,6 +9025,11 @@ body {
   top: 45%;
   transform: translateY(6vw);
   visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+  #buttons {
+    transform: translateY(8vw);
+  }
 }
 
 #backgroundbit {
@@ -9024,7 +9039,6 @@ body {
   background-image: url(../img/intvultrablur3.png);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   opacity: 0;
 }
@@ -9032,6 +9046,7 @@ body {
 #projectsinfo {
   position: absolute;
   left: 0%;
+  right: 0%;
   top: 100%;
   width: 100vw;
 }
@@ -9039,8 +9054,25 @@ body {
 #socialinfo {
   position: absolute;
   left: 100%;
+  right: -100%;
   top: 100%;
   width: 100vw;
+}
+
+.intvinnercontainer {
+  width: 33vw;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .intvinnercontainer {
+    width: 50vw;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .intvinnercontainer {
+    width: 25vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

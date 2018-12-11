@@ -48,10 +48,12 @@ function presentLogo() {
 
 function presentText() {
     TweenLite.to(logo, 0.5, {
+        delay: 0.15,
         ease: Power2.easeInOut,
         xPercent: -290,
     });
     TweenLite.to(logoText, 0.5, {
+        delay: 0.15,
         ease: Power2.easeInOut,
         xPercent: -36,
         clipPath: "inset(0% 0% 0% 0%)",
@@ -62,6 +64,7 @@ function presentText() {
 
 function presentAfter() {
     TweenLite.to(buttons, 0.5, {
+        delay: 0.2,
         ease: Bounce.easeIn,
         autoAlpha: 1,
     });
