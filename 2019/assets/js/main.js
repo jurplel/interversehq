@@ -64,12 +64,12 @@ function presentText() {
 
 function presentAfter() {
     TweenLite.to(buttons, 0.5, {
-        delay: 0.2,
+        delay: 0,
         ease: Bounce.easeIn,
         autoAlpha: 1,
     });
     TweenLite.to(backgroundBit, 1.0, {
-        ease: Power1.easeInOut,
+        ease: Power0.easeInOut,
         autoAlpha: 1,
     });
 }
