@@ -69,14 +69,14 @@ function resetStar(star, start = false) {
     star.py = 0;
 }
 
-$(window).resize(function() {
+window.addEventListener('resize', function() {
     width = window.innerWidth;
     height = window.innerHeight;
     canvas.width = width;
     canvas.height = height;
     mousex = width / 2;
     mousey = height / 2;
-})
+});
 
 // initial star setup
 for (var i = 0, n; i < units; i++) {

@@ -1,70 +1,91 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- GTAG -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10935865-4"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
-
 	gtag('config', 'UA-10935865-4', { 'anonymize_ip': true });
-	</script>
+    </script>
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,500" rel="stylesheet"> 
 
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#101010">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=PYe9QlpENE">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=PYe9QlpENE">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=PYe9QlpENE">
+    <link rel="manifest" href="/site.webmanifest?v=PYe9QlpENE">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=PYe9QlpENE" color="#050710">
+    <link rel="shortcut icon" href="/favicon.ico?v=PYe9QlpENE">
+    <meta name="msapplication-TileColor" content="#050710">
 
-	<!-- Theme Color -->
-	<meta name="theme-color" content="#000000">
-    <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
-
-	<title>Interverse</title>
-
+    <meta name="theme-color" content="#050710">
+    <title>Interverse</title>
 </head>
 <body>
-	<header>
-		<canvas id="canvas"></canvas>
-		<div id="logo" class="valign">
-			<picture>
-				<img class="noselect" id="filledlogo" src="assets/img/intv_logo.svg" alt="Interverse">
-			</picture>
-		</div>
-		<div class="text-center">
-			<div class="buttons btn-group" role="group">
-				<a href="qview" class="btn btn-lg btn-outline-light" data-toggle="tooltip" role="button" data-placement="bottom" title="Practical and minimal image viewer">qView</a>
-				<a href="https://discord.gg/0lXeGE6soHgmQPT5" class="btn btn-lg btn-outline-light" data-toggle="tooltip" role="button" data-placement="bottom" title="Join the discord group">Discord</a>
-			</div>
-		</div>
-	</header>
-	<footer>
-		Copyright © 2018 jurplel All rights reserved. | <a href="mailto:jurplel@interverse.tk">Email me</a>
+    <div id="backgroundbit"></div>
+    <h1 id="logotext">Interverse</h1>
+    <img id="logo" src="assets/img/intvcompact.svg">
+    <div id="buttons" class="tabs is-centered is-toggle">
+        <ul>
+            <li id="projectsbutton">
+                <a  onclick="switchTab(0)">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li id="socialbutton">
+                <a onclick="switchTab(1)">
+                    <span>Info</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="columns is-gapless is-centered" id="projectsinfo">
+        <div class="column has-text-centered">
+            <div>
+                <h1 class="title">qView</h1>
+                <p>Image viewer designed to be practical and minimal.</p>
+                <p><a href="qview">Website</a> | <a href="https://github.com/jurplel/qView">Github</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="columns is-gapless" id="socialinfo">
+        <div class="column is-hidden-touch"></div>
+        <div class="column has-text-centered is-one-quarter-desktop">
+            <h1 class="title">What is this place?</h1>
+            <p>
+                Hi, I'm jurplel, and this is my personal website.
+                Interverse is just a name I thought of a while back, and I stuck with it for years.
+                Nowadays, I just host all my projects here and use it to practice web/graphic design.
+                Hope you like it!
+            </p>
+        </div>
+        <div class="column is-hidden-touch"></div>
+        <div class="column has-text-centered is-one-quarter-desktop">
+            <h1 class="title">Contact me</h1>
+            <p><a href="https://discord.gg/0lXeGE6soHgmQPT5">Join my Discord server</a></p>
+            <p><a href="https://github.com/jurplel">Visit me on Github</a></p>
+            <p><a href="mailto:jurplel@interverse.tk">Email me</a></p>
+        </div>
+        <div class="column is-hidden-touch"></div>
+    </div>
+    <footer class="intvfooter">
+		Copyright © 2018 jurplel All rights reserved.
 	</footer>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Popper JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-	<!-- JS Cookie -->
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-	<!-- Vivus JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.min.js"></script>
-	<!-- Custom JS -->
-	<script src="assets/js/main.js"></script>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/TweenLite.js" integrity="sha256-BxR+ZJzr2+8rL4LbOfULTc/gW3zutQlXojLVxYmUyWc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/CSSPlugin.js" integrity="sha256-0uHyvvHb/nitW5ICGsupEJdESWgmKKlj6XnT4xxfuts=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/EasePack.js" integrity="sha256-F/RSSCXyjqp8NImwqisApSewIqOQMbnkGz542Jsh4F0=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
-</html>
