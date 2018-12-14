@@ -1,0 +1,21 @@
+@import "intvstyle.scss";
+
+html {
+    overflow: hidden;
+}
+
+#fourohfour {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 16vw;
+    font-weight: 300;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#subtitles {
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    transform: translateY(9vw);
+}

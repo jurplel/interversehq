@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* Font rendering fix for macOS */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+$intv-bg-color: #050710;
+
+$body-background-color: $intv-bg-color;
+$family-sans-serif: 'Exo 2', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$title-color: white;
+$subtitle-color: white;
+$text: white;
+
+
+$link-hover: hsl(204, 86%, 53%);
+
+$tabs-toggle-link-active-background-color: white;
+$tabs-toggle-link-active-color: $intv-bg-color;
+$tabs-toggle-link-hover-background-color: white;
+$tabs-toggle-link-radius: 7px;
+
+$control-radius: 7px;
+
+@import "bulma.sass";
+
+a {
+	transition: 0.1s;
+}
+
+.intvfooter {
+	position: absolute;
+	text-align: center;
+	bottom: .5em;
+	width: 100vw;
+	color: #525252;
+    font-size: 0.8em;
+}
+
+.intvbutton {
+    transition: 0.1s;
+    &:hover {
+        color: $intv-bg-color !important;
+    }
+    &:active {
+        color: #FFFFFF !important;
+    }
+}
+
+html {
+    overflow: auto;
+}
