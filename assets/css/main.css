@@ -8981,13 +8981,16 @@ html {
   overflow: auto;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   height: 100vh;
   perspective: 30em;
+}
+
+#wrapper {
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
 #logo {
@@ -9036,7 +9039,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/intvultrablur3.png);
+  background-image: url(../img/intvultrablur3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
