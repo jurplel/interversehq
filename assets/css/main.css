@@ -8983,7 +8983,6 @@ html {
 
 body {
   height: 100vh;
-  perspective: 30em;
 }
 
 #wrapper {
@@ -8991,6 +8990,7 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
+  perspective: 30em;
 }
 
 #logo {
