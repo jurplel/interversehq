@@ -32,24 +32,18 @@ a {
 }
 
 .intvfooter {
-	position: absolute;
 	text-align: center;
-	bottom: .5em;
 	width: 100vw;
 	color: #525252;
     font-size: 0.8em;
 }
 
 .intvbutton {
-    transition: 0.1s;
+    transition: 0.35s;
     &:hover {
         color: $intv-bg-color !important;
     }
     &:active {
         color: #FFFFFF !important;
     }
-}
-
-html {
-    overflow: auto;
 }

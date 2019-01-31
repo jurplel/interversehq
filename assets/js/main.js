@@ -9,11 +9,6 @@ function isVisible(e) {
 //start
 var logo = document.getElementById("logo");
 var logoText = document.getElementById("logotext");
-var buttons = document.getElementById("buttons");
-var projectsInfo = document.getElementById("projectsinfo");
-var socialInfo = document.getElementById("socialinfo");
-var projectsButton = document.getElementById("projectsbutton");
-var socialButton = document.getElementById("socialbutton");
 var backgroundBit = document.getElementById("backgroundbit");
 
 var isInfoShown = false;
@@ -61,10 +56,6 @@ function presentText() {
 }
 
 function presentAfter() {
-    TweenLite.to(buttons, 0.5, {
-        ease: Bounce.easeIn,
-        autoAlpha: 1,
-    });
     TweenLite.to(backgroundBit, 1.0, {
         ease: Power0.easeInOut,
         autoAlpha: 1,
@@ -74,7 +65,7 @@ function presentAfter() {
 function setLogoPosition(setRaised) {
     if (setRaised)
     {
-        TweenLite.to([logo, logoText, buttons], 0.6, {
+        TweenLite.to([logo, logoText], 0.6, {
             ease: Power2.easeInOut,
             top: "20%"
         })
@@ -90,7 +81,7 @@ function setLogoPosition(setRaised) {
     }
     else
     {
-        TweenLite.to([logo, logoText, buttons], 0.6, {
+        TweenLite.to([logo, logoText], 0.6, {
             ease: Power2.easeInOut,
             top: "45%"
         })
@@ -103,64 +94,5 @@ function setLogoPosition(setRaised) {
             height: "100vh"
         });
         isInfoShown = false;
-    }
-}
-
-function setProjectsInfo(setVisible) {
-    if (setVisible) {
-        TweenLite.to(projectsInfo, 0.6, {
-            ease: Power2.easeInOut,
-            left: "0%"
-        });
-        currentInfoIndex = 0;
-        socialButton.classList.remove("is-active");
-        projectsButton.classList.add("is-active");
-    }
-    else {
-        TweenLite.to(projectsInfo, 0.6, {
-            ease: Power2.easeInOut,
-            left: "-100%"
-        });
-    }
-}
-
-function setSocialInfo(setVisible) {
-    if (setVisible) {
-        TweenLite.to(socialInfo, 0.6, {
-            ease: Power2.easeInOut,
-            left: "0%"
-        });
-        currentInfoIndex = 1;
-        socialButton.classList.add("is-active");
-        projectsButton.classList.remove("is-active");
-    }
-    else {
-        TweenLite.to(socialInfo, 0.6, {
-            ease: Power2.easeInOut,
-            left: "100%"
-        });
-    }
-}
-
-function switchTab(index) {
-    if (index == currentInfoIndex && isInfoShown) {
-        setLogoPosition(false);
-        projectsButton.classList.remove("is-active");
-        socialButton.classList.remove("is-active");
-        return;
-    }
-    else {
-        setLogoPosition(true);
-    }
-
-    switch(index) {
-    case 0:
-        setProjectsInfo(true);
-        setSocialInfo(false);
-        break;
-    case 1:
-        setProjectsInfo(false);
-        setSocialInfo(true);
-        break;
     }
 }

@@ -8959,16 +8959,14 @@ a {
 }
 
 .intvfooter {
-  position: absolute;
   text-align: center;
-  bottom: 0.5em;
   width: 100vw;
   color: #525252;
   font-size: 0.8em;
 }
 
 .intvbutton {
-  transition: 0.1s;
+  transition: 0.35s;
 }
 .intvbutton:hover {
   color: #050710 !important;
@@ -8977,20 +8975,8 @@ a {
   color: #FFFFFF !important;
 }
 
-html {
-  overflow: auto;
-}
-
 body {
   height: 100vh;
-}
-
-#wrapper {
-  overflow: hidden;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  perspective: 30em;
 }
 
 #logo {
@@ -8999,6 +8985,7 @@ body {
   left: 50%;
   width: 9vw;
   visibility: hidden;
+  z-index: 20;
 }
 @media screen and (max-width: 768px) {
   #logo {
@@ -9015,6 +9002,7 @@ body {
   -webkit-clip-path: inset(0px 0px 0px 100%);
   clip-path: inset(0px 0px 0px 100%);
   visibility: hidden;
+  z-index: 20;
 }
 @media screen and (max-width: 768px) {
   #logotext {
@@ -9022,44 +9010,65 @@ body {
   }
 }
 
-#buttons {
-  position: absolute;
-  width: 100vw;
-  top: 45%;
-  transform: translateY(6vw);
-  visibility: hidden;
-}
-@media screen and (max-width: 768px) {
-  #buttons {
-    transform: translateY(8vw);
-  }
-}
-
 #backgroundbit {
-  position: absolute;
-  width: 100vw;
   height: 100vh;
   background-image: url(../img/intvultrablur3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   visibility: hidden;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0em 0.5em 1em #000;
 }
 
-#projectsinfo {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 100%;
-  width: 100vw;
+#underbackgroundbit {
+  perspective: 30em;
 }
 
-#socialinfo {
-  position: absolute;
-  left: 100%;
-  right: -100%;
-  top: 100%;
-  width: 100vw;
+#qview {
+  background-color: #292929;
+}
+
+#qviewcontent {
+  background-color: #212121;
+  border-radius: 7px;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+#qviewfooter {
+  border-color: #212121;
+  border-top-width: 0;
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+
+#synchrobg {
+  background-color: #051427;
+}
+
+.card {
+  box-shadow: 0em 0em 1rem black;
+  border-radius: 7px;
+  border-color: #262626;
+}
+
+.qviewtext {
+  font-family: Lato;
+}
+
+.qviewtitle {
+  font-weight: 300;
+  font-size: 4rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#synchrotitle {
+  font-family: "Coda" !important;
+  font-weight: 300;
+  font-size: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
