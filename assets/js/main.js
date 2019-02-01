@@ -58,7 +58,7 @@ function presentText() {
 const config = {
     threshold: 1
 };
-  
+
 const tl = new TimelineLite()
 
 let observer = new IntersectionObserver(function(entries, self) {
