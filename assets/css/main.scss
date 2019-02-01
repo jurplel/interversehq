@@ -38,13 +38,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     visibility: hidden;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0em 0.5em 1em #000;
 }
 
 #underbackgroundbit {
     perspective: 30em;
+    box-shadow: 0em 0.5em 1em #000;
+    position: relative;
+    z-index: 10;
 }
 
 #qview {
