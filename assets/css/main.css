@@ -9017,10 +9017,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   visibility: hidden;
+  perspective: 30em;
 }
 
 #underbackgroundbit {
-  perspective: 30em;
   box-shadow: 0em 0.5em 1em #000;
   position: relative;
   z-index: 10;
@@ -9069,6 +9069,10 @@ body {
   font-family: "Coda" !important;
   font-weight: 300;
   font-size: 4rem;
+}
+
+.perspective {
+  perspective: 30em;
 }
 
 /*# sourceMappingURL=main.css.map */
