@@ -17,7 +17,6 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,500" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet"> 
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -35,69 +34,44 @@
     <title>Interverse</title>
 </head>
 <body>
-    <header id="underbackgroundbit" class="perspective">
-        <div id="backgroundbit">
+    <header id="underbackgroundbit" class="perspective shadow">
+        <div id="backgroundbit" class="perspective parallaxbg">
         </div>
         <h1 id="logotext">Interverse</h1>
         <img id="logo" src="assets/img/intvcompact.svg">
     </header>
-    <section class="section">
+    <section class="section displaysection qviewsection parallaxbg shadow">
         <div class="container">
-            <h1 class="title has-text-centered">Projects</h1>
             <div class="columns is-centered">
-                <div class="column has-text-centered perspective is-half">
-                    <div class="card" id="qview">
-                        <div class="card-content" id="qviewcontent">
-                            <img src="qview/assets/img/qview.svg" width="84em" class="qviewtext qviewtitle">
-                            <h1 class="title qviewtext qviewtitle">qView</h1><br>
-                            <p class="subtitle qviewtext">Image viewer designed to be practical and minimal.</p>
-                        </div>
-                        <div class="card-footer" id="qviewfooter">
-                            <div class="card-footer-item" id="qviewfooter">
-                                <a href="qview">Website</a>
-                            </div>
-                            <div class="card-footer-item">
-                                <a href="https://github.com/jurplel/qView">Github</a>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-                <!-- <div class="column has-text-centered">
-                    <div class="card" id="synchrobg">
-                        <div class="card-content">
-                            <h1 class="title" id="synchrotitle">Synchro</h1>
-                            <p>Video player with synchronized playback.</p>
-                            <p>Coming "soon"</p>
-                        </div>
+                <div class="column has-text-centered is-half">
+                    <h1 class="title qviewtext qviewtitle">qView</h1><br>
+                    <h2 class="subtitle qviewtext is-size-4">An image viewer designed to be practical and minimal</h2>
+                    <div class="buttons is-centered has-addons">
+                        <a class="button is-primary is-inverted is-outlined is-medium intvbutton" href="qview">Website</a>
+                        <a class="button is-primary is-inverted is-outlined is-medium intvbutton" href="https://github.com/jurplel/qView">Github</a>
                     </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column has-text-centered">
-                    <h1 class="title">Contact me</h1>
-                    <p><a href="https://discord.gg/0lXeGE6soHgmQPT5">Join my Discord server</a></p>
-                    <p><a href="https://github.com/jurplel">Visit me on Github</a></p>
-                    <p><a href="mailto:jurplel@intvhq.com">Email me</a></p>
+                </div>
+                <div class="column is-half">
+                    <img style="position: absolute" src="qview/assets/img/screenshot3.png">
                 </div>
             </div>
         </div>
     </section>
-    <!-- <secton class="section">  
-        <div class="container">
+    <section class="section contactsection is-valigned is-flex">
+        <div class="container" style="margin: auto">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
-                    <h1 class="title">Contact me</h1>
-                    <p><a href="https://discordapp.com/invite/t8K7NtA">Join my Discord server</a></p>
-                    <p><a href="https://github.com/jurplel">Visit me on Github</a></p>
-                    <p><a href="mailto:jurplel@interverse.tk">Email me</a></p>
+                    <h5 class="is-size-5"><a href="https://github.com/jurplel">jurplel on Github</a></h4>
+                </div>
+                <div class="column has-text-centered">
+                    <h5 class="is-size-4"><a href="https://discordapp.com/invite/t8K7NtA">Join Interverse on Discord</a></p>
+                </div>
+                <div class="column has-text-centered">
+                    <h5 class="is-size-5"><a href="mailto:jurplel@intvhq.com">jurplel@intvhq.com</a></h4>
                 </div>
             </div>
         </div>
-    </secton> -->
+    </section>
     <footer class="intvfooter">
 		Copyright © 2019 jurplel All rights reserved.
 	</footer>

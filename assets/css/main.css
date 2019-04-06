@@ -8966,7 +8966,7 @@ a {
 }
 
 .intvbutton {
-  transition: 0.35s;
+  transition: 0.2s;
 }
 .intvbutton:hover {
   color: #050710 !important;
@@ -9010,48 +9010,48 @@ body {
   }
 }
 
-#backgroundbit {
-  height: 100vh;
-  background-image: url(../img/intvultrablur3.jpg);
-  background-size: cover;
+.parallaxbg {
+  background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#backgroundbit {
+  background-image: url(../img/intvultrablur3.jpg);
+  height: 100vh;
   visibility: hidden;
-  perspective: 30em;
 }
 
 #underbackgroundbit {
-  box-shadow: 0em 0.5em 1em #000;
   position: relative;
   z-index: 10;
-}
-
-#qview {
-  background-color: #292929;
-}
-
-#qviewcontent {
-  background-color: #212121;
-  border-radius: 7px;
-  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
-  position: relative;
-}
-
-#qviewfooter {
-  border-color: #212121;
-  border-top-width: 0;
-  border-left-width: 2px;
-  border-right-width: 2px;
 }
 
 #synchrobg {
   background-color: #051427;
 }
 
-.card {
-  box-shadow: 0em 0em 1rem black;
-  border-radius: 7px;
-  border-color: #262626;
+.displaysection {
+  height: 35rem;
+  padding-top: 5em;
+  padding-bottom: 5rem;
+}
+
+.shadow {
+  box-shadow: 0em 0.5em 1em #000;
+}
+
+.qviewsection {
+  background-image: linear-gradient(rgba(21, 21, 21, 0.95), rgba(21, 21, 21, 0.95)), url("../../qview/assets/img/thumbnail.jpg");
+  z-index: 9;
+}
+
+.contactsection {
+  z-index: 8;
+  height: 12rem;
+  margin: auto;
 }
 
 .qviewtext {
@@ -9060,7 +9060,7 @@ body {
 
 .qviewtitle {
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 6rem;
   display: inline-block;
   vertical-align: middle;
 }
