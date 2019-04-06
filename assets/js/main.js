@@ -10,10 +10,18 @@ function isVisible(e) {
 var logo = document.getElementById("logo");
 var logoText = document.getElementById("logotext");
 var backgroundBit = document.getElementById("backgroundbit");
-
+var qviewSectionLeft = document.getElementById("qviewsectionleft");
+var contact1 = document.getElementById("contact1");
+var contact2 = document.getElementById("contact2");
+var contact3 = document.getElementById("contact3");
+contact1.isContact = true;
+contact2.isContact = true;
+contact3.isContact = true;
 
 TweenLite.set(logo, {xPercent:-50, yPercent:-50, autoAlpha:"1"})
 TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"})
+TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"})
+
 
 window.onload = function() {
     presentLogo();
@@ -54,7 +62,7 @@ function presentText() {
 }
 
 const config = {
-    threshold: 1
+    threshold: 0.3
 };
 
 const tl = new TimelineLite()
@@ -62,19 +70,39 @@ const tl = new TimelineLite()
 let observer = new IntersectionObserver(function(entries, self) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-        let overlap = '-=0.3';
+        let overlap = '-=0.75';
         
         if (!tl.isActive()) {
             overlap = '+=0';
         }
-        
-        tl.to(entry.target, 0.6, { 
-            ease: Back.easeOut,
-            rotationX:0
+        console.log(entry);
+        if (entry.target.isContact) {
+            console.log(entry);
+            tl.to(entry.target, 1, { 
+                ease: Back.easeOut,
+                scale:1,
+                rotationX:0
+            }, overlap);
+        }
+        else {
+        TweenLite.to(entry.target, 2, { 
+            ease: Power4.easeOut,
+            yPercent:0,
+            xPercent:0,
+            autoAlpha:1
          }, overlap);
+        }
         self.unobserve(entry.target);
         }
     });
 }, config);
 
-observer.observe(qview);
+TweenLite.set(qviewSectionLeft, {yPercent:30, autoAlpha:0})
+TweenLite.set(contact1, {rotationX:-90, scale:0})
+TweenLite.set(contact2, {rotationX:-90, scale:0})
+TweenLite.set(contact3, {rotationX:-90, scale:0})
+
+observer.observe(qviewSectionLeft);
+observer.observe(contact1);
+observer.observe(contact2);
+observer.observe(contact3);
