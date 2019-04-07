@@ -9047,8 +9047,13 @@ body {
 
 .contactsection {
   z-index: 8;
-  height: 12rem;
   margin: auto;
+}
+@media screen and (min-width: 769px), print {
+  .contactsection {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .qviewtext {
