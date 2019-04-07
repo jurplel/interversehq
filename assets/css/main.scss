@@ -67,8 +67,11 @@ body {
 
 .contactsection {
     z-index: 8;
-    height: 12rem;
     margin: auto;
+    @include tablet {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
 
 .qviewtext {
