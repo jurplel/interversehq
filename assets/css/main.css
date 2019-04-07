@@ -8967,6 +8967,7 @@ a {
 
 .intvbutton {
   transition: 0.2s;
+  color: #FFFFFF !important;
 }
 .intvbutton:hover {
   color: #050710 !important;
