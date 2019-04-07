@@ -9029,10 +9029,6 @@ body {
   z-index: 10;
 }
 
-#synchrobg {
-  background-color: #051427;
-}
-
 .displaysection {
   height: 35rem;
   padding-top: 5em;
@@ -9044,7 +9040,7 @@ body {
 }
 
 .qviewsection {
-  background-image: linear-gradient(rgba(21, 21, 21, 0.95), rgba(21, 21, 21, 0.95)), url("../../qview/assets/img/thumbnail.jpg");
+  background-image: linear-gradient(rgba(21, 21, 21, 0.7), rgba(21, 21, 21, 0.7)), url("../../qview/assets/img/thumbnail.jpg");
   z-index: 9;
 }
 
