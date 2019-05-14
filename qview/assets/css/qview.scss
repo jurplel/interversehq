@@ -1,0 +1,96 @@
+@import "../../../node_modules/bulma/sass/utilities/mixins.sass";
+
+body {
+    background-color: #151515;
+    background-image: url("../img/rainbg.jpg");
+    
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif
+}
+
+h1, h2, h3, h4, h5, .intvbutton {
+    font-family: Lato;
+    font-weight: 400;
+}
+
+h1, h2, h3, .intvbutton {
+    font-weight: 300;
+}
+
+.changelogheading {
+    font-size: 4rem;
+    @include tablet {
+        font-size: 6.5rem;
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+        transform: rotate(-180deg);
+    }
+}
+
+.changelogsubheading {
+    @include tablet {
+        left: 0rem;
+        top: 1rem;
+        position: absolute;
+    }
+    font-size: 2rem;
+}
+
+.firstsection, .nonaltsection, .altsection {
+    position: relative;
+}
+
+.firstsection {
+    background-color: #151515;
+    z-index: 3;
+}
+
+.nonaltsection {
+    box-shadow: 0em 0em 1em #000;
+    background-color: #212121;
+    z-index: 2;
+}
+
+.altsection {
+    background-color: #292929;
+    z-index: 1;
+}
+
+.window {
+    background-color: rgba(21, 21, 21, 0.7);
+}
+
+.qviewbutton {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-width: 20rem;
+}
+
+.qviewtitle {
+    font-weight: 300;
+    font-size: 6rem;
+}
+
+.cylinder {
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    height: 10rem;
+    perspective-origin: left;
+    perspective: 30rem;
+}
+  
+.cylinder li {
+    height: 2.5rem;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 300;
+    font-family: Lato, "Open Sans", sans-serif;
+    font-size: 2.5rem;
+    transform-origin: left center;
+    cursor: pointer;
+}

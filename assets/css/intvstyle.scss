@@ -1,10 +1,4 @@
-@charset "utf-8";
-
-/* Font rendering fix for macOS */
-* {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
 
 $intv-bg-color: #050710;
 
@@ -15,6 +9,8 @@ $title-color: white;
 $subtitle-color: white;
 $text: white;
 
+$title-weight: 300;
+$subtitle-weight: 400;
 
 $link-hover: hsl(204, 86%, 53%);
 
@@ -25,26 +21,61 @@ $tabs-toggle-link-radius: 7px;
 
 $control-radius: 7px;
 
-@import "bulma/bulma.sass";
+$navbar-background-color: transparent;
+$navbar-item-color: white;
+$navbar-breakpoint: $tablet;
+$navbar-item-hover-background-color: transparent;
+$navbar-dropdown-item-hover-background-color: transparent;
 
+
+@import "../../node_modules/bulma/bulma.sass";
+
+// Utility Classes
+.has-margin-auto {
+    margin: auto;
+}
+
+.has-position-absolute {
+    position: absolute;
+}
+
+.has-position-relative {
+    position: relative;
+}
+
+// Styling tweaks
 a {
 	transition: 0.1s;
 }
 
+
+// Custom site-wide classes
 .intvfooter {
 	text-align: center;
 	color: #525252;
     font-size: 0.8em;
-    margin-bottom: .5em;
+    padding-bottom: .5em;
 }
 
 .intvbutton {
+    @extend .button, .is-primary, .is-inverted, .is-outlined;
     transition: 0.2s;
-    color: #FFFFFF !important;
-    &:hover {
-        color: $intv-bg-color !important;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    &:hover, &:focus {
+        color: $intv-bg-color;
+        border-color: #FFFFFF;
     }
     &:active {
-        color: #FFFFFF !important;
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
     }
+    &:focus:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
+    }
+}
+
+.intvshadow {
+    box-shadow: 0em 0.5em 1em #000;
 }
