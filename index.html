@@ -2,8 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- GTAG -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10935865-4"></script>
@@ -19,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/intvstyle.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- FAVICON -->
@@ -34,25 +34,25 @@
     <title>Interverse</title>
 </head>
 <body>
-    <header id="underbackgroundbit" class="perspective shadow">
-        <div id="backgroundbit" class="perspective parallaxbg">
+    <header id="underbackgroundbit" class="has-perspective intvshadow">
+        <div id="backgroundbit" class="parallaxbg">
         </div>
         <h1 id="logotext">Interverse</h1>
         <img id="logo" src="assets/img/intvcompact.svg">
     </header>
-    <section class="section displaysection qviewsection parallaxbg shadow">
+    <section class="section displaysection qviewsection parallaxbg intvshadow">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column has-text-centered is-half" id="qviewsectionleft">
-                    <h1 class="title qviewtext qviewtitle">qView</h1><br>
+                    <h1 class="title qviewtext qviewtitle is-spaced">qView</h1>
                     <h2 class="subtitle qviewtext is-size-4">An image viewer designed to be practical and minimal</h2>
                     <div class="buttons is-centered has-addons">
-                        <a class="button is-primary is-inverted is-outlined is-medium intvbutton" href="qview">Website</a>
-                        <a class="button is-primary is-inverted is-outlined is-medium intvbutton" href="https://github.com/jurplel/qView">Github</a>
+                        <a class="intvbutton is-medium" href="qview">Website</a>
+                        <a class="intvbutton is-medium" href="https://github.com/jurplel/qView">Github</a>
                     </div>
                 </div>
                 <div class="column is-half">
-                    <img style="position: absolute" src="qview/assets/img/screenshot3.png">
+                    <img style="position: absolute" src="qview/assets/img/screenshot2.png">
                 </div>
             </div>
         </div>
@@ -78,9 +78,9 @@
 
     <!-- JS -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CIntersectionObserver" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/TweenLite.js" integrity="sha256-BxR+ZJzr2+8rL4LbOfULTc/gW3zutQlXojLVxYmUyWc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/CSSPlugin.js" integrity="sha256-0uHyvvHb/nitW5ICGsupEJdESWgmKKlj6XnT4xxfuts=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/umd/EasePack.js" integrity="sha256-F/RSSCXyjqp8NImwqisApSewIqOQMbnkGz542Jsh4F0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@2.0.2/TimelineLite.js" integrity="sha256-SctfWBU8nsiVvzXI/cr0AW1JMdyCearrxGwAtGEcseY=" crossorigin="anonymous" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/TweenLite.js" integrity="sha256-qCMygthIsxqQGvGUjiq+bBG4vCiKRtIOTaL09ti1YWc=" crossorigin="anonymous" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/CSSPlugin.js" integrity="sha256-PYv18XxTKeHwRks7YcZlHYTGfQXFEqtByFdNUuLFGcs=" crossorigin="anonymous" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/TimelineLite.js" integrity="sha256-tT/RYuc1oeK8yKIezYdSpJNDaI70+ifAlLQnamxVFRs=" crossorigin="anonymous" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/EasePack.js" integrity="sha256-KI89b81VRM3v7sbszidbztT5NdWZtppKQ5cVU6C4WRQ=" crossorigin="anonymous" type="module"></script>
     <script src="assets/js/main.js" type="module"></script>
 </body>

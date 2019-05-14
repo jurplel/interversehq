@@ -70,32 +70,29 @@ const tl = new TimelineLite()
 let observer = new IntersectionObserver(function(entries, self) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-        let overlap = '-=0.75';
-        
-        if (!tl.isActive()) {
-            overlap = '+=0';
+            let overlap = '-=0.75';
+            
+            if (!tl.isActive()) {
+                overlap = '+=0';
+            }
+            if (entry.target.isContact) {
+                tl.to(entry.target, 1, { 
+                    ease: Back.easeOut,
+                    scale:1,
+                    rotationX:0
+                }, overlap);
+            }
+            else {
+                TweenLite.to(entry.target, 2, { 
+                    ease: Power4.easeOut,
+                    yPercent:0,
+                    xPercent:0,
+                    autoAlpha:1
+                }, overlap);
+            }
+            self.unobserve(entry.target);
         }
-        console.log(entry);
-        if (entry.target.isContact) {
-            console.log(entry);
-            tl.to(entry.target, 1, { 
-                ease: Back.easeOut,
-                scale:1,
-                rotationX:0
-            }, overlap);
-        }
-        else {
-        TweenLite.to(entry.target, 2, { 
-            ease: Power4.easeOut,
-            yPercent:0,
-            xPercent:0,
-            autoAlpha:1
-         }, overlap);
-        }
-        self.unobserve(entry.target);
-        }
-    });
-}, config);
+    })}, config);
 
 TweenLite.set(qviewSectionLeft, {yPercent:30, autoAlpha:0})
 TweenLite.set(contact1, {rotationX:-90, scale:0})
