@@ -14,7 +14,8 @@
     </script>
     
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,500" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 
     <!-- CSS -->
@@ -53,7 +54,11 @@
                     </div>
                 </div>
                 <div class="column is-half">
-                    <img class="has-position-absolute" src="qview/assets/img/screenshot2.png" alt="qView screenshot">
+                    <picture>
+                        <source type="image/webp" srcset="qview/assets/img/screenshot2.webp">
+                        <source type="image/jpeg" srcset="qview/assets/img/screenshot2.png">
+                        <img class="has-position-absolute" src="qview/assets/img/screenshot2.png" alt="qView screenshot with nothing loaded">
+                    </picture>
                 </div>
             </div>
         </div>
