@@ -23,9 +23,7 @@ var navbarHTML = `
 
 var footerHTML =`
 <div class="intvfooter">
-        <p>
-            Copyright © 2019 jurplel All rights reserved. 
-        </p>
+        Copyright © 2019 jurplel All rights reserved. 
 </div>`
 
 var navbarHTMLobj = document.createElement('div');
