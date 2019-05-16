@@ -21,7 +21,8 @@ h1, h2, h3, .intvbutton {
         font-size: 6.5rem;
         writing-mode: vertical-lr;
         text-orientation: sideways;
-        transform: rotate(-180deg);
+        transform: rotate(180deg);
+        white-space: nowrap;
     }
 }
 
