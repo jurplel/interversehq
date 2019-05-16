@@ -48,7 +48,11 @@
                     <h3 class="is-size-3">An image viewer for <span class="has-text-weight-normal">viewing</span></h3>
                     <h5 class="is-size-5">No toolbars or distractions—pure space efficiency</h5>
                     <a role="button" class="intvbutton qviewbutton" href="download">Get qView</a>
-                    <img id="screenshot1" class="is-block has-margin-auto" src="assets/img/screenshot1.png" alt="qView screenshot with image loaded">
+                    <picture id="screenshot1" class="is-block has-margin-auto">
+                        <source type="image/webp" srcset="assets/img/screenshot1.webp">
+                        <source type="image/jpeg" srcset="assets/img/screenshot1.png">
+                        <img src="assets/img/screenshot1.png" alt="qView screenshot with image loaded">
+                    </picture>
                 </div>
         </section>
     </div>
@@ -61,7 +65,11 @@
                         interface, just your image and a titlebar.</p>
                 </div>
                 <div class="column is-three-fifths">
-                    <img src="assets/img/screenshot2.png" alt="qView screenshot with nothing loading">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/screenshot2.webp">
+                        <source type="image/jpeg" srcset="assets/img/screenshot2.png">
+                        <img src="assets/img/screenshot2.png" alt="qView screenshot with nothing loaded">
+                    </picture>
                 </div>
             </div>  
         </div>
@@ -89,16 +97,17 @@
                             preloading, minimalism doesn't have to be a compromise.</p>
                 </div>
                 <div class="column is-three-fifths">
-                    <div class="has-position-relative">
-                        <img id="screenshot3-2" src="assets/img/screenshot3.png" alt="qView screenshot showing menu">
-                    </div>
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/screenshot3.webp">
+                        <source type="image/jpeg" srcset="assets/img/screenshot3.png">
+                        <img src="assets/img/screenshot3.png" alt="qView screenshot showing context menu">
+                    </picture>
                 </div>
             </div>
         </div>
     </section>
     <div class="nonaltsection">
         <section class="section">
-
             <div class="container">
                 <div class="columns">
                     <div class="column">
@@ -130,8 +139,8 @@
     
     <!-- JS -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CIntersectionObserver" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/TweenLite.js" integrity="sha256-qCMygthIsxqQGvGUjiq+bBG4vCiKRtIOTaL09ti1YWc=" crossorigin="anonymous" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/CSSPlugin.js" integrity="sha256-PYv18XxTKeHwRks7YcZlHYTGfQXFEqtByFdNUuLFGcs=" crossorigin="anonymous" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/TweenLite.min.js" integrity="sha256-VfpswwlYKouVmlpnJW0MszMzLm9lH2yfB6ty3d1WsB4=" crossorigin="anonymous" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/plugins/CSSPlugin.min.js" integrity="sha256-UJt5JHwfrhok9SvTqbi6rRw2ajY0ugeYsIT2pioVDJY=" crossorigin="anonymous" type="module"></script>    
     <script src="assets/js/qview.js"></script>
     <script src="assets/js/main.js" type="module"></script>
 </body>
