@@ -2,11 +2,6 @@
 
 body {
     background-color: #151515;
-    background-image: url("../img/rainbg.jpg");
-    
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    background-size: cover;
     color: #ffffff;
     font-family: "Open Sans", sans-serif
 }
@@ -60,7 +55,10 @@ h1, h2, h3, .intvbutton {
 }
 
 .window {
-    background-color: rgba(21, 21, 21, 0.7);
+    background-image: linear-gradient(rgba(21,21,21,0.7), rgba(21,21,21,0.7)), url("../img/rainbg.jpg");
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 .qviewbutton {
