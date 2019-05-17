@@ -18,7 +18,7 @@ contact1.isContact = true;
 contact2.isContact = true;
 contact3.isContact = true;
 
-TweenLite.set(logo, {xPercent:-50, yPercent:-50, autoAlpha:"1"})
+TweenLite.set(logo, {xPercent:-50, yPercent:-50, autoAlpha:"0"})
 TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"})
 TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"})
 
@@ -28,14 +28,17 @@ window.onload = function() {
 }
 
 function presentLogo() {
-
+    TweenLite.to(logo, 1, {
+        delay: 0.2,
+        ease: Power2.easeOut,
+        autoAlpha: 1,
+    });
     TweenLite.from(logo, 1, {
         delay: 0.2,
         ease: Power2.easeOut,
         scale: 4,
         rotationX: 90,
         rotationZ: getRandomArbitrary(-120, 120),
-        autoAlpha: 0,
         onComplete: presentText
     });
 }

@@ -39,6 +39,8 @@ else if (navigator.platform.indexOf("Linux") != -1) {
     os = 3;
 }
 
+var qviewfor = document.getElementById('qviewfor');
+
 // Define hideable zones
 var winZone = document.getElementsByClassName('winzone');
 var macZone = document.getElementsByClassName('maczone');
@@ -156,7 +158,7 @@ for (let select of selects) {
 
 // Easter egg to enable no scrolling limits
 var noScrollLimit = false;
-document.getElementById('qviewfor').onclick = function(event) {
+qviewfor.onclick = function(event) {
     if (event.detail == 3) {
         alert('Hey, you just found an easter egg! Scroll limit disabled.');
         noScrollLimit = true;
@@ -178,6 +180,10 @@ document.getElementById('scrollzone').onwheel = function(event) {
 };
 
 // Intro animation
+TweenLite.set(qviewfor, {
+    autoAlpha: 0
+})
+
 for (let select of selects) {
     select.style.visibility = 'hidden';
 }
@@ -189,11 +195,16 @@ if (os <= 1) {
 } else {
     setTransforms(0);
 }
+
 window.onload = function() {
-    TweenLite.from(document.getElementById('qviewfor'), 0.5, {
+    TweenLite.to(qviewfor, 0.5, {
+        delay: 0,
         ease: Power1.easeOut,
-        autoAlpha: 0,
+        autoAlpha: 1
+    });
+    TweenLite.from(qviewfor, 0.5, {
         delay: 0.1,
+        ease: Power1.easeOut,
         onComplete: function() {
             for (let select of selects) {
                 showZones();
