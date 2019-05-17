@@ -18,7 +18,7 @@ contact1.isContact = true;
 contact2.isContact = true;
 contact3.isContact = true;
 
-TweenLite.set(logo, {xPercent:-50, yPercent:-50, autoAlpha:"1"})
+TweenLite.set(logo, {xPercent:-50, yPercent:-50, autoAlpha:"0"})
 TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"})
 TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"})
 
@@ -28,14 +28,17 @@ window.onload = function() {
 }
 
 function presentLogo() {
-
+    TweenLite.to(logo, 1, {
+        delay: 0.2,
+        ease: Power2.easeOut,
+        autoAlpha: 1,
+    });
     TweenLite.from(logo, 1, {
         delay: 0.2,
         ease: Power2.easeOut,
         scale: 4,
         rotationX: 90,
         rotationZ: getRandomArbitrary(-120, 120),
-        autoAlpha: 0,
         onComplete: presentText
     });
 }
@@ -70,32 +73,29 @@ const tl = new TimelineLite()
 let observer = new IntersectionObserver(function(entries, self) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-        let overlap = '-=0.75';
-        
-        if (!tl.isActive()) {
-            overlap = '+=0';
+            let overlap = '-=0.75';
+            
+            if (!tl.isActive()) {
+                overlap = '+=0';
+            }
+            if (entry.target.isContact) {
+                tl.to(entry.target, 1, { 
+                    ease: Back.easeOut,
+                    scale:1,
+                    rotationX:0
+                }, overlap);
+            }
+            else {
+                TweenLite.to(entry.target, 2, { 
+                    ease: Power4.easeOut,
+                    yPercent:0,
+                    xPercent:0,
+                    autoAlpha:1
+                }, overlap);
+            }
+            self.unobserve(entry.target);
         }
-        console.log(entry);
-        if (entry.target.isContact) {
-            console.log(entry);
-            tl.to(entry.target, 1, { 
-                ease: Back.easeOut,
-                scale:1,
-                rotationX:0
-            }, overlap);
-        }
-        else {
-        TweenLite.to(entry.target, 2, { 
-            ease: Power4.easeOut,
-            yPercent:0,
-            xPercent:0,
-            autoAlpha:1
-         }, overlap);
-        }
-        self.unobserve(entry.target);
-        }
-    });
-}, config);
+    })}, config);
 
 TweenLite.set(qviewSectionLeft, {yPercent:30, autoAlpha:0})
 TweenLite.set(contact1, {rotationX:-90, scale:0})

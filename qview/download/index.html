@@ -2,20 +2,27 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- GTAG -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10935865-4"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-10935865-4', { 'anonymize_ip': true });
     </script>
 
-    <!-- Favicon -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/intvstyle.css">
+    <link rel="stylesheet" href="../assets/css/qview.css">
+
+    <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/qview/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/qview/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/qview/favicon-16x16.png">
@@ -27,148 +34,122 @@
     <meta name="msapplication-TileColor" content="#212121">
     <meta name="msapplication-config" content="/qview/browserconfig.xml">
 
-    <!-- Theme Color-->
-    <meta name="theme-color" content="#121212">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/qview.css">
-    <link rel="stylesheet" href="assets/css/download.css">
-
-    <title>Download - qView</title>
+    <meta name="theme-color" content="#151515">
+    <title>Downloads - qView</title>
+    <meta name="description" content="Windows, macOS, and Linux downloads for qView, a lightweight, minimal image viewer.">
 </head>
 
 <body>
-    <div class="header">
+    <div class="firstsection intvshadow">
         <div class="container">
-            <header class="row">
-            </header>
+            <header></header>
         </div>
+        <section id="scrollzone" class="section has-text-centered" style="padding-top:0;">
+            <div class="col-12 text-center is-unselectable">
+                <h1 id="qviewfor" class="title is-2 is-inline">qView for</h1>&nbsp;&nbsp;
+                <ul class="cylinder has-text-left">
+                    <li id="winselect">Windows</li>
+                    <li id="macselect">macOS</li>
+                    <li id="linuxselect">Linux</li>
+                </ul>
+            </div>
+        </section>
     </div>
-    <section id="scrollzone" class="firstsection window" style="padding-bottom:2em; ">
-        <div class="col-12 text-center noselect">
-            <h1 class="d-inline">qView for</h1>&nbsp;&nbsp;
-            <ul class="cylinder text-left transition">
-                <li id="winselect">Windows</li>
-                <li id="macselect">macOS</li>
-                <li id="linuxselect">Linux</li>
-            </ul>
-            <br>
-        </div>
-    </section>
-    <section class="section altsection" style="height:30em;">
+    <section class="section altsection" style="min-height:30rem;">
         <div class="container">
-            <div class="row">
-                <div id="winzone" class="col-12 text-center">
-                    <a id="win64dl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a>
-                    <h5>64-bit installer - Windows 7+</h5>
-                    <h6><a href="javascript:void(0);" id="hiddenwindowsbutton">32-bit and portable downloads</a></h6>
+            <div class="columns">
+                <div class="winzone column has-text-centered">
+                    <a id="win64dl" role="button" class="intvbutton qviewbutton" href="#">Download</a>
+                    <h5 class="is-size-5">64-bit installer - Windows 7+</h5>
+                    <a href="javascript:void(0);" id="hiddenwindowsbutton">32-bit and portable downloads</a>
                     <div id="hiddenwindowsdl">
-                        <div class="btn-group" role="group">
-                            <a id="win64dlp" role="button" class="btn btn-lg btn-outline-light" href="#">64-bit portable</a>
-                            <a id="win32dl" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit installer</a>
-                            <a id="win32dlp" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit portable</a>
+                        <div class="buttons has-addons is-centered">
+                            <a id="win64dlp" role="button" class="intvbutton is-medium" href="#">64-bit portable</a>
+                            <a id="win32dl" role="button" class="intvbutton is-medium" href="#">32-bit installer</a>
+                            <a id="win32dlp" role="button" class="intvbutton is-medium" href="#">32-bit portable</a>
                         </div>
                     </div>
                 </div>
-                <div id="maczone" class="col-12 text-center">
-                    <a id="dmgdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Download</a>
-                    <h5>dmg image - macOS 10.11+</h5>
+                <div class="maczone column has-text-centered">
+                    <a id="dmgdl" role="button" class="intvbutton qviewbutton" href="#">Download</a>
+                    <h5 class="is-size-5">dmg image - macOS 10.12+</h5>
                 </div>
-                <div class="linuxzone col-md-6 text-center">
-                    <h2>Packages:</h2>
-                    <h4>AUR:&nbsp;&nbsp;<a href="https://aur.archlinux.org/packages/qview/" >qview</a></h4>
-                    <h4>.deb:&nbsp;&nbsp;<div class="btn-group" role="group">
-                        <a id="deb32dl" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit</a>
-                        <a id="deb64dl" role="button" class="btn btn-lg btn-outline-light" href="#">64-bit</a>
-                    </div>
-                    <h4>.rpm:&nbsp;&nbsp;<div class="btn-group" role="group">
-                        <a id="rpm32dl" role="button" class="btn btn-lg btn-outline-light" href="#">32-bit</a>
-                        <a id="rpm64dl" role="button" class="btn btn-lg btn-outline-light" href="#">64-bit</a>
-                    </div>
+                <div class="linuxzone column has-text-centered">
+                    <h3 class="title">Repositories:</h3>
+                    <ul class="is-size-5 has-text-left is-inline-block content">
+                        <li>AUR: <a href="https://aur.archlinux.org/packages/qview/">qview</a></li>
+                        <li>PPA: <a href="https://launchpad.net/~jurplel/+archive/ubuntu/qview">ppa:jurplel/qview</a></li>
+                    </ul>
+                    <h3 class="title">Packages:</h3>
+                    <ul class="is-size-5 content">
+                        <li class="is-size-5">
+                            <a id="deb32dl" href="#">32-bit .deb</a> |
+                            <a id="deb64dl" href="#">64-bit .deb</a>  
+                        </li>               
+                        <li class="is-size-5">
+                            <a id="rpm32dl" href="#">32-bit .rpm</a> | 
+                            <a id="rpm64dl" href="#">64-bit .rpm</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="linuxzone col-md-6 text-center">
-                    <h2>Distro agnostic:</h2>
-                    <a id="targzdl" role="button" class="btn btn-lg btn-outline-light dlbtn" href="#">Source Tarball</a>
-                    <h5><a href="https://github.com/jurplel/qView/wiki/Linux-Build-and-Install-Guide">Source tarball installation
-                            guide</a></h5>
+                <div class="linuxzone column has-text-centered">
+                    <h3 class="title">Distro-agnostic:</h3>
+                    <ul class="is-size-5 content">
+                        <li><a id="" href="#">Appimage</a></li>
+                        <li><a id="targzdl" href="#">Source Tarball</a> <sup><a class="is-size-7" href="https://github.com/jurplel/qView/wiki/Linux-Build-and-Install-Guide">Build guide</a></sup></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
     <section class="section nonaltsection">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="qvheading">What's new</h1><br><br>
-                </div>
+            <div class="has-text-centered">
+                <h1 class="title is-2">What's new</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-2">
-                    <h2 class="changelogheading changelogsubheading"><span id="date0">error</span></h2>
-                    <h1 class="qvheading changelogheading">version <span id="ver0">0.0</span></h1>
+            <div class="columns is-tablet">
+                <div class="column is-2-tablet">
+                    <h4 class="changelogheading changelogsubheading is-size-5-mobile" style="top: 3rem"><span class="date">error</span></h4>
+                    <h1 class="changelogheading is-size-5-mobile">version <span class="ver">0.0</span></h1>
                 </div>
-                <div class="changelog" id="log0" class="col-lg-10">
-                </div>
+                <div class="column log"></div>
             </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <a class="btn btn-large btn-outline-light dlbtn" href="../changelog">View all changelogs</a>
-                </div>
+            <div class="has-text-centered">
+                <a class="is-size-5" href="../changelog">Earlier releases</a>
             </div>
         </div>
     </section>
     <section class="section altsection">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="qvheading">More stuff</h1>
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <h1 class="title">More stuff</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                    <a href="https://github.com/jurplel/qView/wiki/Keyboard-Shortcuts" class="btn btn-large btn-outline-light dlbtn">Keyboard shortcuts</a>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <a href="https://github.com/jurplel/qView/issues" class="btn btn-large btn-outline-light dlbtn">Report a bug</a>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <a href="https://discord.gg/0lXeGE6soHgmQPT5" class="btn btn-large btn-outline-light dlbtn">Discord</a>
-                </div>
+            <div class="buttons is-centered">
+                <a href="https://github.com/jurplel/qView/wiki/Keyboard-Shortcuts" class="intvbutton is-large">View keyboard shortcuts</a>
+                <a href="https://github.com/jurplel/qView/issues" class="intvbutton is-large">Report a bug</a>
+                <a href="https://discord.gg/0lXeGE6soHgmQPT5" class="intvbutton is-large">Join the Discord server</a>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="col-12 text-center">
-                        <br><br><h2>Thank you for using qView.</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="column has-text-centered">
+                        <h2 class="subtitle">Thank you for using qView.</h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="altsection">
-    </footer>
+    <footer class="altsection"></footer>
 
-    <video preload="auto" playsinline autoplay muted loop poster="../assets/img/thumbnail.jpg" id="bgvid">
-        <source src="../assets/img/rainywindow.mp4" type="video/mp4">
-    </video>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-    <!--Showdown-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js" integrity="sha256-dwhppIrxD8qC6lNulndZgtIm4XBU9zoMd9OUoXzIDAE=" crossorigin="anonymous"></script>
-    <!-- Custom JS -->
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js" integrity="sha256-LSUpTY0kkXGKvcBC9kbmgibmx3NVVgJvAEfTZbs51mU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/TweenLite.min.js" integrity="sha256-VfpswwlYKouVmlpnJW0MszMzLm9lH2yfB6ty3d1WsB4=" crossorigin="anonymous" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/plugins/CSSPlugin.min.js" integrity="sha256-UJt5JHwfrhok9SvTqbi6rRw2ajY0ugeYsIT2pioVDJY=" crossorigin="anonymous" type="module"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/TimelineLite.min.js" integrity="sha256-5HW1hilN77unDg9wwY2mmXL1G8/hBMrYOgiB+BqsxNg=" crossorigin="anonymous" type="module"></script>    
     <script src="../assets/js/qview.js"></script>
-    <script src="assets/js/download.js"></script>
+    <script src="../assets/js/changelog.js"></script>
+    <script src="../assets/js/download.js" type="module"></script>
 </body>
 
 </html>

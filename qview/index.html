@@ -2,20 +2,27 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- GTAG -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10935865-4"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-10935865-4', { 'anonymize_ip': true });
     </script>
 
-    <!-- Favicon -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/intvstyle.css">
+    <link rel="stylesheet" href="assets/css/qview.css">
+
+    <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/qview/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/qview/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/qview/favicon-16x16.png">
@@ -27,116 +34,118 @@
     <meta name="msapplication-TileColor" content="#212121">
     <meta name="msapplication-config" content="/qview/browserconfig.xml">
 
-    <!-- Theme Color-->
-    <meta name="theme-color" content="#121212">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/qview.css">
-
+    <meta name="theme-color" content="#151515">
     <title>qView - Practical and Minimal Image Viewer</title>
-    <meta name="description" content="qView is a Qt-based image viewer designed to be practical and minimal, available for Windows, macOS, and Linux">
+    <meta name="description" content="qView is a lightweight image viewer designed with minimalism and practicality in mind, available for Windows, macOS, and Linux">
 </head>
 
 <body>
-    <div class="header">
+    <div class="firstsection intvshadow window">
         <div class="container">
-            <header class="row">
-            </header>
+            <header></header>
         </div>
+        <section class="section has-text-centered">
+            <div class="container">
+                    <h3 class="is-size-3">An image viewer for <span class="has-text-weight-normal">viewing</span></h3>
+                    <h5 class="is-size-5">No toolbars or distractions—pure space efficiency</h5>
+                    <a role="button" class="intvbutton qviewbutton" href="download">Get qView</a>
+                    <picture id="screenshot1" class="is-block has-margin-auto">
+                        <source type="image/webp" srcset="assets/img/screenshot1.webp">
+                        <source type="image/jpeg" srcset="assets/img/screenshot1.png">
+                        <img src="assets/img/screenshot1.png" alt="qView screenshot with image loaded">
+                    </picture>
+                </div>
+        </section>
     </div>
-    <section class="section firstsection align-items-center window">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>An image viewer for <b>viewing</b></h2>
-                    <h5>No toolbars or distractions—pure space efficiency</h5>
-                    <a role="button" class="btn btn-lg btn-outline-light dlbtn" href="download">Get qView</a><br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img class="img-fluid" src="assets/img/screenshot.png" alt="qView screenshot">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section  altsection">
+    <section class="section altsection">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h2>Refreshingly minimal</h2>
+            <div class="columns">
+                <div class="column">
+                    <h2 class="title is-2">Beautifully simple</h2>
                     <p>qView was designed from the very start to be as visually minimal and space efficient as possible. No cluttered
-                        interface, just your image and a context menu</p>
+                        interface, just your image and a titlebar.</p>
                 </div>
-                <div class="col-md-7">
-                    <img class="img-fluid" src="assets/img/screenshot3.png" alt="qView screenshot 3">
+                <div class="column is-three-fifths">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/screenshot2.webp">
+                        <source type="image/jpeg" srcset="assets/img/screenshot2.png">
+                        <img src="assets/img/screenshot2.png" alt="qView screenshot with nothing loaded">
+                    </picture>
                 </div>
-            </div>
+            </div>  
         </div>
     </section>
-    <section class="section  nonaltsection">
+    <section class="section nonaltsection">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <img class="img-fluid" src="assets/img/screenshot2.png" alt="qView screenshot 2">
+            <div class="columns">
+                <div class="column is-three-fifths">
+                    <video loop playsinline autoplay muted src="assets/img/qloop.mp4" style="border-radius: 1em;">
+                        qView looping video showing many images switching quickly
+                    </video>
                 </div>
-                <div class="col-md-5">
-                    <h2>Practical nonetheless</h2>
-                    <p>With features such as animated GIF support, file info display, file history, slideshow, image transformations,
-                        and numerous configurable options, minimalism doesn't have to be a compromise.</p>
+                <div class="column">
+                    <h2 class="title is-2">Fast and lightweight</h2>
+                    <p>You shouldn't have to wait just to view an image—qView opens practically instantly, and switching
+                            images is just as quick, all while having low memory and CPU usage.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section  altsection">
+    <section class="section altsection">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h2>High quality scaling</h2>
-                    <p>Whenever you zoom or resize the window, your image is quickly and smoothly scaled to ensure a crisp
-                        picture.</p>
+            <div class="columns">
+                <div class="column">
+                    <h2 class="title is-2">Fully-featured</h2>
+                    <p>With features such as animated GIF controls, file history, rotation/mirroring, and multithreaded
+                            preloading, minimalism doesn't have to be a compromise.</p>
                 </div>
-                <div class="col-md-3">
-                    <h2>Cross-platform</h2>
-                    <p>Whatever operating sytem you prefer, qView was designed to provide as native of an experience as possible.</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>Supports all common image formats</h2>
-                    <p>qView supports all common image formats including but not limited to bmp, gif, jp2, jpg, png, svg,
-                        tiff, and webp.</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>Free and open-source</h2>
-                    <p>qView is completely free and open source software based on Qt5. It can be found on Github under the
-                        GPLv3 license.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <a role="button" class="btn btn-lg btn-outline-light dlbtn" href="download">Get qView</a><br>
+                <div class="column is-three-fifths">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/screenshot3.webp">
+                        <source type="image/jpeg" srcset="assets/img/screenshot3.png">
+                        <img src="assets/img/screenshot3.png" alt="qView screenshot showing context menu">
+                    </picture>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="altsection">
-    </footer>
-
-    <video preload="auto" playsinline autoplay muted loop poster="assets/img/thumbnail.jpg" id="bgvid">
-        <source src="assets/img/rainywindow.mp4" type="video/mp4">
-    </video>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-    <!-- Custom JS -->
+    <div class="nonaltsection">
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="title">Configurable</h3>
+                        <p>qView features a myriad of configurable preferences to ensure the best experience for as many people as possible.</p>
+                    </div>
+                    <div class="column">
+                        <h3 class="title">Compatible</h3>
+                        <p>qView supports all common image formats including bmp, gif, jpg, png, 
+                            tiff, and webp.</p>
+                    </div>
+                    <div class="column">
+                        <h3 class="title">Cross-platform</h3>
+                        <p>Whatever operating system you use, the experience is designed to be as native as possible.</p>
+                    </div>
+                    <div class="column">
+                        <h3 class="title">Free and open-source</h3>
+                        <p>qView is completely free and open source software based on Qt5. It can be found on Github under the
+                            GPLv3 license.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container has-text-centered">
+                <a role="button" class="intvbutton qviewbutton" href="download">Get qView</a>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    
+    <!-- JS -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CIntersectionObserver" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/TweenLite.min.js" integrity="sha256-VfpswwlYKouVmlpnJW0MszMzLm9lH2yfB6ty3d1WsB4=" crossorigin="anonymous" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/plugins/CSSPlugin.min.js" integrity="sha256-UJt5JHwfrhok9SvTqbi6rRw2ajY0ugeYsIT2pioVDJY=" crossorigin="anonymous" type="module"></script>    
     <script src="assets/js/qview.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
 </body>
 
 </html>

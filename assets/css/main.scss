@@ -1,8 +1,4 @@
-@import "intvstyle.scss";
-
-body {
-    height: 100vh;
-}
+@import "../../node_modules/bulma/sass/utilities/mixins.sass";
 
 #logo {
     position: absolute;
@@ -54,14 +50,11 @@ body {
     height: 35rem;
     padding-top: 5em;
     padding-bottom: 5rem;
-}
-
-.shadow {
-    box-shadow: 0em 0.5em 1em #000;
+    position: relative;
 }
 
 .qviewsection {
-    background-image: linear-gradient(rgba(21,21,21,0.7), rgba(21,21,21,0.7)), url("../../qview/assets/img/thumbnail.jpg");
+    background-image: linear-gradient(rgba(21,21,21,0.7), rgba(21,21,21,0.7)), url("../../qview/assets/img/rainbg.jpg");
     z-index: 9;
 }
 
@@ -85,12 +78,6 @@ body {
     vertical-align: middle;
 }
 
-#synchrotitle {
-    font-family: 'Coda' !important;
-    font-weight: 300;
-    font-size: 4rem;
-}
-
-.perspective {
+.has-perspective {
     perspective: 30em;
 }

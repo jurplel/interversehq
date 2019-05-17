@@ -2,20 +2,27 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- GTAG -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10935865-4"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-10935865-4', { 'anonymize_ip': true });
     </script>
 
-    <!-- Favicon -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/intvstyle.css">
+    <link rel="stylesheet" href="../assets/css/qview.css">
+
+    <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/qview/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/qview/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/qview/favicon-16x16.png">
@@ -27,85 +34,58 @@
     <meta name="msapplication-TileColor" content="#212121">
     <meta name="msapplication-config" content="/qview/browserconfig.xml">
 
-    <!-- Theme Color-->
-    <meta name="theme-color" content="#121212">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/qview.css">
-
+    <meta name="theme-color" content="#151515">
     <title>Changelog - qView</title>
 </head>
 
 <body>
-    <div class="header">
+    <div class="firstsection intvshadow">
         <div class="container">
-            <header class="row">
-            </header>
+            <header></header>
         </div>
-    </div>
-    <section class="section firstsection window">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <h2 class="changelogheading changelogsubheading"><span id="date0">error</span></h2>
-                    <h1 class="qvheading changelogheading">version <span id="ver0">0.0</span></h1>
-                </div>
-                <div class="changelog" id="log0" class="col-lg-10">
+        <section class="section">
+            <div class="container">
+                <div class="columns is-tablet">
+                    <div class="column is-2-tablet">
+                        <h4 class="changelogheading changelogsubheading is-size-5-mobile"><span class="date">error</span></h4>
+                        <h1 class="changelogheading">version <span class="ver">0.0</span></h1>
+                    </div>
+                    <div class="column log"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="section altsection">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <h2 class="changelogheading changelogsubheading"><span id="date1">error</span></h2>
-                    <h1 class="qvheading changelogheading">version <span id="ver1">0.0</span></h1>
+            <div class="columns is-tablet">
+                <div class="column is-2-tablet">
+                    <h4 class="changelogheading changelogsubheading is-size-5-mobile"><span class="date">error</span></h4>
+                    <h1 class="changelogheading">version <span class="ver">0.0</span></h1>
                 </div>
-                <div class="changelog" id="log1" class="col-lg-10">
-                </div>
+                <div class="column log"></div>
             </div>
         </div>
     </section>
     <section class="section nonaltsection">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <h2 class="changelogheading changelogsubheading"><span id="date2">error</span></h2>
-                    <h1 class="qvheading changelogheading">version <span id="ver2">0.0</span></h1>
+            <div class="columns is-tablet">
+                <div class="column is-2-tablet">
+                    <h4 class="changelogheading changelogsubheading is-size-5-mobile"><span class="date">error</span></h4>
+                    <h1 class="changelogheading">version <span class="ver">0.0</span></h1>
                 </div>
-                <div class="changelog" id="log2" class="col-lg-10">
-                </div>
+                <div class="column log"></div>
             </div>
         </div>
     </section>
-    <section class="section altsection">
-        <div class="col-12 text-center">
-            <a class="btn btn-large btn-outline-light dlbtn" href="https://github.com/jurplel/qView/releases">Further changelogs</a>
-        </div>
+    <section class="section altsection has-text-centered">
+        <a class="intvbutton is-large" href="https://github.com/jurplel/qView/releases">View full release history</a>
     </section>
-    <footer class="altsection">
-    </footer>
+    <footer class="altsection"></footer>
 
-    <video preload="auto" playsinline autoplay muted loop poster="../assets/img/thumbnail.jpg" id="bgvid">
-        <source src="../assets/img/rainywindow.mp4" type="video/mp4">
-    </video>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-    <!--Showdown-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js" integrity="sha256-dwhppIrxD8qC6lNulndZgtIm4XBU9zoMd9OUoXzIDAE=" crossorigin="anonymous"></script>
-    <!-- Custom JS -->
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js" integrity="sha256-LSUpTY0kkXGKvcBC9kbmgibmx3NVVgJvAEfTZbs51mU=" crossorigin="anonymous"></script>
     <script src="../assets/js/qview.js"></script>
-    <script src="assets/js/changelog.js"></script>
+    <script src="../assets/js/changelog.js"></script>
 </body>
 
 </html>

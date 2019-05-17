@@ -1,2 +1,8 @@
 .DS_Store
 .directory
+
+npm-debug.log*
+node_modules/
+
+*.css
+*.css.map
