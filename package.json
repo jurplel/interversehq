@@ -6,7 +6,10 @@
     "node-sass": "^4.12.0"
   },
   "scripts": {
-    "scss": "node-sass assets/css -o assets/css --source-map true && node-sass qview/assets/css -o qview/assets/css --source-map true"
+    "scss:main": "node-sass assets/css -o assets/css --source-map true",
+    "scss:qview": "node-sass qview/assets/css -o qview/assets/css --source-map true",
+    "scss": "npm run scss:main && npm run scss:qview",
+    "scss:watch": "npm run scss:main -- -w & npm run scss:qview -- -w"
   },
   "repository": {
     "type": "git",
