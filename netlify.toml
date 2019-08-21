@@ -7,8 +7,14 @@
   status = 301
   force = true
 
-  [[redirects]]
+[[redirects]]
   from = "https://www.intvhq.com/*"
   to = "https://www.interversehq.com/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/discord"
+  to = "https://discordapp.com/invite/t8K7NtA"
+  status = 200
+  
