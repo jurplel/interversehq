@@ -16,5 +16,4 @@
 [[redirects]]
   from = "/discord"
   to = "https://discordapp.com/invite/t8K7NtA"
-  status = 200
-  force = true
+  status = 301
