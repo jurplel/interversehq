@@ -1,5 +1,6 @@
 {
-  "servers": [
-    "35.227.80.175:32019"
-  ]
+	"servers": [{
+		"ip": "35.227.80.175:32019",
+		"name": "Official Interverse Server"
+	}]
 }
