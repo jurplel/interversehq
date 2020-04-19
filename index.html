@@ -36,56 +36,46 @@
     <meta name="description" content="Interverse—a website with stuff.">
 </head>
 <body>
-    <section class="hero is-medium parallaxbg" id="backgroundbit">
-        <div class="hero-head">
-            <header class="container">
-                <nav class="navbar" role="navigation" aria-label="main navigation">  
-                    <div class="navbar-brand">
-                        <a class="navbar-item is-size-5" href="/"><span class="intvhighlight">interverse</span><span class="intvnohighlight">hq</span></a>
-                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="qviewnavbar">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
+    <header class="hero is-medium parallaxbg" id="backgroundbit">
+        <div class="hero-head class container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">  
+                <div class="navbar-brand">
+                    <a class="navbar-item is-size-5" href="/"><span class="intvhighlight">interverse</span><span class="intvnohighlight">hq</span></a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="qviewnavbar">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="qviewnavbar">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="/qview/download">qView</a>
+                        <a class="navbar-item" href="/qview/changelog">Discord</a>
+                        <a class="navbar-item" href="https://github.com/jurplel/qView">Github</a>
                     </div>
-                    <div class="navbar-menu" id="qviewnavbar">
-                        <div class="navbar-start">
-                            <a class="navbar-item" href="/qview/download">qView</a>
-                            <a class="navbar-item" href="/qview/changelog">Discord</a>
-                            <a class="navbar-item" href="https://github.com/jurplel/qView">Github</a>
-                        </div>
-                        <div class="navbar-end">
-                            <a class="navbar-item" href="/">Interverse</a>
-                        </div>
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="/">Interverse</a>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </nav>
         </div>
       
         <div class="hero-body">
             <div class="container has-text-centered">
-                <div style="background-color:'#ececec'">
-                    <h1 class="title is-size-1"><span class="intvhighlight">interverse</span><span class="intvnohighlight">hq</span></h1>
-                    <h3 class="subtitle is-size-4">A site by jurplel.</h3>
-                </div>
+                <h1 class="title is-size-1"><span class="intvhighlight">interverse</span><span class="intvnohighlight">hq</span></h1>
+                <h3 class="subtitle is-size-4">A site by jurplel.</h3>
             </div>
         </div>
         <div class="wave-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="200rem" viewBox="0 0 1440 320"><path fill="#0e141c" fill-opacity="1" d="M0,256L1440,160L1440,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="200rem" viewBox="0 0 1440 270"><path fill="#0e141c" fill-opacity="1" d="M0,256L1440,160L1440,270L0,270Z"></path></svg>
         </div>
-    </section>
-    <!-- <header id="underbackgroundbit" class="has-perspective intvshadow">
-        <div id="backgroundbit" class="parallaxbg">
-        </div>
-        <h1 id="logotext">Interverse</h1>
-        <img id="logo" src="assets/img/intvcompact.svg" alt="Interverse logo">
     </header>
-    <section class="section displaysection qviewsection parallaxbg intvshadow">
+    <section>
         <div class="container">
             <div class="columns is-centered">
                 <div class="column has-text-centered is-half" id="qviewsectionleft">
-                    <h1 class="title qviewtext qviewtitle is-spaced">qView</h1>
-                    <h2 class="subtitle qviewtext is-size-4">An image viewer designed to be practical and minimal</h2>
+                    <h1 class="title is-size-1 intvhighlight">qView</h1>
+                    <h2 class="subtitle is-size-5">An image viewer designed to be practical and minimal</h2>
                     <div class="buttons is-centered has-addons">
                         <a class="intvbutton is-medium" href="qview">Website</a>
                         <a class="intvbutton is-medium" href="https://github.com/jurplel/qView">Github</a>
@@ -93,15 +83,15 @@
                 </div>
                 <div class="column is-half">
                     <picture>
-                        <source type="image/webp" srcset="qview/assets/img/screenshot2.webp">
-                        <source type="image/jpeg" srcset="qview/assets/img/screenshot2.png">
-                        <img class="has-position-absolute" src="qview/assets/img/screenshot2.png" alt="qView screenshot with nothing loaded">
+                        <source type="image/webp" srcset="qview/assets/img/screenshot1.webp">
+                        <source type="image/jpeg" srcset="qview/assets/img/screenshot1.png">
+                        <img src="qview/assets/img/screenshot2.png" alt="qView screenshot with nothing loaded">
                     </picture>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section contactsection">
+    <!-- <section class="section contactsection">
         <div class="container" style="margin: auto">
             <div class="columns is-centered has-perspective">
                 <div class="column has-text-centered" id="contact1">
