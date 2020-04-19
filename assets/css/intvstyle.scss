@@ -1,28 +1,29 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
 
-$intv-bg-color: #050710;
+$intv-bg-color: #0e141c;
+$intv-fg-color: #ececec;
 
 $body-background-color: $intv-bg-color;
 $family-sans-serif: 'Exo 2', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-$title-color: white;
-$subtitle-color: white;
-$text: white;
+$title-color: $intv-fg-color;
+$subtitle-color: $intv-fg-color;
+$text: $intv-fg-color;
 
-$title-weight: 300;
+$title-weight: 600;
 $subtitle-weight: 400;
 
 $link-hover: hsl(204, 86%, 53%);
 
-$tabs-toggle-link-active-background-color: white;
+$tabs-toggle-link-active-background-color: $intv-fg-color;
 $tabs-toggle-link-active-color: $intv-bg-color;
-$tabs-toggle-link-hover-background-color: white;
+$tabs-toggle-link-hover-background-color: $intv-fg-color;
 $tabs-toggle-link-radius: 7px;
 
 $control-radius: 7px;
 
 $navbar-background-color: transparent;
-$navbar-item-color: white;
+$navbar-item-color: $intv-fg-color;
 $navbar-breakpoint: $tablet;
 $navbar-item-hover-background-color: transparent;
 $navbar-dropdown-item-hover-background-color: transparent;
@@ -66,12 +67,12 @@ code {
     margin-bottom: 0.5rem;
     &:hover, &:focus {
         color: $intv-bg-color;
-        border-color: #FFFFFF;
+        border-color: $intv-fg-color;
     }
     &:active {
-        color: #FFFFFF;
-        border-color: #FFFFFF;
-        background-color: #FFFFFF;
+        color: $intv-fg-color;
+        border-color: $intv-fg-color;
+        background-color: $intv-fg-color;
     }
     &:focus:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
@@ -80,4 +81,19 @@ code {
 
 .intvshadow {
     box-shadow: 0em 0.5em 1em #000;
+}
+
+.intvhighlight {
+    background-color: $intv-fg-color;
+    color: $intv-bg-color;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.intvnohighlight {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-weight: 600;
 }

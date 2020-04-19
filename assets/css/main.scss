@@ -36,9 +36,10 @@
 }
 
 #backgroundbit {
-    background-image: url(../img/intvultrablur3.jpg);
-    height: 100vh;
-    visibility: hidden;
+    background-image: url(../img/intvultrablurcrystal.png);
+    height: 50rem;
+    position: relative;
+    // visibility: hidden;
 }
 
 #underbackgroundbit {
@@ -80,4 +81,9 @@
 
 .has-perspective {
     perspective: 30em;
+}
+
+.wave-container {
+    position: absolute;
+    bottom: -1rem;
 }
