@@ -1,7 +1,10 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
 
+$intv-bg-color-darker: #050710;
 $intv-bg-color: #0e141c;
 $intv-fg-color: #ececec;
+
+$intv-link-hover: hsl(204, 86%, 53%);
 
 $body-background-color: $intv-bg-color;
 $family-sans-serif: 'Exo 2', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -27,6 +30,7 @@ $navbar-item-color: $intv-fg-color;
 $navbar-breakpoint: $tablet;
 $navbar-item-hover-background-color: transparent;
 $navbar-dropdown-item-hover-background-color: transparent;
+$navbar-height: 3rem;
 
 
 @import "../../node_modules/bulma/bulma.sass";
@@ -83,6 +87,19 @@ code {
     box-shadow: 0em 0.5em 1em #000;
 }
 
+a:hover {
+    .intvhighlight, .intvnohighlight {
+        color: black;
+        background-color: white;
+        box-shadow: 0em 0em 0.5em white;
+    }
+    &:active {
+        .intvhighlight, .intvnohighlight {
+            color: white;
+        }
+    }
+}
+
 .intvhighlight {
     background-color: $intv-fg-color;
     color: $intv-bg-color;
@@ -90,10 +107,18 @@ code {
     padding-right: 0.2rem;
     font-weight: 600;
     display: inline-block;
+    transition: 0.2s;
 }
 
 .intvnohighlight {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
     font-weight: 600;
+    transition: 0.2s;
+}
+
+.intvoverlay {
+    background: rgba($color: $intv-bg-color, $alpha: 0.75);
+    -webkit-backdrop-filter: saturate(200%) blur(20px);
+    backdrop-filter: saturate(200%) blur(20px);
 }
