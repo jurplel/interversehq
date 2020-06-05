@@ -88,10 +88,13 @@ code {
 }
 
 a:hover {
-    .intvhighlight, .intvnohighlight {
+    .intvhighlight {
         color: black;
         background-color: white;
         box-shadow: 0em 0em 0.5em white;
+    }
+    .intvnohighlight {
+        color: white;
     }
     &:active {
         .intvhighlight, .intvnohighlight {
