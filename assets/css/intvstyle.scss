@@ -122,6 +122,6 @@ a:hover {
 
 .intvoverlay {
     background: rgba($color: $intv-bg-color, $alpha: 0.75);
-    -webkit-backdrop-filter: saturate(200%) blur(20px);
-    backdrop-filter: saturate(200%) blur(20px);
+    -webkit-backdrop-filter: saturate(100%) blur(20px);
+    backdrop-filter: saturate(100%) blur(20px);
 }
