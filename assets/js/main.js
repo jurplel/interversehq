@@ -7,8 +7,9 @@ function isVisible(e) {
 }
 
 //start
-var logo = document.getElementById("logo");
+// var logo = document.getElementById("logo");
 var logoText = document.getElementById("logotext");
+// var logoBg = document.getElementById("logobg");
 var backgroundBit = document.getElementById("backgroundbit");
 var qviewSectionLeft = document.getElementById("qviewsectionleft");
 var contact1 = document.getElementById("contact1");
@@ -18,44 +19,74 @@ contact1.isContact = true;
 contact2.isContact = true;
 contact3.isContact = true;
 
-TweenLite.set(logo, {xPercent:-50, yPercent:-50, autoAlpha:"0"})
-TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"})
-TweenLite.set(logoText, {xPercent:-90, yPercent:-50, autoAlpha:"1"})
+let logos = document.getElementsByClassName('logo');
+TweenLite.set(logos[0], {color: "rgba(255, 0, 0)"});
+TweenLite.set(logos[1], {color: "rgba(0, 255, 0)"});
+TweenLite.set(logos[2], {color: "rgba(0, 0, 255)"});
 
+TweenLite.set(logos[0], {xPercent:-55, yPercent:-52, autoAlpha:"0"});
+TweenLite.set(logos[1], {xPercent:-50, yPercent:-50, autoAlpha:"0"})
+TweenLite.set(logos[2], {xPercent:-45, yPercent:-48, autoAlpha:"0"});
+
+TweenLite.set(logoText, {xPercent:-50, yPercent:-50, autoAlpha:"1"})
 
 window.onload = function() {
     presentLogo();
 }
 
 function presentLogo() {
-    TweenLite.to(logo, 1, {
-        delay: 0.2,
-        ease: Power2.easeOut,
-        autoAlpha: 1,
-    });
-    TweenLite.from(logo, 1, {
+    for (let i = 0; i < logos.length; i++) {
+        TweenLite.to(logos[i], 1, {
+            delay: 0.2,
+            ease: Power2.easeOut,
+            autoAlpha: 1,
+        });
+    }
+    let offsetx = getRandomArbitrary(0, 50);
+    let offsety = getRandomArbitrary(-50, 50);
+    TweenLite.from(logos[0], 1, {
         delay: 0.2,
         ease: Power2.easeOut,
         scale: 4,
-        rotationX: 90,
-        rotationZ: getRandomArbitrary(-120, 120),
+        color: "rgba(255, 0, 0)",
+        xPercent: -offsetx-100,
+        yPercent: -offsety-100,
+    });
+    TweenLite.from(logos[1], 1, {
+        delay: 0.2,
+        ease: Power2.easeOut,
+        scale: 4,
+        color: "rgba(0, 255, 0)",
+    });
+    TweenLite.from(logos[2], 1, {
+        delay: 0.2,
+        ease: Power2.easeOut,
+        scale: 4,
+        color: "rgba(0, 0, 255)",
+        xPercent: offsetx,
+        yPercent: offsety,
         onComplete: presentText
     });
 }
 
 function presentText() {
-    TweenLite.to(logo, 0.5, {
-        ease: Power2.easeInOut,
-        xPercent: -290,
-    });
-    TweenLite.to(logoText, 0.5, {
-        ease: Power2.easeInOut,
-        xPercent: -36,
+    TweenLite.to(logoText, 0.35, {
+        delay: 0.2,
+        ease: Power2.easeOut,
+        backgroundPosition: "0%, 0%",
+        onComplete: presentText1
     })
-    TweenLite.to(logoText, 0.48, {
-        ease: Power2.easeInOut,
-        clipPath: "inset(0% 0% 0% 0%)",
-        webkitClipPath: "inset(0% 0% 0% 0%)",
+}
+
+function presentText1() {
+    for (let i = 0; i < logos.length; i++) {
+        TweenLite.set(logos[i], {autoAlpha: "0"})
+    }
+
+    TweenLite.set(logoText, {color: "white"})
+    TweenLite.to(logoText, 0.35, {
+        ease: Power2.easeOut,
+        backgroundPosition: "-98%, 0%",
     })
 
     TweenLite.to(backgroundBit, 1, {

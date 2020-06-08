@@ -1,30 +1,31 @@
 @import "../../node_modules/bulma/sass/utilities/mixins.sass";
 
-#logo {
+.logo {
     position: absolute;
-    top: 45%;
+    top: 42.4%;
     left: 50%;
-    width: 9vw;
-    visibility: hidden;
+    font-size: 15vw;
+    font-weight: 600;
     @include mobile {
-        width: 12vw;
+        font-size: 30vw;
     }
-    z-index: 20;
+    visibility: hidden;
+    mix-blend-mode: screen;
 }
 
 #logotext {
     position: absolute;
     top: 45%;
     left: 50%;
-    font-size: 9vw;
+    font-size: 7vw;
     font-weight: 300;
-    -webkit-clip-path: inset(0px 0px 0px 100%);
-    clip-path: inset(0px 0px 0px 100%);
-    visibility: hidden;
     @include mobile {
         font-size: 12vw;
     }
-    z-index: 20;
+    background: linear-gradient(to right, white 50%, transparent 50%);
+    background-size: 203%;
+    background-position: 100%;
+    color: transparent;
 }
 
 .parallaxbg {
@@ -36,14 +37,17 @@
 }
 
 #backgroundbit {
+    position: absolute;
     background-image: url(../img/intvultrablur3.jpg);
     height: 100vh;
+    width: 100vw;
     visibility: hidden;
 }
 
 #underbackgroundbit {
     position: relative;
     z-index: 10;
+    height: 100vh;
 }
 
 .displaysection {

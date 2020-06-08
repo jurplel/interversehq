@@ -1,6 +1,6 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
 
-$intv-bg-color: #050710;
+$intv-bg-color: #0e141c;
 
 $body-background-color: $intv-bg-color;
 $family-sans-serif: 'Exo 2', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -80,4 +80,10 @@ code {
 
 .intvshadow {
     box-shadow: 0em 0.5em 1em #000;
+}
+
+.intvoverlay {
+    background: rgba($color: $intv-bg-color, $alpha: 0.75);
+    -webkit-backdrop-filter: saturate(100%) blur(20px);
+    backdrop-filter: saturate(100%) blur(20px);
 }
