@@ -24,7 +24,7 @@ var warpZ = 50,
     units = 200,
     stars = [],
     cycle = 0,
-    Z = 0.2,
+    Z = 0.1,
     isDown = false;
 
 // addEventListener helper

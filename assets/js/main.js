@@ -34,7 +34,7 @@ TweenLite.set(logoText, {xPercent:-50, yPercent:-50, autoAlpha:"1"});
 
 TweenLite.set(navbar, {autoAlpha:"0"});
 
-TweenLite.set(canvas, {autoAlpha:"0"});
+// TweenLite.set(canvas, {autoAlpha:"0"});
 
 window.onload = function() {
     presentLogo();
