@@ -6,7 +6,7 @@
     left: 50%;
     font-size: 15vw;
     font-weight: 600;
-    @include mobile {
+    @include touch {
         font-size: 30vw;
     }
     visibility: hidden;
@@ -19,7 +19,7 @@
     left: 50%;
     font-size: 7vw;
     font-weight: 300;
-    @include mobile {
+    @include touch {
         font-size: 12vw;
     }
     background: linear-gradient(to right, white 50%, transparent 50%);
@@ -49,6 +49,7 @@
     height: 100vh;
     width: 100vw;
     visibility: hidden;
+    z-index: -1;
 }
 
 #underbackgroundbit {

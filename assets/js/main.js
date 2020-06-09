@@ -107,9 +107,13 @@ function presentText1() {
         clamp: true
         })
 
-    TweenLite.to(canvas, 1, {
-        ease: roughEase,
-        autoAlpha: 1
+    TweenLite.to(backgroundBit, 1.7, {
+        ease: Power2.easeOut,
+        autoAlpha: 1,
+    });
+    TweenLite.from(backgroundBit, 1.7, {
+        ease: Power2.easeOut,
+        scale: 0.01,
     });
 
     TweenLite.to(navbar, 1, {
