@@ -87,3 +87,41 @@ code {
     -webkit-backdrop-filter: saturate(100%) blur(20px);
     backdrop-filter: saturate(100%) blur(20px);
 }
+
+@keyframes flicker {
+    $steps: 20;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        opacity: random();
+      }
+    }
+  }
+
+.crt {
+  position: relative;
+  overflow: hidden;
+	@mixin full {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 2;
+	}
+  // flicker
+  &::after{
+		@include full;
+    background: transparentize($intv-bg-color, 0.9);
+    opacity: 0;
+		animation: flicker 0.15s infinite;
+  }
+  // scanlines
+  &::before{
+		@include full;
+    background: linear-gradient(transparentize($intv-bg-color, 1) 50%, transparentize(darken($intv-bg-color, 10), 0.75) 50%), linear-gradient(90deg, transparentize(#ff0000, 0.94), transparentize(#00ff00, 0.98), transparentize(#0000ff, 0.94));
+    background-size: 100% 2px, 3px 100%;
+  }
+}

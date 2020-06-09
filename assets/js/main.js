@@ -79,9 +79,9 @@ function presentText() {
 }
 
 function presentText1() {
-    for (let i = 0; i < logos.length; i++) {
-        TweenLite.set(logos[i], {autoAlpha: "0"})
-    }
+    // for (let i = 0; i < logos.length; i++) {
+    //     TweenLite.set(logos[i], {autoAlpha: "0"})
+    // }
 
     TweenLite.set(logoText, {color: "white"})
     TweenLite.to(logoText, 0.35, {
@@ -89,10 +89,10 @@ function presentText1() {
         backgroundPosition: "-98%, 0%",
     })
 
-    TweenLite.to(backgroundBit, 1, {
-        ease: Power1.easeInOut,
-        autoAlpha: 1,
-    });
+    // TweenLite.to(backgroundBit, 1, {
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 1,
+    // });
 }
 
 const config = {

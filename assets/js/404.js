@@ -12,7 +12,7 @@ canvas.height = height;
 
 // get 2d graphics context and set global alpha
 var ctx = canvas.getContext("2d");
-ctx.globalAlpha = 0.5;
+ctx.globalAlpha = 1;
 
 // setup aliases
 var random = Math.random,
@@ -20,11 +20,11 @@ var random = Math.random,
     floor = Math.floor;
 
 // constants and storage for objects that represent star positions
-var warpZ = 12,
-    units = 500,
+var warpZ = 50,
+    units = 200,
     stars = [],
     cycle = 0,
-    Z = 0.025,
+    Z = 0.2,
     isDown = false;
 
 // addEventListener helper
