@@ -11,6 +11,7 @@ function isVisible(e) {
 var logoText = document.getElementById("logotext");
 // var logoBg = document.getElementById("logobg");
 var backgroundBit = document.getElementById("backgroundbit");
+var canvas = document.getElementById("canvas");
 var qviewSectionLeft = document.getElementById("qviewsectionleft");
 var contact1 = document.getElementById("contact1");
 var contact2 = document.getElementById("contact2");
@@ -25,10 +26,12 @@ TweenLite.set(logos[1], {color: "rgba(0, 255, 0)"});
 TweenLite.set(logos[2], {color: "rgba(0, 0, 255)"});
 
 TweenLite.set(logos[0], {xPercent:-55, yPercent:-52, autoAlpha:"0"});
-TweenLite.set(logos[1], {xPercent:-50, yPercent:-50, autoAlpha:"0"})
+TweenLite.set(logos[1], {xPercent:-50, yPercent:-50, autoAlpha:"0"});
 TweenLite.set(logos[2], {xPercent:-45, yPercent:-48, autoAlpha:"0"});
 
-TweenLite.set(logoText, {xPercent:-50, yPercent:-50, autoAlpha:"1"})
+TweenLite.set(logoText, {xPercent:-50, yPercent:-50, autoAlpha:"1"});
+
+TweenLite.set(canvas, {autoAlpha:"0"});
 
 window.onload = function() {
     presentLogo();
@@ -89,10 +92,10 @@ function presentText1() {
         backgroundPosition: "-98%, 0%",
     })
 
-    // TweenLite.to(backgroundBit, 1, {
-    //     ease: Power1.easeInOut,
-    //     autoAlpha: 1,
-    // });
+    TweenLite.to(canvas, 1, {
+        ease: Power1.easeInOut,
+        autoAlpha: 1,
+    });
 }
 
 const config = {

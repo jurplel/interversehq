@@ -24,9 +24,16 @@
     }
     background: linear-gradient(to right, white 50%, transparent 50%);
     background-size: 203%;
-    background-position: 100%;
+    background-position: 99%;
     color: transparent;
     line-height: 1
+}
+
+#canvas {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
 }
 
 .parallaxbg {
