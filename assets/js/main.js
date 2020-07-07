@@ -17,12 +17,12 @@ TweenLite.set(logos[1], {color: "rgba(255, 0, 0)"});
 TweenLite.set(logos[2], {color: "rgba(0, 255, 0)"});
 TweenLite.set(logos[3], {color: "rgba(0, 0, 255)"});
 
-TweenLite.set(logos[0], {xPercent:-50, yPercent:-50, autoAlpha:"0"});
-TweenLite.set(logos[1], {xPercent:-55, yPercent:-52, autoAlpha:"0"});
-TweenLite.set(logos[2], {xPercent:-50, yPercent:-50, autoAlpha:"0"});
-TweenLite.set(logos[3], {xPercent:-45, yPercent:-48, autoAlpha:"0"});
+TweenLite.set(logos[0], {xPercent:-50, yPercent:-52, autoAlpha:"0"});
+TweenLite.set(logos[1], {xPercent:-55, yPercent:-54, autoAlpha:"0"});
+TweenLite.set(logos[2], {xPercent:-50, yPercent:-52, autoAlpha:"0"});
+TweenLite.set(logos[3], {xPercent:-45, yPercent:-50, autoAlpha:"0"});
 
-TweenLite.set(logoText, {xPercent:-50, yPercent:-50, autoAlpha:"1"});
+TweenLite.set(logoText, {xPercent:-50, yPercent:-40, autoAlpha:"1"});
 
 TweenLite.set(navbar, {autoAlpha:"0"});
 
