@@ -2,15 +2,21 @@
 
 .logo {
     position: absolute;
-    top: 42.4%;
+    top: 40%;
     left: 50%;
-    font-size: 15vw;
+    font-size: 20vw;
     font-weight: 600;
     @include touch {
         font-size: 30vw;
     }
     visibility: hidden;
     mix-blend-mode: screen;
+}
+
+#logoshadow {
+    mix-blend-mode: normal;
+    text-shadow: 0 0 2rem black;
+    color: transparent;
 }
 
 #logotext {
