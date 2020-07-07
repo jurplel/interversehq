@@ -81,6 +81,39 @@ code {
     box-shadow: 0em 0.5em 1em #000;
 }
 
+a:hover {
+    .intvhighlight {
+        color: black;
+        background-color: white;
+        box-shadow: 0em 0em 0.5em white;
+    }
+    .intvnohighlight {
+        color: white;
+    }
+    &:active {
+        .intvhighlight, .intvnohighlight {
+            color: white;
+        }
+    }
+}
+
+.intvhighlight {
+    background-color: white;
+    color: $intv-bg-color;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.intvnohighlight {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
 .intvoverlay {
     background: rgba($color: $intv-bg-color, $alpha: 0.75);
     -webkit-backdrop-filter: saturate(100%) blur(20px);
