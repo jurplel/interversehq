@@ -127,6 +127,6 @@ let observer = new IntersectionObserver(function(entries, self) {
         }
     })}, config);
 
-TweenLite.set(qviewSectionLeft, {yPercent:30, autoAlpha:0})
+TweenLite.set(qviewSectionLeft, {yPercent:10, autoAlpha:0})
 
 observer.observe(qviewSectionLeft);
