@@ -15,39 +15,66 @@
     
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,600" rel="stylesheet"> 
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/intvstyle.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=PYe9QlpENE">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=PYe9QlpENE">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=PYe9QlpENE">
-    <link rel="manifest" href="/site.webmanifest?v=PYe9QlpENE">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=PYe9QlpENE" color="#050710">
-    <link rel="shortcut icon" href="/favicon.ico?v=PYe9QlpENE">
-    <meta name="msapplication-TileColor" content="#050710">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=9B9RRdzorn">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=9B9RRdzorn">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=9B9RRdzorn">
+    <link rel="manifest" href="/site.webmanifest?v=9B9RRdzorn">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=9B9RRdzorn" color="#0e141c">
+    <link rel="shortcut icon" href="/favicon.ico?v=9B9RRdzorn">
+    <meta name="msapplication-TileColor" content="#0e141c">
+    
     <meta name="theme-color" content="#050710">
     <title>Interverse</title>
     <meta name="description" content="Interverse—a website with stuff.">
 </head>
 <body>
     <header id="underbackgroundbit" class="has-perspective intvshadow">
-        <div id="backgroundbit" class="parallaxbg">
+        <div id="backgroundbit" class="parallaxbg"></div>
+        <div class="hero-head class">
+            <nav class="navbar" id="navbar" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item is-size-5" href="/">Interverse</a>
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="intvnavbar">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="navbar-menu" id="intvnavbar">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="/qview">qView</a>
+                            <a class="navbar-item" href="/discord">Discord</a>
+                            <a class="navbar-item" href="https://github.com/jurplel">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
+        <div class="hero is-medium">
+            <div class="hero-body">
+                <div class="container has-text-centered"></div>
+            </div>
+        </div>
+        <h1 id="logoshadow" class="logo is-unselectable">v</h1>
+        <h1 id="logored" class="logo is-unselectable">v</h1>
+        <h1 id="logogreen" class="logo is-unselectable">v</h1>
+        <h1 id="logoblue" class="logo">v</h1>
         <h1 id="logotext">Interverse</h1>
-        <img id="logo" src="assets/img/intvcompact.svg" alt="Interverse logo">
     </header>
     <section class="section displaysection qviewsection parallaxbg intvshadow">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column has-text-centered is-half" id="qviewsectionleft">
-                    <h1 class="title qviewtext qviewtitle is-spaced">qView</h1>
-                    <h2 class="subtitle qviewtext is-size-4">An image viewer designed to be practical and minimal</h2>
+                    <h1 class="title is-size-1 intvhighlight">qView</h1>
+                    <h5 class="subtitle is-size-5">An image viewer designed to be practical and minimal</h5>
                     <div class="buttons is-centered has-addons">
                         <a class="intvbutton is-medium" href="qview">Website</a>
                         <a class="intvbutton is-medium" href="https://github.com/jurplel/qView">Github</a>
@@ -55,9 +82,9 @@
                 </div>
                 <div class="column is-half">
                     <picture>
-                        <source type="image/webp" srcset="qview/assets/img/screenshot2.webp">
-                        <source type="image/jpeg" srcset="qview/assets/img/screenshot2.png">
-                        <img class="has-position-absolute" src="qview/assets/img/screenshot2.png" alt="qView screenshot with nothing loaded">
+                        <source type="image/webp" srcset="qview/assets/img/screenshot1.webp">
+                        <source type="image/jpeg" srcset="qview/assets/img/screenshot1.png">
+                        <img src="qview/assets/img/screenshot1.png" alt="qView screenshot with nothing loaded">
                     </picture>
                 </div>
             </div>
@@ -79,7 +106,7 @@
         </div>
     </section>
     <footer class="intvfooter">
-		Copyright © 2019 jurplel All rights reserved.
+		Copyright © 2020 jurplel All rights reserved.
 	</footer>
 
     <!-- JS -->
@@ -90,3 +117,5 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/easing/EasePack.min.js" integrity="sha256-Kmyt+nZHXBP0Dc93zU2XMTyo9Bb94gIYk/2H7knbl6U=" crossorigin="anonymous" type="module"></script>    
     <script src="assets/js/main.js" type="module"></script>
 </body>
+
+</html>

@@ -1,6 +1,6 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
 
-$intv-bg-color: #050710;
+$intv-bg-color: #0e141c;
 
 $body-background-color: $intv-bg-color;
 $family-sans-serif: 'Exo 2', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -23,7 +23,6 @@ $control-radius: 7px;
 
 $navbar-background-color: transparent;
 $navbar-item-color: white;
-$navbar-breakpoint: $tablet;
 $navbar-item-hover-background-color: transparent;
 $navbar-dropdown-item-hover-background-color: transparent;
 
@@ -80,4 +79,43 @@ code {
 
 .intvshadow {
     box-shadow: 0em 0.5em 1em #000;
+}
+
+a:hover {
+    .intvhighlight {
+        color: black;
+        background-color: white;
+        box-shadow: 0em 0em 0.5em white;
+    }
+    .intvnohighlight {
+        color: white;
+    }
+    &:active {
+        .intvhighlight, .intvnohighlight {
+            color: white;
+        }
+    }
+}
+
+.intvhighlight {
+    background-color: white;
+    color: $intv-bg-color;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.intvnohighlight {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.intvoverlay {
+    background: rgba($color: $intv-bg-color, $alpha: 0.75);
+    -webkit-backdrop-filter: saturate(100%) blur(20px);
+    backdrop-filter: saturate(100%) blur(20px);
 }
