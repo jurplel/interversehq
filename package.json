@@ -1,8 +1,8 @@
 {
-  "name": "intvhq.com",
+  "name": "interversehq",
   "description": "Interverse Website",
   "dependencies": {
-    "bulma": "^0.7.4",
+    "bulma": "^0.9.1",
     "node-sass": "^4.12.0"
   },
   "scripts": {
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jurplel/intvhq.com.git"
+    "url": "git+https://github.com/jurplel/interversehq.git"
   },
   "author": "jurplel",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jurplel/intvhq.com/issues"
+    "url": "https://github.com/jurplel/interversehq/issues"
   }
 }
