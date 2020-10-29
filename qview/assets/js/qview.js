@@ -12,6 +12,7 @@ var navbarHTML = `
         <div class="navbar-start">
             <a class="navbar-item" href="/qview/download">Download</a>
             <a class="navbar-item" href="/qview/changelog">Changelog</a>
+            <a class="navbar-item" href="/qview/formats">Supported Formats</a>
             <a class="navbar-item" href="https://github.com/jurplel/qView">Github</a>
             <a class="navbar-item" href="/discord">Discord</a>
         </div>
