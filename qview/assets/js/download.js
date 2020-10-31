@@ -6,7 +6,7 @@ request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
         let data = JSON.parse(request.responseText);
         let assets = data[0].assets;
-        for (i = 0; i < assets.length; i++) {
+        for (let i = 0; i < assets.length; i++) {
             if (assets[i].name.endsWith('i586.rpm')) {
                 document.getElementById('rpm32dl').setAttribute('href', assets[i].browser_download_url);
             }
