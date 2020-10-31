@@ -4,7 +4,20 @@ request.open('GET', 'https://api.github.com/repos/jurplel/qView/releases', true)
 request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
 
-        converter = new showdown.Converter();
+        const classMap = {
+            h4: 'is-size-5',
+        }
+          
+        const bindings = Object.keys(classMap)
+        .map(key => ({
+            type: 'output',
+            regex: new RegExp(`<${key}(.*)>`, 'g'),
+            replace: `<${key} class="${classMap[key]}" $1>`
+        }));
+
+        const converter = new showdown.Converter({
+            extensions: [...bindings]
+        });
         let data = JSON.parse(request.responseText);
 
         let logs = document.getElementsByClassName('log');
@@ -14,6 +27,7 @@ request.onload = function () {
             lines.splice(0,1);
             let newhtml = lines.join('\n');
             logs[i].innerHTML = newhtml;
+            logs[i].innerHTML
         }
 
         let vers = document.getElementsByClassName('ver')

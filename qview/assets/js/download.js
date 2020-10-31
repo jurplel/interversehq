@@ -4,18 +4,46 @@ request.open('GET', 'https://api.github.com/repos/jurplel/qView/releases', true)
 
 request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
-        var data = JSON.parse(request.responseText);
-
-        document.getElementById('rpm32dl').setAttribute('href', data[0].assets[0].browser_download_url);
-        document.getElementById('rpm64dl').setAttribute('href', data[0].assets[1].browser_download_url);
-        document.getElementById('win32dl').setAttribute('href', data[0].assets[2].browser_download_url);
-        document.getElementById('win32dlp').setAttribute('href', data[0].assets[3].browser_download_url);
-        document.getElementById('win64dl').setAttribute('href', data[0].assets[4].browser_download_url);
-        document.getElementById('win64dlp').setAttribute('href', data[0].assets[5].browser_download_url);
-        document.getElementById('dmgdl').setAttribute('href', data[0].assets[6].browser_download_url);
-        document.getElementById('targzdl').setAttribute('href', data[0].assets[7].browser_download_url);
-        document.getElementById('deb64dl').setAttribute('href', data[0].assets[8].browser_download_url);
-        document.getElementById('deb32dl').setAttribute('href', data[0].assets[9].browser_download_url);
+        let data = JSON.parse(request.responseText);
+        let assets = data[0].assets;
+        for (i = 0; i < assets.length; i++) {
+            if (assets[i].name.endsWith('i586.rpm')) {
+                document.getElementById('rpm32dl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('x86_64.rpm')) {
+                document.getElementById('rpm64dl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('legacy.dmg')) {
+                document.getElementById('osxdl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('win32.exe')) {
+                document.getElementById('win32dl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('win32.zip')) {
+                document.getElementById('win32dlp').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('win64.exe')) {
+                document.getElementById('win64dl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('win64.zip')) {
+                document.getElementById('win64dlp').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('.AppImage')) {
+                document.getElementById('appimagedl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('.dmg')) { // this is ok because it already doesnt end with legacy.dmg
+                document.getElementById('dmgdl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('.tar.gz')) {
+                document.getElementById('targzdl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('amd64.deb')) {
+                document.getElementById('deb64dl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('i386.deb')) {
+                document.getElementById('deb32dl').setAttribute('href', assets[i].browser_download_url);
+            }
+        }
     }
 }
 
