@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- GTAG -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10935865-4"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-10935865-4', { 'anonymize_ip': true });
+    </script>
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,600" rel="stylesheet"> 
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/intvstyle.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=9B9RRdzorn">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=9B9RRdzorn">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=9B9RRdzorn">
+    <link rel="manifest" href="/site.webmanifest?v=9B9RRdzorn">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=9B9RRdzorn" color="#0e141c">
+    <link rel="shortcut icon" href="/favicon.ico?v=9B9RRdzorn">
+    <meta name="msapplication-TileColor" content="#0e141c">
+    
+    <meta name="theme-color" content="#050710">
+    <title>Interverse</title>
+    <meta name="description" content="Interverse—a website with stuff.">
+</head>
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-head class" id="canvasheader">
+            <nav class="navbar" id="navbar" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item is-size-5" href="/">Interverse</a>
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="intvnavbar">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="navbar-menu" id="intvnavbar">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="/qview">qView</a>
+                            <a class="navbar-item" href="/discord">Discord</a>
+                            <a class="navbar-item" href="https://github.com/jurplel">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body p-0" id="canvascontainer">
+            <canvas id="welcomecanvas"></canvas>
+        </div>
+        <footer class="hero-footer intvfooter" id="canvasfooter">
+            Copyright © 2020 jurplel All rights reserved.
+        </footer>
+    </section>
+
+    <!-- JS -->
+    <script src="assets/js/welcome.js" type="module"></script>
+</body>
+
+</html>
