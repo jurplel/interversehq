@@ -12,8 +12,8 @@ var navbarHTML = `
         <div class="navbar-start">
             <a class="navbar-item" href="/qview/download">Download</a>
             <a class="navbar-item" href="/qview/changelog">Changelog</a>
-            <a class="navbar-item" href="/qview/formats">Supported Formats</a>
             <a class="navbar-item" href="https://github.com/jurplel/qView">GitHub</a>
+            <a class="navbar-item" href="https://hosted.weblate.org/projects/qview/qview/">Weblate</a>
             <a class="navbar-item" href="/discord">Discord</a>
         </div>
         <div class="navbar-end">
@@ -24,7 +24,7 @@ var navbarHTML = `
 
 var footerHTML =`
 <div class="intvfooter">
-        Copyright © 2021 jurplel All rights reserved. 
+        Copyright © 2022 jurplel All rights reserved. 
 </div>`
 
 var navbarHTMLobj = document.createElement('div');
