@@ -2,6 +2,16 @@
 var request = new XMLHttpRequest();
 request.open('GET', 'https://api.github.com/repos/jurplel/qView/releases', true);
 
+// mac download button replacing with apple/intel choice
+const macchoice = document.getElementById('macchoice')
+macchoice.style.display = 'none'
+
+const macdl = document.getElementById('macdl')
+macdl.onclick = function() {
+    macdl.style.display = 'none'
+    macchoice.style.display = ''
+}
+
 request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
         let data = JSON.parse(request.responseText);
@@ -31,7 +41,10 @@ request.onload = function () {
             else if (assets[i].name.endsWith('.AppImage')) {
                 document.getElementById('appimagedl').setAttribute('href', assets[i].browser_download_url);
             }
-            else if (assets[i].name.endsWith('.dmg')) { // this is ok because it already doesnt end with legacy.dmg
+            else if (assets[i].name.endsWith('arm64.dmg')) {
+                document.getElementById('armdmgdl').setAttribute('href', assets[i].browser_download_url);
+            }
+            else if (assets[i].name.endsWith('.dmg')) { // this is ok because it already doesnt end with legacy.dmg or arm64.dmg
                 document.getElementById('dmgdl').setAttribute('href', assets[i].browser_download_url);
             }
             else if (assets[i].name.endsWith('.tar.gz')) {
