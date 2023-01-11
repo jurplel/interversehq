@@ -3,7 +3,7 @@
   "description": "Interverse Website",
   "dependencies": {
     "bulma": "^0.9.1",
-    "node-sass": "^8.0.0"
+    "node-sass": "^4.12.0"
   },
   "scripts": {
     "scss:main": "node-sass assets/css -o assets/css --source-map true",
