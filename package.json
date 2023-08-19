@@ -2,12 +2,12 @@
   "name": "interversehq",
   "description": "Interverse Website",
   "dependencies": {
-    "bulma": "^0.9.1",
-    "node-sass": "^4.12.0"
+    "bulma": "^0.9.4",
+    "sass": "^1.66.1"
   },
   "scripts": {
-    "scss:main": "node-sass assets/css -o assets/css --source-map true",
-    "scss:qview": "node-sass qview/assets/css -o qview/assets/css --source-map true",
+    "scss:main": "sass assets/css:assets/css",
+    "scss:qview": "sass qview/assets/css:qview/assets/css",
     "scss": "npm run scss:main && npm run scss:qview",
     "scss:watch": "npm run scss:main -- -w & npm run scss:qview -- -w"
   },
