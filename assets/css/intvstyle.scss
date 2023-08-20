@@ -2,17 +2,30 @@
 
 $intv-bg-color: #0e141c;
 
+$intv-bg-accent: #182b39;
+
 $body-background-color: $intv-bg-color;
-$family-sans-serif: 'Exo 2', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-sans-serif: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$title-family: 'Exo 2', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$subtitle-family: $title-family;
+$button-family: $title-family;
 
 $title-color: white;
 $subtitle-color: white;
 $text: white;
 
-$title-weight: 300;
-$subtitle-weight: 400;
+// "Seafoam" link style
+// $link: #2AB7B7;
+// $link-hover: #37d2d2;
 
-$link-hover: hsl(204, 86%, 53%);
+// Traditional link style
+// $link: #3273dc;
+// $link-hover: #209cee;
+
+// "Combined" link style
+$link: #2E95CA;
+$link-hover: #2AB7B7;
 
 $tabs-toggle-link-active-background-color: white;
 $tabs-toggle-link-active-color: $intv-bg-color;
@@ -46,7 +59,13 @@ a {
 //Style code blocks a little
 code {
     color: lightgray;
-    background-color: #181818;
+    background-color: #121212;
+}
+
+//Style code blocks a little
+pre {
+    color: lightgray;
+    background-color: #121212;
 }
 
 
@@ -77,8 +96,12 @@ code {
     }
 }
 
+.intvsubtleshadow {
+    box-shadow: 0em 0.2em 0.4em #000;
+}
+
 .intvshadow {
-    box-shadow: 0em 0.5em 1em #000;
+    box-shadow: 0em 0.375em 0.75em #000;
 }
 
 a:hover {
