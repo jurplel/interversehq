@@ -2,6 +2,7 @@
   "name": "interversehq",
   "description": "Interverse Website",
   "dependencies": {
+    "@material-design-icons/font": "^0.14.11",
     "bulma": "^0.9.4",
     "sass": "^1.66.1"
   },
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
+    "@kamona/tailwindcss-perspective": "^0.1.1",
     "@tailwindcss/typography": "^0.5.9",
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.3.3"

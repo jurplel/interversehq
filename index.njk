@@ -1,0 +1,47 @@
+---
+title: Interverse
+description: Interverse--a site with stuff.
+layout: layouts/base.njk
+eleventyNavigation:
+  key: test
+  order: 2
+---
+<header id="underbackgroundbit" class="relative h-screen perspective-5 shadow-intv z-20 bg-intv-dark">
+    <div id="backgroundbit" class="parallaxbg bg-intv-ultrablur opacity-0 h-full w-full absolute"></div>
+    {% include "components/nav.njk" %}
+
+    <h1 id="logoshadow" class="logo absolute font-display shadow-black text-shadow-xl_0 top-[40%] left-1/2 lg:text-[20vw] text-[30vw] font-semibold text-transparent select-none">v</h1>
+    <h1 id="logored" class="logo absolute font-display mix-blend-screen top-[40%] left-1/2 lg:text-[20vw] text-[30vw] font-semibold text-pure-red select-none">v</h1>
+    <h1 id="logogreen" class="logo absolute font-display mix-blend-screen top-[40%] left-1/2 lg:text-[20vw] text-[30vw] font-semibold text-pure-green select-none">v</h1>
+    <h1 id="logoblue" class="logo absolute font-display mix-blend-screen top-[40%] left-1/2 lg:text-[20vw] text-[30vw] font-semibold text-pure-blue select-none">v</h1>
+
+    <h1 id="logotext" class="absolute top-[65%] left-1/2 lg:text-[7vw] text-[12vw] leading-none bg-[length:203%] bg-[99%] font-display font-light text-transparent bg-gradient-to-r from-white from-50% to-transparent to-50%">Interverse</h1>
+</header>
+<section class="h-[35rem] py-20 relative parallaxbg bg-qview shadow-intv z-10 dark">
+    <div class="container px-6 max-w-7xl mx-auto">
+        <div class="columns-2">
+            <div class="text-center" id="qviewsectionleft">
+                <h1 class="text-5xl font-display intvhighlight">qView</h1>
+                <h5 class="text-xl font-display text-white">An image viewer designed to be practical and minimal</h5>
+                <div class="buttons mt-6" role="group">
+                    <a class="button" href="qview">Website</a>
+                    <a class="button" href="https://github.com/jurplel/qView">GitHub</a>
+                </div>
+            </div>
+            <picture>
+                <source type="image/webp" srcset="qview/assets/img/screenshot1.webp">
+                <source type="image/jpeg" srcset="qview/assets/img/screenshot1.png">
+                <img src="qview/assets/img/screenshot1.png" alt="qView screenshot with nothing loaded">
+            </picture>
+        </div>
+    </div>
+</section>
+{% include "components/footer.njk" %}
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CIntersectionObserver" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/TweenLite.min.js" integrity="sha256-VfpswwlYKouVmlpnJW0MszMzLm9lH2yfB6ty3d1WsB4=" crossorigin="anonymous" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/plugins/CSSPlugin.min.js" integrity="sha256-UJt5JHwfrhok9SvTqbi6rRw2ajY0ugeYsIT2pioVDJY=" crossorigin="anonymous" type="module"></script>    
+<script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/TimelineLite.min.js" integrity="sha256-5HW1hilN77unDg9wwY2mmXL1G8/hBMrYOgiB+BqsxNg=" crossorigin="anonymous" type="module"></script>    
+<script src="https://cdn.jsdelivr.net/npm/gsap@2.1.2/src/minified/easing/EasePack.min.js" integrity="sha256-Kmyt+nZHXBP0Dc93zU2XMTyo9Bb94gIYk/2H7knbl6U=" crossorigin="anonymous" type="module"></script>    
+<script src="/assets/js/main.js" type="module"></script>
+<script src="/bowad/assets/js/navbar.js" type="module"></script>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" dir="ltr" class="dark">
+<html lang="en" dir="ltr" class="antialiased">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 
     <!-- CSS -->
@@ -27,11 +27,6 @@
     <meta name="description" content={{ description }}>
 </head>
 <body class="dark:text-white dark:bg-intv-dark">
-    {% include "../components/nav.njk" %}
-    <main>
-        {{ content | safe }}
-    </main>
-    {% include "../components/footer.njk" %}
+    {{ content | safe }}
 </body>
-<script src="/bowad/assets/js/main.js" type="module"></script>
 </html>

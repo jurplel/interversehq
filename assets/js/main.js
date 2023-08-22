@@ -10,7 +10,7 @@ function isVisible(e) {
 var logoText = document.getElementById("logotext");
 var backgroundBit = document.getElementById("backgroundbit");
 var navbar = document.getElementById("navbar");
-var qviewSectionLeft = document.getElementById("qviewsectionleft");
+// var qviewSectionLeft = document.getElementById("qviewsectionleft");
 
 let logos = document.getElementsByClassName('logo');
 TweenLite.set(logos[1], {color: "rgba(255, 0, 0)"});
@@ -72,7 +72,6 @@ function presentText0() {
         backgroundPosition: "0%, 0%",
         onComplete: presentText1
     })
-    // presentText1();
 }
 
 function presentText1() {
@@ -127,9 +126,9 @@ let observer = new IntersectionObserver(function(entries, self) {
         }
     })}, config);
 
-TweenLite.set(qviewSectionLeft, {yPercent:10, autoAlpha:0})
+// TweenLite.set(qviewSectionLeft, {yPercent:10, autoAlpha:0})
 
-observer.observe(qviewSectionLeft);
+// observer.observe(qviewSectionLeft);
 
 
 document.addEventListener('DOMContentLoaded', () => {

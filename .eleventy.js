@@ -5,7 +5,9 @@ module.exports = function(eleventyConfig) {
 
   // Copy assets
   eleventyConfig.addPassthroughCopy("bowad/assets/img/**/*")
+  eleventyConfig.addPassthroughCopy("assets/img/**/*")
   eleventyConfig.addPassthroughCopy("bowad/assets/js/**/*")
+  eleventyConfig.addPassthroughCopy("assets/js/**/*")
   
   // Copy favicon stuff
   eleventyConfig.addPassthroughCopy("*.png")
@@ -13,4 +15,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("*.ico")
   eleventyConfig.addPassthroughCopy("site.webmanifest")
   eleventyConfig.addPassthroughCopy("browserconfig.xml")
+
+  // Copy over entire qview website, self-contained
+  eleventyConfig.addPassthroughCopy("qview/")
 };

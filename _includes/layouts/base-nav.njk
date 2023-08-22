@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+---
+{% include "../components/nav.njk" %}
+<main>
+    {{ content | safe }}
+</main>
+{% include "../components/footer.njk" %}
+
+<script src="/bowad/assets/js/navbar.js" type="module"></script>
