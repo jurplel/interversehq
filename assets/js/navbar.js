@@ -1,5 +1,6 @@
 const navbar = document.getElementById("navbar")
 
+// If we aren't on the main page (with GSAP), we can make opacity transition
 if (!window.TweenLite) {
     navbar.classList.add("ease-out", "duration-200", "transition-opacity")
 }
@@ -7,9 +8,8 @@ if (!window.TweenLite) {
 // dark mode switch
 document.addEventListener("DOMContentLoaded", function () {
     updateDarkMode()
-    window.setTimeout(() => {
-        navbar.classList.remove("opacity-0")
-    }, 100)
+    // then remove opacity at load time for a subtle animation
+    navbar.classList.remove("opacity-0")
 })
 
 const themeToggle = document.getElementById('theme-toggle')
@@ -44,10 +44,12 @@ function updateDarkMode() {
             document.documentElement.classList.add('dark')
         }
     } else if (theme === 'light') {
-        document.documentElement.classList.remove('dark')
         themeToggle.classList.remove('dark')
-        if (!document.documentElement.classList.contains('light')) {
-            document.documentElement.classList.add('light')
+        if (!document.documentElement.classList.contains('forcedark')) {
+            document.documentElement.classList.remove('dark')
+            if (!document.documentElement.classList.contains('light')) {
+                document.documentElement.classList.add('light')
+            }
         }
     }
 }

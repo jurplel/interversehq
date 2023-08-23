@@ -1,0 +1,23 @@
+---
+title: 404 - Interverse
+layout: layouts/base.njk
+forceDark: true
+---
+<header>
+    <canvas id="canvas">
+    </canvas>
+    <div class="absolute top-0 w-full h-full">
+        {# {% include "components/nav.njk" %} #}
+        <h1 class="absolute font-display top-[40%] left-1/2 text-[16vw] font-light -translate-x-1/2 -translate-y-1/2">404</h1>
+        <div class="text-center w-full absolute top-[40%] translate-y-[9vw]">
+            <h3 class="font-display text-4xl font-light">Looks like you're lost</h3>
+            <!-- TODO: style links -->
+            <h5 class="font-display text-xl"><a href="/">Take me home</a></h5>
+        </div>
+        <div class="absolute bottom-0 w-full">
+            {% include "components/footer.njk" %}
+        </div>
+    </div>
+</header>
+<script src="/assets/js/404.js"></script>
+<script src="/assets/js/navbar.js" type="module"></script>
