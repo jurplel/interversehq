@@ -1,0 +1,18 @@
+---
+title: Welcome thing - Interverse
+layout: layouts/base.njk
+forceDark: true
+---
+<header class="h-screen flex flex-col">
+    <div id="canvasheader">
+        {% include "components/nav.njk" %}
+    </div>
+    <div id="canvascontainer" class="flex flex-grow">
+        <canvas id="welcomecanvas"></canvas>
+    </div>
+    <div id="canvasfooter">
+        {% include "components/footer.njk" %}
+    </div>
+</header>
+<script src="/welcomething/assets/js/welcome.js"></script>
+<script src="/assets/js/navbar.js" type="module"></script>

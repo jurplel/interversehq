@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/img/**/*")
   eleventyConfig.addPassthroughCopy("bowad/assets/js/**/*")
   eleventyConfig.addPassthroughCopy("assets/js/**/*")
+  eleventyConfig.addPassthroughCopy("welcomething/assets/js/**/*")
   
   // Copy favicon stuff
   eleventyConfig.addPassthroughCopy("*.png")
