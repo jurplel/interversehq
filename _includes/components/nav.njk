@@ -1,23 +1,6 @@
-<!-- <nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b">
-    <a href="/" class="font-semibold text-xl tracking-tight">My Page</a>
-  
-    {% set navPages = collections.all | eleventyNavigation %}
-    <ul>
-      {% for entry in navPages %}
-        <li class="inline">
-          <a
-           href="{{ entry.url }}"
-           class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
-           {{'bg-black text-white' if entry.url in page.url
-           else 'text-gray-700 hover:text-gray-900'}}">
-           {{ entry.title }}
-         </a>
-        </li>
-      {% endfor %}
-   </ul>
-  </nav> -->
 <!-- JS will set the opacity to 100 -->
 <nav id="navbar" class="relative overflow-hidden z-30 opacity-0">
+  {% set navPages = collections.all | eleventyNavigation %} 
   <div class="mx-auto max-w-7xl px-6 lg:px-8 font-display">
     <div class="relative flex h-16 items-center justify-between">
       <!-- Mobile menu button-->
@@ -52,11 +35,17 @@
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="text-white bg-gray-700 rounded-md px-3 py-2 text-sm font-semibold" aria-current="page">whoami</a>
-            <a href="#" class="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold transition-all">Projects</a>
-            <a href="#" class="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold transition-all">Blog</a>
-            <a href="#" class="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold transition-all">Github</a>
+            {% for entry in navPages %}
+            <a href="{{ entry.url }}" 
+               {% if entry.url == page.url %}
+               class="text-white bg-gray-700 rounded-md px-3 py-2 text-sm font-semibold" 
+               {% else %}
+               class="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold transition-all" 
+               {% endif %}
+               aria-current="page">
+              {{ entry.title }}
+            </a>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -87,10 +76,17 @@
   <div class="opacity-0 sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Discord</a>
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+      {% for entry in navPages %}
+      <a href="{{ entry.url }}" 
+          {% if entry.url == page.url %}
+          class="text-white bg-gray-700 rounded-md px-3 py-2 text-sm font-semibold block" 
+          {% else %}
+          class="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold transition-all block" 
+          {% endif %}
+          aria-current="page">
+        {{ entry.title }}
+      </a>
+      {% endfor %}
     </div>
   </div>
 </nav>

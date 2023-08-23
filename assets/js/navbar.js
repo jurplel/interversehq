@@ -1,7 +1,7 @@
 const navbar = document.getElementById("navbar")
 
 if (!window.TweenLite) {
-    navbar.classList.add("ease-out", "duration-300", "transition-opacity")
+    navbar.classList.add("ease-out", "duration-200", "transition-opacity")
 }
 
 // dark mode switch
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateDarkMode()
     window.setTimeout(() => {
         navbar.classList.remove("opacity-0")
-    }, 200)
+    }, 100)
 })
 
 const themeToggle = document.getElementById('theme-toggle')
