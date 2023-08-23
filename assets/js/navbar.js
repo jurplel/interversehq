@@ -1,5 +1,15 @@
+const navbar = document.getElementById("navbar")
+
+if (!window.TweenLite) {
+    navbar.classList.add("ease-out", "duration-300", "transition-opacity")
+}
+
+// dark mode switch
 document.addEventListener("DOMContentLoaded", function () {
     updateDarkMode()
+    window.setTimeout(() => {
+        navbar.classList.remove("opacity-0")
+    }, 200)
 })
 
 const themeToggle = document.getElementById('theme-toggle')
@@ -49,4 +59,41 @@ document.querySelectorAll("#theme-toggle input").forEach((t) => {
             updateDarkMode()
         }
     })
+})
+
+// mobile menu
+
+const menu = document.getElementById("mobile-menu")
+const menuButton = document.getElementById("menu-button")
+const menuOpened = document.getElementById('menu-open')
+const menuClosed = document.getElementById('menu-closed')
+
+let opened = true
+
+function toggleMobileMenu() {
+    opened = !opened
+    console.log(opened)
+    if (opened) {
+        menuOpened.classList.add('block')
+        menuOpened.classList.remove('hidden')
+
+        menuClosed.classList.add('hidden')
+        menuClosed.classList.remove('block')
+
+        menu.classList.add('opacity-100')
+        menu.classList.remove('opacity-0')
+    } else {
+        menuClosed.classList.add('block')
+        menuClosed.classList.remove('hidden')
+
+        menuOpened.classList.add('hidden')
+        menuOpened.classList.remove('block')
+
+        menu.classList.add('opacity-0')
+        menu.classList.remove('opacity-100')
+    }
+}
+
+menuButton.addEventListener("click", (e) => {
+    toggleMobileMenu()
 })
