@@ -33,8 +33,10 @@ module.exports = {
       colors: {
         'intv-dark': '#0e141c',
         'intv-dark-accent': '#182b39',
-        'intv-bright': '#2E95CA',
-        'intv-bright-accent': '#2AB7B7',
+        'intv-bright': '#1b65c6',
+        'intv-bright-accent': '#0392BF',
+        'intv-bright-dark': '#3273dc',
+        'intv-bright-accent-dark': '#0392BF',
         'pure-red': 'rgb(255, 0, 0)',
         'pure-green': 'rgb(0, 255, 0)',
         'pure-blue': 'rgb(0, 0, 255)',

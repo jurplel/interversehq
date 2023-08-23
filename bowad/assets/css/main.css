@@ -4,9 +4,12 @@
 
 
 /* Dark mode transition */
+
 body * {
     @apply transition-colors duration-200;
 }
+
+/* ported conveniences from legacy intvstyle */
 
 .parallaxbg {
     @apply bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden;
@@ -15,6 +18,8 @@ body * {
 .intvhighlight {
     @apply bg-white text-intv-dark px-1 font-semibold inline-block leading-[1.125]
 }
+
+/* rules for the dark mode switch */
 
 #theme-toggle input:checked~span {
     opacity: 1;
@@ -27,6 +32,8 @@ body * {
 #theme-toggle.dark .thumb {
     left: 2rem;
 }
+
+/* button stuff */
 
 .button {
     @apply px-4 py-2
@@ -53,4 +60,14 @@ body * {
 
 .buttons .button:last-child {
     @apply rounded-r-lg border-x
+}
+
+/* convenient link style */
+
+a.link, .prose a {
+    @apply text-intv-bright dark:text-intv-bright-dark no-underline
+}
+
+a.link:hover, .prose a:hover {
+    @apply text-intv-bright-accent dark:text-intv-bright-accent-dark no-underline
 }
