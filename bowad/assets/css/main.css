@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Dark mode transition */
+body * {
+    @apply transition-colors duration-200;
+}
+
+.parallaxbg {
+    @apply bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden;
+}
+
+.intvhighlight {
+    @apply bg-white text-intv-dark px-1 font-semibold inline-block leading-[1.125]
+}
+
+#theme-toggle input:checked~span {
+    opacity: 1;
+}
+
+#theme-toggle.light .thumb {
+    left: 0;
+}
+
+#theme-toggle.dark .thumb {
+    left: 2rem;
+}
+
+.button {
+    @apply px-4 py-2
+        text-xl font-display font-medium
+        border rounded-lg border-black dark:border-white
+        text-black hover:text-white active:text-black
+        dark:text-white dark:hover:text-black dark:active:text-white
+        bg-transparent hover:bg-black dark:hover:bg-white
+        focus:z-10 focus:ring-2 focus:ring-blue-700
+    ;
+}
+
+.buttons {
+    @apply inline-flex rounded-md shadow-sm
+}
+
+.buttons .button {
+    @apply border-x-0 rounded-none mx-0
+}
+
+.buttons .button:first-child {
+    @apply rounded-l-lg border-x
+}
+
+.buttons .button:last-child {
+    @apply rounded-r-lg border-x
+}
