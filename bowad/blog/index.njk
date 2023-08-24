@@ -1,0 +1,19 @@
+---
+title: Blog - Interverse
+layout: layouts/base-nav.njk
+eleventyNavigation:
+  key: Blog
+  order: 1
+---
+<div class="container max-w-3xl mx-auto">
+    <h1 class="font-display font-bold text-4xl text-center py-16">Interverse Blog</h1>
+    <ul>
+    {%- for post in collections.post -%}
+        <li>
+            {{ post.data.name }}
+            <br>
+            {{ post.data.date }}
+        </li>
+    {%- endfor -%}
+    </ul>
+</div>
