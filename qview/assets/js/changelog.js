@@ -7,7 +7,7 @@ request.onload = function () {
         const classMap = {
             h4: 'is-size-5',
         }
-          
+
         const bindings = Object.keys(classMap)
         .map(key => ({
             type: 'output',
@@ -19,6 +19,9 @@ request.onload = function () {
             extensions: [...bindings]
         });
         let data = JSON.parse(request.responseText);
+
+        // Filter out pre-releases
+        data = data.filter(release => !release.prerelease);
 
         let logs = document.getElementsByClassName('log');
         for (i = 0; i < logs.length; i++) {
