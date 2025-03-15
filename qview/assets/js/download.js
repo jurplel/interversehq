@@ -5,6 +5,7 @@ request.open('GET', 'https://api.github.com/repos/jurplel/qView/releases', true)
 request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
         let data = JSON.parse(request.responseText);
+        data = data.filter(release => !release.prerelease);
         let assets = data[0].assets;
         for (let i = 0; i < assets.length; i++) {
             if (assets[i].name.endsWith('i586.rpm')) {
