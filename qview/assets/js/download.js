@@ -8,13 +8,7 @@ request.onload = function () {
         data = data.filter(release => !release.prerelease);
         let assets = data[0].assets;
         for (let i = 0; i < assets.length; i++) {
-            if (assets[i].name.endsWith('i586.rpm')) {
-                document.getElementById('rpm32dl').setAttribute('href', assets[i].browser_download_url);
-            }
-            else if (assets[i].name.endsWith('x86_64.rpm')) {
-                document.getElementById('rpm64dl').setAttribute('href', assets[i].browser_download_url);
-            }
-            else if (assets[i].name.endsWith('legacy.dmg')) {
+            if (assets[i].name.endsWith('legacy.dmg')) {
                 document.getElementById('osxdl').setAttribute('href', assets[i].browser_download_url);
             }
             else if (assets[i].name.endsWith('win32.exe')) {
@@ -38,12 +32,6 @@ request.onload = function () {
             else if (assets[i].name.endsWith('.tar.gz')) {
                 document.getElementById('targzdl').setAttribute('href', assets[i].browser_download_url);
             }
-            else if (assets[i].name.endsWith('amd64.deb')) {
-                document.getElementById('deb64dl').setAttribute('href', assets[i].browser_download_url);
-            }
-            else if (assets[i].name.endsWith('i386.deb')) {
-                document.getElementById('deb32dl').setAttribute('href', assets[i].browser_download_url);
-            }
         }
     }
 }
@@ -56,7 +44,7 @@ if (navigator.platform.indexOf("Win") != -1) {
     if (navigator.userAgent.indexOf("WOW64") != -1 || 
         navigator.userAgent.indexOf("Win64") != -1 ) {
         os = 1;
-    } 
+    }
     else {
         os = 0;
     }
